@@ -24,7 +24,7 @@ The site is plain static files, published from the root of this repository. Ther
 | `volume` | Volume as printed, e.g. `CLX` |
 | `number` | Issue number as printed, e.g. `49,318` |
 | `lead_headline` | Front-page lead headline |
-| `path` | Path from the site root, e.g. `issues/2026-09-29/` |
+| `path` | Path from the site root, e.g. `issues/2026-09-26/` |
 
 4. From the repository root, regenerate the front page and the archive:
 
