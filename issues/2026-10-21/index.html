@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<title>The Vinland Herald &middot; Wednesday, 21 October 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1b1a17;--paper:#f6f1e4;--rule:#2a2824;--muted:#5a554b;--soft:#e9e1cc}
+*{box-sizing:border-box}
+.site-nav{background:var(--paper);border-bottom:1px solid var(--rule);font-family:"Old Standard TT",serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;text-align:center;padding:6px 12px}
+.site-nav a{color:var(--ink);text-decoration:none;padding:0 14px}
+.site-nav a+a{border-left:1px solid var(--rule)}
+.site-nav a:hover,.site-nav a:focus{text-decoration:underline}
+body{margin:0;background:#d9d2c0;color:var(--ink);font-family:"Libre Caslon Text",Georgia,"Times New Roman",serif;font-size:15.5px;line-height:1.5}
+.sheet{max-width:1240px;margin:24px auto;background:var(--paper);padding:22px 34px 40px;box-shadow:0 2px 18px rgba(0,0,0,.18)}
+header.mast{text-align:center;border-bottom:4px double var(--rule);padding-bottom:6px}
+.topline{display:flex;justify-content:space-between;font-family:"Old Standard TT",serif;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;border-bottom:1px solid var(--rule);padding-bottom:5px}
+.mastrow{display:grid;grid-template-columns:1fr 2.6fr 1fr;align-items:center;gap:18px;padding:10px 0 4px}
+.ear{border:1px solid var(--rule);padding:7px 9px;font-size:11.5px;line-height:1.4;text-align:left;font-family:"Old Standard TT",serif}
+.ear strong{display:block;font-size:11px;letter-spacing:.12em;border-bottom:1px solid var(--rule);margin-bottom:3px}
+h1.title{font-family:"UnifrakturMaguntia","Old English Text MT",serif;font-weight:400;font-size:clamp(40px,6.2vw,80px);margin:0;line-height:1;white-space:nowrap}
+.founded{font-family:"Old Standard TT",serif;font-style:italic;font-size:14px;margin-top:4px}
+.dateline{display:flex;justify-content:space-between;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin-top:6px;padding:4px 0;font-family:"Old Standard TT",serif;font-size:13px;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
+h2,h3,h4{font-family:"Playfair Display",Georgia,serif;margin:0}
+.hed-lead{font-size:clamp(30px,3.9vw,50px);line-height:1.05;font-weight:900;margin:10px 0 8px;text-align:center}
+.lead .deck{font-size:19px;font-style:italic;font-weight:700;text-align:center;margin:0 0 10px;column-span:all}
+.cols2{column-count:2;column-gap:26px;column-rule:1px solid #9d968a}
+.cols2 p:first-of-type::first-letter{}
+.lead .byline{column-span:all;text-align:center}
+.byline{font-family:"Old Standard TT",serif;font-style:italic;font-size:13px;color:var(--muted);border-top:1px solid #9d968a;border-bottom:1px solid #9d968a;padding:3px 0;margin:6px 0 10px}
+p{margin:0 0 .72em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.lead .cols2 > p:nth-of-type(2)::first-letter{float:left;font-family:"Playfair Display",serif;font-size:64px;line-height:.82;padding:4px 7px 0 0;font-weight:900}
+p.note{font-size:13px;color:var(--muted);text-align:left}
+.front-grid{display:grid;grid-template-columns:2.05fr 1fr;gap:0;margin-top:12px}
+.front-main{padding-right:24px;border-right:1px solid var(--rule)}
+.front-side{padding-left:22px}
+.hed-side{font-size:23px;line-height:1.12;font-weight:900;margin:8px 0 6px}
+.side .deck{font-size:15px;font-style:italic;font-weight:700;margin-bottom:4px;line-height:1.25}
+.story.side{border-bottom:2px solid var(--rule);padding-bottom:10px;margin-bottom:12px;font-size:14.5px}
+.briefs{background:var(--soft);padding:10px 12px;font-size:13.5px;border-top:3px solid var(--rule)}
+.briefs h4,.boxed h4,.review h4{font-size:14px;letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid var(--rule);margin-bottom:6px;padding-bottom:2px}
+.page.inner{margin-top:34px;border-top:4px double var(--rule);padding-top:6px}
+.pagebar{display:flex;justify-content:space-between;font-family:"Old Standard TT",serif;font-size:12px;text-transform:uppercase;letter-spacing:.1em;border-bottom:1px solid var(--rule);padding-bottom:4px;margin-bottom:10px}
+.pagebar span:first-child{font-weight:700}
+.inner-cols{column-count:3;column-gap:26px;column-rule:1px solid #9d968a}
+.inner-cols article, .inner-cols aside{break-inside:auto}
+.hed{font-size:27px;line-height:1.1;font-weight:900;margin:4px 0 6px;break-after:avoid}
+.inner-cols .deck{font-size:15.5px;font-style:italic;font-weight:700;line-height:1.25;margin-bottom:4px}
+.inner-cols article.story{margin-bottom:18px;padding-bottom:10px;border-bottom:2px solid var(--rule)}
+.boxed{border:1px solid var(--rule);padding:9px 11px;margin:0 0 16px;font-size:13.5px;break-inside:avoid;background:#fbf8ef}
+.review{background:var(--soft);border-top:3px solid var(--rule);border-bottom:3px solid var(--rule);padding:10px 12px;font-size:13.5px;margin-top:10px}
+.editorial{border:2px solid var(--rule);padding:12px 14px;margin-bottom:16px;background:#fbf8ef}
+.edlabel{font-family:"Old Standard TT",serif;text-transform:uppercase;letter-spacing:.2em;font-size:12px;text-align:center;border-bottom:1px solid var(--rule);padding-bottom:3px;margin-bottom:6px}
+.hed-ed{font-size:26px;font-style:italic;text-align:center;margin:4px 0 10px}
+footer{margin-top:30px;border-top:4px double var(--rule);padding-top:8px;font-size:12px;color:var(--muted);text-align:center;font-family:"Old Standard TT",serif}
+@media (max-width:980px){.inner-cols{column-count:2} .mastrow{grid-template-columns:1fr 1fr} .mastrow .brand{grid-column:1/-1;order:-1} }
+@media (max-width:720px){
+ .sheet{margin:0;padding:14px 14px 28px}
+ .front-grid{grid-template-columns:1fr} .front-main{padding-right:0;border-right:none;border-bottom:2px solid var(--rule);padding-bottom:10px;margin-bottom:12px} .front-side{padding-left:0}
+ .cols2,.inner-cols{column-count:1}
+ .topline,.dateline{font-size:10.5px} .dateline{flex-wrap:wrap;gap:6px}
+ .mastrow{grid-template-columns:1fr} h1.title{white-space:normal;font-size:44px}
+}
+</style></head>
+<body>
+<nav class="site-nav" aria-label="The Vinland Herald"><a class="nav-home" href="../../">Front page</a><a class="nav-archive" href="../../archive/">Archive</a></nav>
+<div class="sheet">
+<header class="mast">
+<div class="topline"><span>Vol. CLX &middot; No. 49,336</span><span>The Commonwealth&rsquo;s Newspaper of Record</span><span>Price VKR 18</span></div>
+<div class="mastrow">
+ <div class="ear"><strong>WEATHER</strong><em>Karontoborg:</em> Showers clearing by evening, fresh west wind; high 10°C, low 4°C.<br><em>Hokelgard:</em> Cloud thickening, dry; high 8°C, low 2°C.<br><em>Stadakona:</em> Light rain, 6°C.<br><em>Leifsbudir:</em> Squally showers, 9°C; Helluland Sea moderate to rough.</div>
+ <div class="brand"><h1 class="title">The Vinland Herald</h1><div class="founded">Founded 1867 &middot; Karontoborg</div></div>
+ <div class="ear"><strong>MARKETS</strong>(Tuesday close)<br>KXC Composite 21,228 (−0.2%)<br>VKR/USD 6.85 (weaker)<br>VKR/EUR 7.92<br>NOK 0.652 VKR<br>CNY 0.965 VKR<br>10-yr Commonwealth 3.96% (−2 bp)<br>Benchmark crude $110.27 (+1.0%)<br>Gold $4,040/oz</div>
+</div>
+<div class="dateline"><span>Karontoborg &middot; Hokelgard</span><span>Wednesday, 21 October 2026</span><span>Late Edition</span></div>
+</header>
+<section class="page front"><div class="front-grid"><div class="front-main"><article class="lead"><h2 class="hed-lead">Fifty Sites, 613 Hectares, Thirteen Claims</h2><div class="cols2"><h3 class="deck">Treasury publishes its list of surplus federal land in the Lakes a week early; the largest site is the rail yards east of the river; mayors: &ldquo;Now we can argue about something real&rdquo;; Lindqvist amendment passes by nine; Skjoldkraft lodges a second Intertie route on the eve of Thursday&rsquo;s sitting</h3>
+<p class="byline">By Elise Brattli, Sunniva Rask and Mary Kanatiio Berg, in Karontoborg and Hokelgard</p>
+<p>Treasury did not wait for the deadline.</p>
+<p>On Tuesday afternoon the Finance Ministry published its list of surplus federal land in the Lakes cities. It names fifty sites with a combined area of 613 hectares. Thirteen of them carry a claim by a constitutional people. Each one is marked on the page, as Treasury promised on Monday.</p>
+<p>The list came eight days before the housing working group meets on 29 October. Finance Minister Ingrid Solbakk had promised it only &ldquo;before&rdquo; that date. &ldquo;We said we would show the cities ours,&rdquo; she said. &ldquo;This is ours.&rdquo;</p>
+<p>The largest single site is the old rail yards east of the river in Karontoborg. The disused port strip at Sundgard is also on it, along with depots, a closed customs shed and land beside two lake terminals.</p>
+<p>The list says nothing about terms. It does not say whether any site will be sold, leased or given. &ldquo;That is for the 29th,&rdquo; a Treasury official said.</p>
+<p>Mayor Petra Oyelaran-Skog of Karontoborg read it on her phone at City Hall. &ldquo;Now we can argue about something real,&rdquo; she said.</p>
+<p>In Hokelgard the People&rsquo;s Thing passed the Government&rsquo;s late amendment to Minister Kari Lindqvist&rsquo;s incident-reporting bill by nine votes. The public register will open ninety days after the law takes effect. The bill now goes to third reading on Thursday.</p>
+<p>Thursday is also the day of the Provincial Thing&rsquo;s first status committee sitting on the Shield Intertie. On Tuesday evening Skjoldkraft lodged a second, longer route with the clerk.</p>
+<p class="note"><em>The land list, page 3. Coalition and the vote, page 2. The Gulf, page 4. The Intertie, page 5. The Lindqvist bill and the Mars launch, page 6. The Herald&rsquo;s View, Opinion.</em></p></div></article></div><div class="front-side"><article class="story side"><h2 class="hed-side">A Quiet Day Ends Slightly Lower</h2><h3 class="deck">KXC slips 0.2 per cent to 21,228; Glimra prices its bond at 4.53 per cent; crude climbs to $110.27; ten-year yield eases to 3.96 per cent</h3>
+<p class="byline">By Tomas Nygaard</p>
+<p>The KXC Composite fell 0.2 per cent on Tuesday to close at 21,228, after a day with little direction. Glimra Compute priced its VKR 2.4 billion bond. Crude rose 1.0 per cent to $110.27 on fresh claims of attacks in the Gulf. The ten-year yield eased two basis points to 3.96 per cent. The krona weakened slightly to 6.85 to the dollar.</p>
+<p class="note"><em>Page 3.</em></p></article><article class="story side"><h2 class="hed-side">Two Tankers &ldquo;Ablaze&rdquo;, Says the North Shore. &ldquo;Incorrect&rdquo;, Says a Navy</h2><h3 class="deck">Gulf power claims two more mine strikes on the southern route; the navy of the republic to the south rejects the claim; threat to undersea cables; rates hold</h3>
+<p class="byline">By Halldor Vik</p>
+<p>The regional power on the north shore of the Gulf said on Tuesday that two tankers had struck its mines and caught fire. The navy of the republic to the south called the claim incorrect. Independent monitors could not confirm either account. The same power threatened undersea communication cables in the Gulf. Published war-risk rates held.</p>
+<p class="note"><em>Page 4.</em></p></article><aside class="briefs"><h4>IN BRIEF</h4><p><strong>Coalition.</strong> No third meeting between Landvern and the junior coalition partner. The coalition held on Tuesday&rsquo;s vote. Page 2.</p>
+<p><strong>Hvelv.</strong> Attorney General still awaits the board minutes. Nineteen days remain. Page 2.</p>
+<p><strong>Archive.</strong> One new caller; families still thirteen of fifteen. Page 5.</p>
+<p><strong>Space.</strong> The Pacific partner&rsquo;s craft is on its way to Mars. The Stadakona dust counter passed its first check. Page 6.</p>
+<p><strong>Hockey.</strong> Lynx 4, Lakers 1. Page 8.</p></aside></div></div></section><section class="page inner"><div class="pagebar"><span>Page Two &middot; The Great Thing</span><span>The Vinland Herald</span><span>Wednesday, 21 October 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">Nine Votes, and a Coalition That Held</h2><h3 class="deck">Speaker selects the late amendment; Government wins 9-vote majority; Landvern abstains; bill completes report stage; third reading Thursday</h3>
+<p class="byline">By Sunniva Rask and Peter Okimaw, Hokelgard</p>
+<p>The whip said on Monday that the numbers were where they had been on Friday. On Tuesday they were.</p>
+<p>The Speaker of the People&rsquo;s Thing selected the Government&rsquo;s late amendment to the Lindqvist bill at the start of report stage. Members debated it for just under two hours. It passed by nine votes.</p>
+<p>Labour and the Green River Alliance voted against. Landvern abstained. Every member of the governing coalition who was present voted for it, according to the division list published on Tuesday evening.</p>
+<p>The amendment means the bill&rsquo;s public incident register will open ninety days after the law takes effect. Operators must still report incidents from the first day.</p>
+<p>The rest of report stage passed without a division. The bill goes to third reading on Thursday 22 October.</p>
+<p>A senior Commonwealth whip was brief. &ldquo;The coalition voted as a coalition,&rdquo; he said. &ldquo;That is what the word means.&rdquo;</p>
+<p>Liv Karhagen, Leader of the Opposition, said the vote had proved one thing and hidden another. &ldquo;We know the coalition can count to nine,&rdquo; she said. &ldquo;We still do not know who has been talking to Landvern, or why.&rdquo;</p></article><aside class="boxed"><h4>Still no third meeting</h4><p>There was no third meeting on Tuesday between Landvern and the junior coalition partner, as far as the Herald could establish. A Landvern spokesman again said there was &ldquo;no date to give&rdquo;.</p>
+<p>Bjarne Tollefsrud did not explain his party&rsquo;s abstention. A Landvern member of the People&rsquo;s Thing said the party &ldquo;had no wish to help the Government or to save Labour&rsquo;s blushes&rdquo;.</p>
+<p>The junior coalition partner made no statement. The Herald has still not been able to confirm the party&rsquo;s identity and does not print rumour as fact.</p>
+<p>Hanne Loft of the Green River Alliance said an abstention could also be a message. &ldquo;A party that abstains is telling someone it is available,&rdquo; she said.</p>
+<p>First Minister Erik Halvorsen did not speak in public on Tuesday.</p></aside><aside class="boxed"><h4>Minutes still not in</h4><p>The Attorney General&rsquo;s office said on Tuesday that it had still not received the minutes of Hvelv Systems&rsquo; board review of alert escalation. The thirty-day window runs to Monday 9 November. Nineteen days remain. The preservation notice served on Friday 9 October stays in force.</p>
+<p>Oskar Brandvold, Hvelv&rsquo;s chief executive, was not seen in public.</p></aside></div></section><section class="page inner"><div class="pagebar"><span>Page Three &middot; Karontoborg & The Economy</span><span>The Vinland Herald</span><span>Wednesday, 21 October 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">What the Commonwealth Owns in the Lakes</h2><h3 class="deck">Treasury list shows fifty sites over 613 hectares; thirteen marked with a constitutional peoples&rsquo; claim; terms left to the working group; mayors start drawing; housing starts fall 6.6 per cent</h3>
+<p class="byline">By Elise Brattli, Economics Editor</p>
+<p>For weeks the argument was whether the land existed. On Tuesday Treasury put it in a table.</p>
+<p>The list runs to fifty sites in the Lakes cities. Together they cover 613 hectares. Each entry gives the site&rsquo;s location, the federal department or Crown body that holds it, its size, and any claim or charge against it.</p>
+<p>Most of the sites are small. Depots, a closed customs shed, strips of land beside lake terminals and old maintenance yards make up the long tail. A handful are large. The biggest is the old rail yards east of the river in Karontoborg. The disused port strip at Sundgard is among the next largest.</p>
+<p>Thirteen sites carry a claim by a constitutional people. The list marks each one in a separate column, with the name of the claimant nation and the state of any negotiation.</p>
+<p>&ldquo;We said we would show the cities ours,&rdquo; Ingrid Solbakk said. &ldquo;This is ours. Some of it is not only ours, and the list says so.&rdquo;</p>
+<p>The list does not say how any site would pass to a city. A Treasury official said terms would be &ldquo;the first business, not the last&rdquo; when the working group meets on 29 October.</p></article><aside class="boxed"><h4>The mayors begin</h4><p>Mayor Petra Oyelaran-Skog said her officials had started laying Treasury&rsquo;s sites over the city&rsquo;s own maps on Tuesday evening. &ldquo;Now we can argue about something real,&rdquo; she said. &ldquo;I would rather argue about a rail yard than about whether a rail yard exists.&rdquo;</p>
+<p>Mayor Tomas Wabano-Lie of Laukvik said the Laukvik sites were &ldquo;smaller than we hoped and better placed than we feared&rdquo;.</p>
+<p>Nora Sakej-Eriksen of the First Peoples&rsquo; Assembly said the claims column was &ldquo;the most honest page Treasury has printed this year&rdquo;. She added a warning. &ldquo;A mark on a list is not a settlement,&rdquo; she said. &ldquo;Those thirteen sites are not surplus. They are unfinished.&rdquo;</p>
+<p>Liv Karhagen said the list was &ldquo;a good table and an empty chair&rdquo;. She wants Treasury to say whether federal land counts toward the cities&rsquo; land test before the working group sits.</p></aside><aside class="boxed"><h4>Starts fall again</h4><p>Official figures published on Tuesday showed housing starts in the Lakes provinces fell 6.6 per cent in September from August.</p>
+<p>&ldquo;This is Monday&rsquo;s survey turning into concrete, or rather into no concrete,&rdquo; said Hedda Vang, chief economist at the Lakes Mortgage Institute. &ldquo;Land is the right conversation for next year. Rates are the conversation for this one.&rdquo;</p>
+<p>The two large Lakes lenders kept their five-year fixed rate at 7.2 per cent. No third lender has followed.</p></aside><article class="story"><h2 class="hed">A Day Without a Story</h2><h3 class="deck">KXC eases 0.2 per cent to 21,228; Glimra prices at 4.53 per cent; crude rises to $110.27; ten-year yield at 3.96 per cent; krona a touch weaker</h3>
+<p class="byline">By Tomas Nygaard, Karontoborg</p>
+<p>Tuesday was the kind of day that traders forget by Friday.</p>
+<p>The KXC Composite fell 0.2 per cent to 21,228. Strong results from several consumer and industrial firms were balanced by fresh swings in the North Bank chip designers, which gave back part of Monday&rsquo;s gain.</p>
+<p>&ldquo;Monday was relief,&rdquo; said a New Harbour fund manager. &ldquo;Tuesday was people checking whether they had been too relieved.&rdquo;</p>
+<p>Benchmark crude rose 1.0 per cent to $110.27 a barrel after the north-shore power&rsquo;s new claims in the Gulf. The ten-year Commonwealth yield fell two basis points to 3.96 per cent, helped by the weak housing figures. The krona slipped to 6.85 to the dollar and held at 7.92 to the euro. Gold eased to $4,040 an ounce.</p>
+<p>Policy rate 3.50 per cent. Inflation 3.9 per cent. Governor Hallvard Mikaelsen did not speak.</p></article><aside class="boxed"><h4>Glimra prices its bond</h4><p>Glimra Compute priced its VKR 2.4 billion bond on Tuesday at a coupon of 4.53 per cent. The money will pay for a second data hall near Forsgard. The firm shelved the bond on Friday and reopened it on Monday.</p>
+<p>&ldquo;They paid a little more for the pause,&rdquo; a New Harbour credit analyst said. &ldquo;But they got the money.&rdquo;</p></aside></div></section><section class="page inner"><div class="pagebar"><span>Page Four &middot; The World</span><span>The Vinland Herald</span><span>Wednesday, 21 October 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">&ldquo;Ablaze&rdquo;, Then &ldquo;Incorrect&rdquo;</h2><h3 class="deck">North-shore power says two tankers hit its mines on the strait&rsquo;s southern route; navy of the republic to the south rejects it; monitors have no ship; threat to Gulf cables; rates hold; twenty-three ships on the Cape</h3>
+<p class="byline">By Halldor Vik, Defence Correspondent</p>
+<p>For the second day running, the Gulf produced a claim without a ship.</p>
+<p>The regional power on the north shore said on Tuesday that two tankers had struck mines laid by its navy on what it calls the &ldquo;unauthorised&rdquo; southern route through the strait. It said both ships were set on fire and brought to a standstill. It named neither vessel and gave no position.</p>
+<p>Within hours the navy of the republic to the south, which keeps a large force in the region, said the claim was incorrect. It gave no detail.</p>
+<p>Independent maritime monitors could not confirm either account. They had a separate report of an incident between a tanker and military forces far to the south, well outside the strait. They reported no damage and no casualties.</p>
+<p>The north-shore power also threatened the undersea communication cables that run through the Gulf, if the republic to the south renewed its attacks. No cable has been reported damaged.</p>
+<p>In Hokelgard a Foreign Ministry official said Vinland&rsquo;s position was unchanged. &ldquo;Passage through a strait is a right under law,&rdquo; the official said. &ldquo;It is not a licence that one coastal power issues.&rdquo;</p>
+<p>Karontoborg&rsquo;s war-risk underwriters left their published Gulf rates unchanged. No further Vinlandic-flagged ship switched to the Cape route. The count stays at twenty-three.</p>
+<p>&ldquo;We now have two kinds of news from the Gulf,&rdquo; said Sigrid Holme of the Karontoborg Shipowners&rsquo; Association. &ldquo;News that happened, and news that was announced. Our members have to price both.&rdquo;</p>
+<p>The Navy gave no new word on VNS <em>Gudrid</em> and VNS <em>Kjipuktuk</em>. &ldquo;On passage,&rdquo; said Commander Einar Paul. &ldquo;Nothing to add.&rdquo; The initial escort period remains four months.</p></article><aside class="boxed"><h4>Cables closer to home</h4><p>The threat to the Gulf cables was read closely in Leifsbudir. Vinland&rsquo;s own draft agreement on undersea infrastructure in the Helluland Sea remains unsigned. The Coast Guard reported no transit of concern on Tuesday. VCGS <em>Markland</em> remains alongside at Leifsbudir.</p></aside><article class="story"><h2 class="hed">Soldiers on the Streets of a Northern City</h2><p class="byline">By Aslak Kvande</p>
+<p>A southern European state said on Tuesday that it would send several hundred soldiers to one of its large northern cities until the end of the year, after violent clashes there at the weekend. Its government also approved a decree creating a new crime of violent participation in a demonstration, with prison terms of up to five years.</p>
+<p>The cost-of-living protests that began in the large western European republic have now reached several states. The Foreign Ministry&rsquo;s advice for the western republic, updated on Monday, stands. It has not changed its advice for other states.</p></article><article class="story"><h2 class="hed">Fever Outbreak Crosses Two More Borders</h2><p>Health officials in two more African states, one in the east and one in the west, reported confirmed cases of the haemorrhagic fever on Tuesday. In the east, all cases so far belong to a single family cluster. The Commonwealth Public Health Agency said its health questions and temperature checks for arrivals from the region stay in place. It still rates the risk to Vinland as very low.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Five &middot; Nations & The Shield</span><span>The Vinland Herald</span><span>Wednesday, 21 October 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">On the Eve, a Second Line</h2><h3 class="deck">Skjoldkraft lodges an alternative Intertie route, longer and dearer, farther from the burial sites; Harkavik: &ldquo;We would rather bring two answers than one&rdquo;; Kaninaskum: &ldquo;Two lines are still lines&rdquo;; status committee sits tomorrow</h3>
+<p class="byline">By Mary Kanatiio Berg, Constitutional Affairs Correspondent</p>
+<p>Skjoldkraft will go into Thursday&rsquo;s status committee with two routes, not one.</p>
+<p>On Tuesday evening the state power company lodged a second route for the Shield Intertie with the committee clerk. It runs farther west for much of its length. It is longer and would cost more to build. It keeps a wider distance from both burial sites on Kaniapiskau Cree lands, and it avoids one of the trapping grounds the Cree Council has named.</p>
+<p>Jostein Harkavik, Skjoldkraft&rsquo;s head of northern projects, said the company had worked on the alternative &ldquo;for some weeks&rdquo;. &ldquo;We would rather bring two answers to the room than one,&rdquo; he said. &ldquo;The committee should see what each one costs, in money and in other things.&rdquo;</p>
+<p>He did not say how much longer the second line is, or how much more it would cost. He said both figures would be given in evidence on Thursday.</p>
+<p>Grand Chief Ruth Kaninaskum spoke briefly by telephone. &ldquo;Two lines are still lines,&rdquo; she said. &ldquo;We will look at the second one tonight. We will say what we see tomorrow.&rdquo;</p>
+<p>A Cree Council delegation arrived in Hokelgard on Tuesday afternoon. It will give evidence first on Thursday morning, followed by Skjoldkraft and then officials from Energy Minister Petter Grimsrud&rsquo;s department.</p>
+<p>Mr Grimsrud&rsquo;s office said the minister &ldquo;welcomed any route that reduces harm&rdquo;. It would not say whether the Government preferred either one.</p>
+<p>A status committee does not choose a route. It decides whether the constitutional peoples&rsquo; status is touched, and on what terms. Under the Restoration of 1652, that question belongs to the Provincial Thing.</p></article><article class="story"><h2 class="hed">One More Caller</h2><h3 class="deck">Archive records its first new caller in a week; families still thirteen of fifteen</h3>
+<p class="byline">By Mary Kanatiio Berg</p>
+<p>The Archive of the Constitutional Peoples said on Tuesday that one more person had come forward since 2 October with a question about the July breach. The total is now 106.</p>
+<p>No new families were reached. Thirteen of the fifteen households whose holdings were open to the Hvelv portal on 14 and 15 July have now been contacted. Two remain.</p>
+<p>&ldquo;We go at their pace,&rdquo; a spokesman said again. Keeper Annie Tsawenhohi Grann did not speak. Her promise of 12 October stands.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Six &middot; Science & Technology</span><span>The Vinland Herald</span><span>Wednesday, 21 October 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">Ninety Days Passes; Third Reading Thursday</h2><h3 class="deck">Speaker selects the Government&rsquo;s late amendment; Lindqvist: &ldquo;A register that works on its first day is worth ninety days&rdquo;; Kahente-Moe: &ldquo;We will be counting&rdquo;; checker opens in eleven days</h3>
+<p class="byline">By Ingvild Sørhus, Technology Correspondent, Karontoborg</p>
+<p>The public will wait ninety days to read the incident register. The People&rsquo;s Thing decided so on Tuesday by nine votes.</p>
+<p>Minister Kari Lindqvist spoke for the amendment herself. &ldquo;A register that works on its first day is worth ninety days,&rdquo; she said. &ldquo;A register that opens as an empty page is worth nothing to anyone.&rdquo; Operators must still report from the first day, she stressed. &ldquo;Nothing is lost. It is only held.&rdquo;</p>
+<p>Runa Kahente-Moe, Labour&rsquo;s digital affairs spokeswoman, called that &ldquo;a careful way of saying the public goes last&rdquo;. &ldquo;We will be counting,&rdquo; she said. &ldquo;Every incident reported in those ninety days, we will ask about on day ninety-one.&rdquo;</p>
+<p>The Lakes Digital Industry Council welcomed the result.</p>
+<p>The rest of the bill stands as it left committee: a public register, operator liability, and a developer clause held in a six-month review. Depositing counsel have still not tabled their motion on a private right of action.</p>
+<p>Third reading is on Thursday 22 October. Karontoborg&rsquo;s draft contract terms for autonomous systems remain open for comment until the end of the month. The ministry&rsquo;s public checker for machine-made images and audio opens on 1 November, in eleven days. The Laukvik phage preprint still awaits a referee.</p></article><article class="story"><h2 class="hed">On Its Way to Mars, With a Shoebox from Stadakona</h2><h3 class="deck">Pacific partner&rsquo;s sample-return craft launches cleanly and separates on time; Vinlandic dust counter passes its first health check; Atlantic range station tracks the early hours</h3>
+<p class="byline">By Gunnhild Paquette, Science Correspondent</p>
+<p>The launch went as planned.</p>
+<p>Vinland&rsquo;s closest Pacific partner sent its spacecraft toward one of the two moons of Mars on Tuesday. The craft separated from its rocket a little over an hour after liftoff and reached its planned path. It should arrive at Mars next summer. If all goes well, a capsule of soil from the moon will come back to Earth in about five years.</p>
+<p>The small Vinlandic dust counter aboard was switched on briefly on Tuesday evening. The team at Stadakona University said it passed its first health check. &ldquo;It woke up, said hello and went back to sleep,&rdquo; a team member said. &ldquo;That is exactly what we asked it to do.&rdquo;</p>
+<p>The Vinlandic Space Agency said its Atlantic range station had tracked the craft through its early hours, as agreed. The agency&rsquo;s own heavy-lift rocket, Sleipnir-A, reached orbit for the first time on 28 September. Its post-flight review remains on schedule.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Seven &middot; Arts & Culture</span><span>The Vinland Herald</span><span>Wednesday, 21 October 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">The Schools Come to the River</h2><h3 class="deck">Royal Academy says school bookings for <em>What the River Kept</em> are full until the show closes</h3>
+<p class="byline">By Oda Fjellstad, Arts Critic, Karontoborg</p>
+<p>The Royal Academy of Arts said on Tuesday that every weekday morning slot for school groups at Jonas Atsistaehron&rsquo;s <em>What the River Kept</em> is now booked until the show closes on 15 November.</p>
+<p>The Academy said it had not expected that. The installation is long, quiet and asks a lot of its visitors. It has no labels inside the room and no seats in the middle.</p>
+<p>A teacher from a Sundgard school, who brought a class last week, said the pupils had been silent for most of the hour. &ldquo;Then on the bus they would not stop talking,&rdquo; she said. &ldquo;About their grandparents, mostly.&rdquo;</p>
+<p>The late openings on Thursday and Friday evenings, announced on Monday, begin tomorrow. The card by the door still says that no voice in the work comes from the Archive&rsquo;s restricted holdings.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Eight &middot; Sport</span><span>The Vinland Herald</span><span>Wednesday, 21 October 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">Lynx 4, Lakers 1: The Kind Building Turns Cold</h2><h3 class="deck">Laukvik score twice in the second period; power play gives Karontoborg its only goal; record falls to 1–6–1</h3>
+<p class="byline">By Kjetil Hammer</p>
+<p>The one rink that had been kind to the Karontoborg Lakers this season was not kind on Tuesday.</p>
+<p>The Laukvik Lynx beat them 4–1 in Laukvik. Last Thursday, in the same building, the Lakers had won 3–2 in overtime. It is still their only win.</p>
+<p>The Lynx scored early, and then twice in the second period, both times after Lakers turnovers in their own end. The Lakers&rsquo; goal came on the power play late in the second, the one part of their game that keeps working. Laukvik added a fourth into an empty net.</p>
+<p>&ldquo;We said we needed to know the puck,&rdquo; the Lakers coach said afterwards. &ldquo;Tonight it knew us better.&rdquo;</p>
+<p>The Lynx are now 2–3. Their coach said his side had &ldquo;paid a debt to itself&rdquo;.</p>
+<p>The Lakers are 1–6–1 and last in the league. They are home on Saturday.</p>
+<p>The Sundgard Pilots lead at 3–0. The Hokelgard Royals and the Forsgard Rapids are 2–1. The Stadakona Storm are 2–2.</p>
+<p>The Commonwealth Sport Integrity Office continues its club sessions on appetite-regulating medicines.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Nine &middot; Opinion</span><span>The Vinland Herald</span><span>Wednesday, 21 October 2026</span></div><div class="inner-cols"><article class="editorial"><div class="edlabel">The Herald&rsquo;s View</div><h2 class="hed-ed">A Table, and Thirteen Questions</h2>
+<p>Treasury promised a list before 29 October. It delivered one eight days early, and it is a serious piece of work.</p>
+<p>Fifty sites. Six hundred and thirteen hectares. For each one, the holder, the size and any claim. These pages asked on Tuesday for three things: a complete list, every claim marked plainly, and terms settled before the size of the envelope. Treasury has delivered the first two. The third is now the working group&rsquo;s first job, and Treasury says so.</p>
+<p>The thirteen marked sites deserve the most care. Nora Sakej-Eriksen is right that a mark on a list is not a settlement. Those sites are not spare land waiting for a builder. They are open questions under agreements older than any of the departments that hold them. The working group should take them out of the bargaining for now and settle them with the nations concerned. A city that builds homes on ground still in dispute will be arguing about it for a generation.</p>
+<p>The rest of the list should be on the table on 29 October with terms attached. Builders are short of buyers, and September&rsquo;s starts fell again. Land will not fix this year. It can fix the next one, if the terms are clear.</p>
+<p>The Lindqvist bill went the other way. The ninety-day delay passed by nine votes, and the Minister made the best case for it that could be made. We still think it is wrong. A register that opens three months late is a register the public cannot use when it matters most. Labour says it will count every incident reported in those ninety days. Somebody should. On Thursday, members should at least ask the Minister to name the date the register will open.</p>
+<p>The coalition held on Tuesday. Landvern abstained. An abstention is not nothing. Hanne Loft is right that it can be a signal. The junior partner has still not said a word in public. It should, before Thursday&rsquo;s vote.</p>
+<p>At the Intertie, Skjoldkraft has done something unusual. It has brought a second, dearer route that keeps farther from the burial sites. That is a courtesy and a test. The committee should hear what it costs in money, and then hear what the Cree Council says it costs in everything else. Tomorrow is for listening.</p></article><aside class="review"><h4>From the Other Papers</h4><p><strong>The Free Thing</strong> (Hokelgard): &ldquo;Fifty sites, and thirteen of them already claimed. Landvern was right to abstain. Nobody asked it to clean up the coalition&rsquo;s mess.&rdquo;</p>
+<p><strong>The Northern Star:</strong> &ldquo;Treasury has printed the word &rsquo;claim&rsquo; thirteen times. Now it must learn the word &rsquo;settle&rsquo;. On the Intertie, a second line is welcome. It is still a line.&rdquo;</p>
+<p><strong>The Financial Vinlander:</strong> &ldquo;Glimra pays 4.53 per cent for a weekend&rsquo;s nerves. Crude above $110 again. Starts down 6.6 per cent.&rdquo;</p>
+<p><strong>The New World Review:</strong> &ldquo;Ninety days passed by nine votes. The register will open late, and the public will read last.&rdquo;</p>
+<p><strong>The Atlantic Chronicle:</strong> &ldquo;Two tankers ablaze, says one side. Incorrect, says the other. The cables under the Gulf are the real worry, and ours are not yet covered by any signed text.&rdquo;</p>
+<p><strong>The Karontoborg Post:</strong> &ldquo;HOKELGARD&rsquo;S 613 HECTARES&#8201;&mdash;&#8201;LAKERS LOSE THE ONE RINK THEY HAD.&rdquo;</p>
+<p class="note"><em>The Vinland Herald is published daily by Herald House Publishing, New Harbour, Karontoborg. Corrections: the Herald corrects errors of fact on page two. © 2026.</em></p></aside></div></section>
+<footer>The Vinland Herald is published daily by Herald House Publishing, New Harbour, Karontoborg. Corrections: the Herald corrects errors of fact on page two. © 2026.</footer>
+</div></body></html>
