@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<title>The Vinland Herald &middot; Thursday, 29 October 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1b1a17;--paper:#f6f1e4;--rule:#2a2824;--muted:#5a554b;--soft:#e9e1cc}
+*{box-sizing:border-box}
+.site-nav{background:var(--paper);border-bottom:1px solid var(--rule);font-family:"Old Standard TT",serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;text-align:center;padding:6px 12px}
+.site-nav a{color:var(--ink);text-decoration:none;padding:0 14px}
+.site-nav a+a{border-left:1px solid var(--rule)}
+.site-nav a:hover,.site-nav a:focus{text-decoration:underline}
+body{margin:0;background:#d9d2c0;color:var(--ink);font-family:"Libre Caslon Text",Georgia,"Times New Roman",serif;font-size:15.5px;line-height:1.5}
+.sheet{max-width:1240px;margin:24px auto;background:var(--paper);padding:22px 34px 40px;box-shadow:0 2px 18px rgba(0,0,0,.18)}
+header.mast{text-align:center;border-bottom:4px double var(--rule);padding-bottom:6px}
+.topline{display:flex;justify-content:space-between;font-family:"Old Standard TT",serif;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;border-bottom:1px solid var(--rule);padding-bottom:5px}
+.mastrow{display:grid;grid-template-columns:1fr 2.6fr 1fr;align-items:center;gap:18px;padding:10px 0 4px}
+.ear{border:1px solid var(--rule);padding:7px 9px;font-size:11.5px;line-height:1.4;text-align:left;font-family:"Old Standard TT",serif}
+.ear strong{display:block;font-size:11px;letter-spacing:.12em;border-bottom:1px solid var(--rule);margin-bottom:3px}
+h1.title{font-family:"UnifrakturMaguntia","Old English Text MT",serif;font-weight:400;font-size:clamp(40px,6.2vw,80px);margin:0;line-height:1;white-space:nowrap}
+.founded{font-family:"Old Standard TT",serif;font-style:italic;font-size:14px;margin-top:4px}
+.dateline{display:flex;justify-content:space-between;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin-top:6px;padding:4px 0;font-family:"Old Standard TT",serif;font-size:13px;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
+h2,h3,h4{font-family:"Playfair Display",Georgia,serif;margin:0}
+.hed-lead{font-size:clamp(30px,3.9vw,50px);line-height:1.05;font-weight:900;margin:10px 0 8px;text-align:center}
+.lead .deck{font-size:19px;font-style:italic;font-weight:700;text-align:center;margin:0 0 10px;column-span:all}
+.cols2{column-count:2;column-gap:26px;column-rule:1px solid #9d968a}
+.cols2 p:first-of-type::first-letter{}
+.lead .byline{column-span:all;text-align:center}
+.byline{font-family:"Old Standard TT",serif;font-style:italic;font-size:13px;color:var(--muted);border-top:1px solid #9d968a;border-bottom:1px solid #9d968a;padding:3px 0;margin:6px 0 10px}
+p{margin:0 0 .72em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.lead .cols2 > p:nth-of-type(2)::first-letter{float:left;font-family:"Playfair Display",serif;font-size:64px;line-height:.82;padding:4px 7px 0 0;font-weight:900}
+p.note{font-size:13px;color:var(--muted);text-align:left}
+.front-grid{display:grid;grid-template-columns:2.05fr 1fr;gap:0;margin-top:12px}
+.front-main{padding-right:24px;border-right:1px solid var(--rule)}
+.front-side{padding-left:22px}
+.hed-side{font-size:23px;line-height:1.12;font-weight:900;margin:8px 0 6px}
+.side .deck{font-size:15px;font-style:italic;font-weight:700;margin-bottom:4px;line-height:1.25}
+.story.side{border-bottom:2px solid var(--rule);padding-bottom:10px;margin-bottom:12px;font-size:14.5px}
+.briefs{background:var(--soft);padding:10px 12px;font-size:13.5px;border-top:3px solid var(--rule)}
+.briefs h4,.boxed h4,.review h4{font-size:14px;letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid var(--rule);margin-bottom:6px;padding-bottom:2px}
+.page.inner{margin-top:34px;border-top:4px double var(--rule);padding-top:6px}
+.pagebar{display:flex;justify-content:space-between;font-family:"Old Standard TT",serif;font-size:12px;text-transform:uppercase;letter-spacing:.1em;border-bottom:1px solid var(--rule);padding-bottom:4px;margin-bottom:10px}
+.pagebar span:first-child{font-weight:700}
+.inner-cols{column-count:3;column-gap:26px;column-rule:1px solid #9d968a}
+.inner-cols article, .inner-cols aside{break-inside:auto}
+.hed{font-size:27px;line-height:1.1;font-weight:900;margin:4px 0 6px;break-after:avoid}
+.inner-cols .deck{font-size:15.5px;font-style:italic;font-weight:700;line-height:1.25;margin-bottom:4px}
+.inner-cols article.story{margin-bottom:18px;padding-bottom:10px;border-bottom:2px solid var(--rule)}
+.boxed{border:1px solid var(--rule);padding:9px 11px;margin:0 0 16px;font-size:13.5px;break-inside:avoid;background:#fbf8ef}
+.review{background:var(--soft);border-top:3px solid var(--rule);border-bottom:3px solid var(--rule);padding:10px 12px;font-size:13.5px;margin-top:10px}
+.editorial{border:2px solid var(--rule);padding:12px 14px;margin-bottom:16px;background:#fbf8ef}
+.edlabel{font-family:"Old Standard TT",serif;text-transform:uppercase;letter-spacing:.2em;font-size:12px;text-align:center;border-bottom:1px solid var(--rule);padding-bottom:3px;margin-bottom:6px}
+.hed-ed{font-size:26px;font-style:italic;text-align:center;margin:4px 0 10px}
+footer{margin-top:30px;border-top:4px double var(--rule);padding-top:8px;font-size:12px;color:var(--muted);text-align:center;font-family:"Old Standard TT",serif}
+@media (max-width:980px){.inner-cols{column-count:2} .mastrow{grid-template-columns:1fr 1fr} .mastrow .brand{grid-column:1/-1;order:-1} }
+@media (max-width:720px){
+ .sheet{margin:0;padding:14px 14px 28px}
+ .front-grid{grid-template-columns:1fr} .front-main{padding-right:0;border-right:none;border-bottom:2px solid var(--rule);padding-bottom:10px;margin-bottom:12px} .front-side{padding-left:0}
+ .cols2,.inner-cols{column-count:1}
+ .topline,.dateline{font-size:10.5px} .dateline{flex-wrap:wrap;gap:6px}
+ .mastrow{grid-template-columns:1fr} h1.title{white-space:normal;font-size:44px}
+}
+</style></head>
+<body>
+<nav class="site-nav" aria-label="The Vinland Herald"><a class="nav-home" href="../../">Front page</a><a class="nav-archive" href="../../archive/">Archive</a></nav>
+<div class="sheet">
+<header class="mast">
+<div class="topline"><span>Vol. CLX &middot; No. 49,342</span><span>The Commonwealth&rsquo;s Newspaper of Record</span><span>Price VKR 18</span></div>
+<div class="mastrow">
+ <div class="ear"><strong>WEATHER</strong><em>Karontoborg:</em> Grey and still; high 7°C, low 2°C.<br><em>Hokelgard:</em> Frost early, then sun; high 5°C, low −3°C.<br><em>Stadakona:</em> Light rain, 5°C.<br><em>Leifsbudir:</em> Fresh north-westerly, 6°C; Helluland Sea moderate to rough.</div>
+ <div class="brand"><h1 class="title">The Vinland Herald</h1><div class="founded">Founded 1867 &middot; Karontoborg</div></div>
+ <div class="ear"><strong>MARKETS</strong>(Wednesday close)<br>KXC Composite 21,089 (−0.8%)<br>VKR/USD 6.85 (unchanged)<br>VKR/EUR 7.92<br>NOK 0.652 VKR<br>CNY 0.965 VKR<br>10-yr Commonwealth 3.91% (−2 bp)<br>Benchmark crude $117.32 (−0.3%)<br>Gold $4,007/oz</div>
+</div>
+<div class="dateline"><span>Karontoborg &middot; Hokelgard</span><span>Thursday, 29 October 2026</span><span>Late Edition</span></div>
+</header>
+<section class="page front"><div class="front-grid"><div class="front-main"><article class="lead"><h2 class="hed-lead">One Contract for Every Firm, Published Before the Money</h2><div class="cols2"><h3 class="deck">Solbakk gives ground: a standard contract for the industry package will be public &ldquo;before applications open&rdquo;; jobs and dividends will be in it; Labour keeps its debate for Tuesday</h3>
+<p class="byline">By Elise Brattli, Economics Editor, and Sunniva Rask, Hokelgard</p>
+<p>The industry package will have one set of rules after all.</p>
+<p>Finance Minister Ingrid Solbakk said on Wednesday that a standard contract would be published &ldquo;before applications open&rdquo;. Every firm that takes money from the VKR 14 billion package would have to sign it.</p>
+<p>On Tuesday she had said only that the terms would be set &ldquo;firm by firm&rdquo;. On Wednesday she said some terms would be the same for all.</p>
+<p>Asked what the standard contract would cover, she was brief. &ldquo;Jobs will be in it. So will dividends. The details are for the contract.&rdquo;</p>
+<p>She did not give a date. Applications are due to open &ldquo;before the new year&rdquo;.</p>
+<p>The change came two hours after First Minister Erik Halvorsen faced questions on the package in the People&rsquo;s Thing. He answered with the figures, and little else.</p>
+<p>Labour welcomed the move. It will still use its opposition day, now set for Tuesday 3 November, to debate the conditions.</p>
+<p class="note"><em>Page 3. The Herald&rsquo;s View, Opinion.</em></p></div></article></div><div class="front-side"><article class="story side"><h2 class="hed-side">Skjoldkraft Will Pay for the Longer Line</h2><h3 class="deck">Energy Minister settles who meets the extra VKR 1.1 billion if the Intertie&rsquo;s second route is built: the company, not the Treasury; status committee sends the Cree Council questions in writing</h3>
+<p class="byline">By Mary Kanatiio Berg, Constitutional Affairs Correspondent</p>
+<p>If the Shield Intertie takes its longer route, Skjoldkraft will pay the extra VKR 1.1 billion, Energy Minister Petter Grimsrud said on Wednesday. The Treasury will not.</p>
+<p>&ldquo;The company proposed the route,&rdquo; Mr Grimsrud said. &ldquo;The company will carry its cost.&rdquo;</p>
+<p class="note"><em>Page 5.</em></p></article><article class="story side"><h2 class="hed-side">Bill&rsquo;s First Reading Put Off a Week</h2><h3 class="deck">Provincial Thing defers the Incident Reporting Bill to Wednesday 4 November after a row over a corrected print</h3>
+<p class="byline">By Ingvild Sørhus, Technology Correspondent</p>
+<p>The Incident Reporting Bill did not get its first reading on Wednesday. The Speaker of the Provincial Thing moved it to next Wednesday.</p>
+<p class="note"><em>Pages 2 and 6.</em></p></article><aside class="briefs"><h4>IN BRIEF</h4><p><strong>Housing.</strong> Treasury&rsquo;s land-test answer may come in writing after today&rsquo;s meeting. Page 3.</p>
+<p><strong>Central Bank.</strong> Next rate decision on Thursday 19 November. Page 3.</p>
+<p><strong>The Gulf.</strong> Another ship struck, says the north-shore power. A western naval command says the lanes are clear. Page 4.</p>
+<p><strong>Health.</strong> Lakes government would offer advance requests for an assisted death. Page 2.</p>
+<p><strong>Theatre.</strong> <em>The Night Ferry</em> at the Old Quarter Playhouse, reviewed. Page 7.</p>
+<p><strong>Hockey.</strong> Rapids 5, Lakers 3. Still no home win. Page 8.</p></aside></div></div></section><section class="page inner"><div class="pagebar"><span>Page Two &middot; The Great Thing</span><span>The Vinland Herald</span><span>Thursday, 29 October 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">A Week&rsquo;s Delay in the Second Chamber</h2><h3 class="deck">Speaker moves the first reading of the Incident Reporting Bill to next Wednesday; members say they had the corrected print for only a few hours; Lindqvist: &ldquo;A week is not a disaster&rdquo;</h3>
+<p class="byline">By Sunniva Rask, Hokelgard</p>
+<p>The Incident Reporting Bill was due a quiet first reading on Wednesday afternoon. It got a procedural row instead.</p>
+<p>On Wednesday morning the Government sent members of the Provincial Thing a corrected print of the bill. Officials said the changes were small: some numbering, and two definitions put back in the order the People&rsquo;s Thing had passed them.</p>
+<p>Members from the Lakes benches objected when the chamber sat. They said they had been given the new print only that morning. They could not tell, they said, whether the changes were as small as the Government claimed.</p>
+<p>The Speaker ruled that members should have the print for a full day, and moved the first reading to Wednesday 4 November.</p>
+<p>Minister Kari Lindqvist took the delay calmly.</p>
+<p>&ldquo;A week is not a disaster,&rdquo; she said. &ldquo;The corrections are tidy, not new. Committee stage will still be in November. And the checker opens on Sunday, as planned.&rdquo;</p>
+<p>The First Peoples&rsquo; Assembly still has not said how it will treat the bill. Landvern said nothing new about a dated amendment.</p>
+<p>The bill&rsquo;s public register would open ninety days after the law takes effect. Labour wants a fixed date in the law.</p></article><article class="story"><h2 class="hed">Karhagen Asks About Laukvik</h2><h3 class="deck">At First Minister&rsquo;s questions, Labour leader raises Sørstrand&rsquo;s 380 workers; Halvorsen answers with the package figures; Labour&rsquo;s opposition day set for Tuesday 3 November</h3>
+<p class="byline">By Sunniva Rask</p>
+<p>Liv Karhagen used her first question on Wednesday to ask about Laukvik.</p>
+<p>&ldquo;On 1 December, three hundred and eighty steelworkers in Laukvik go on short time,&rdquo; the Leader of the Opposition said. &ldquo;The First Minister says the package is for workers, not shareholders. Can he tell those workers today what the package promises them?&rdquo;</p>
+<p>Mr Halvorsen answered with numbers.</p>
+<p>&ldquo;Fourteen billion krona,&rdquo; he said. &ldquo;Eight billion for steel. Four for vehicle lines. Two for a road north. Sørstrand has said it will apply. We welcome that.&rdquo;</p>
+<p>Ms Karhagen tried again. &ldquo;That is the price list,&rdquo; she said. &ldquo;I asked about the promise.&rdquo;</p>
+<p>Mr Halvorsen repeated that the firm would apply, and sat down.</p>
+<p>The Speaker&rsquo;s office later set Labour&rsquo;s next opposition day for Tuesday 3 November. Labour will use it to debate the package&rsquo;s conditions.</p>
+<p>&ldquo;The Finance Minister moved this afternoon,&rdquo; said Oddvar Ruud, Labour&rsquo;s finance spokesman. &ldquo;We welcome it. But a promise of a contract is not a contract. On Tuesday we will ask to see it.&rdquo;</p></article><article class="story"><h2 class="hed">Lakes Would Offer Advance Requests</h2><h3 class="deck">Provincial government says it would allow people to ask in advance for an assisted death if the Commonwealth bill passes</h3>
+<p class="byline">By Sunniva Rask</p>
+<p>The Lakes government said on Wednesday that it would offer advance requests for an assisted death if the Commonwealth&rsquo;s new bill became law.</p>
+<p>The bill, tabled on Tuesday by Health Minister Gunnar Wapistan, would let people with an illness that will take away their judgement write down in advance when they would want help to die. Two doctors would check the request. It could be withdrawn at any time. Each province would decide whether to offer it.</p>
+<p>The Lakes health minister said the province had &ldquo;listened to families for years&rdquo;. &ldquo;Many have asked for this,&rdquo; the minister said. &ldquo;We will be ready if the Thing says yes.&rdquo;</p>
+<p>Mr Wapistan welcomed the statement. &ldquo;This is how it is meant to work,&rdquo; he said. &ldquo;The Commonwealth writes the safeguards. The provinces decide.&rdquo;</p>
+<p>No other province said anything on Wednesday.</p>
+<p>The bill would also keep people whose only condition is a mental illness outside the law for good. Under the present law they would become eligible on 1 April next year.</p></article><aside class="boxed"><h4>Review continues</h4><p>The Attorney General&rsquo;s office had nothing new on its review of the Hvelv board minutes. On Tuesday it called the work &ldquo;well advanced&rdquo;. The preservation notice served on 9 October remains in force.</p></aside></div></section><section class="page inner"><div class="pagebar"><span>Page Three &middot; Karontoborg & The Economy</span><span>The Vinland Herald</span><span>Thursday, 29 October 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">&ldquo;Jobs Will Be in It. So Will Dividends&rdquo;</h2><h3 class="deck">Solbakk promises a standard contract for all firms in the package, published before applications open; no date; Sundgard vehicle works will apply; Ruud: &ldquo;A promise of a contract is not a contract&rdquo;</h3>
+<p class="byline">By Elise Brattli, Economics Editor</p>
+<p>On Tuesday the Finance Minister said every firm in the industry package would get its own contract. On Wednesday she said they would also share one.</p>
+<p>Ms Solbakk told reporters in Hokelgard that a standard contract would be published &ldquo;before applications open&rdquo;. Each firm would sign it. Each firm would then negotiate its own terms on top.</p>
+<p>&ldquo;Some things are the same for a steel mill and a parts supplier,&rdquo; she said. &ldquo;Those things will be in one contract, and the public will see it.&rdquo;</p>
+<p>Asked what would be in it, she said: &ldquo;Jobs will be in it. So will dividends. The details are for the contract.&rdquo;</p>
+<p>Would firms have to keep every job? Would dividends be banned, or only limited? She would not say. Nor would she give a date. Applications are due to open &ldquo;before the new year&rdquo;.</p></article><aside class="boxed"><h4>Sundgard works will apply</h4><p>The owners of the Sundgard vehicle works said on Wednesday that they would apply to the fund. On Tuesday they had said they were &ldquo;studying the details&rdquo;.</p>
+<p>That makes three firms that have said they will apply: the main Sundgard mill, Sørstrand Steel in Laukvik and now the vehicle works.</p></aside><aside class="boxed"><h4>&ldquo;We will ask to see it&rdquo;</h4><p>Mr Ruud said the standard contract was a step. &ldquo;It is the right step,&rdquo; he said. &ldquo;But a promise of a contract is not a contract. We want to read it before the first krona is paid.&rdquo;</p>
+<p>Labour&rsquo;s debate on Tuesday will go ahead, he said.</p>
+<p>The Lakes steel producers&rsquo; spokesman said a standard contract would help firms &ldquo;plan their applications&rdquo;. &ldquo;We would still like the date,&rdquo; he said.</p></aside><article class="story"><h2 class="hed">Land-Test Answer May Slip</h2><h3 class="deck">Treasury says its reply on federal land may come &ldquo;in writing after the meeting&rdquo;; working group meets today; Oyelaran-Skog: &ldquo;We brought a pen&rdquo;</h3>
+<p class="byline">By Elise Brattli</p>
+<p>The housing working group meets today. Treasury&rsquo;s answer on the land test may not be ready for it.</p>
+<p>On Tuesday Treasury said it would answer &ldquo;at the table&rdquo;. On Wednesday a spokesman said the answer &ldquo;may come in writing after the meeting&rdquo;. He did not say why.</p>
+<p>Labour asked nine days ago whether federal land handed to the cities would count toward the land test in the housing compact.</p>
+<p>&ldquo;We brought a pen,&rdquo; said Mayor Petra Oyelaran-Skog of Karontoborg. &ldquo;It seems Treasury may bring an envelope instead. We will open it whenever it comes. But we would rather hear it in the room.&rdquo;</p>
+<p>The group will discuss terms for thirty-seven of the fifty sites on the federal list. The other thirteen are claimed by nations. They will go to a separate table, which first meets on Friday 13 November. The fifty sites cover 613 hectares.</p></article><article class="story"><h2 class="hed">Central Bank Sets a Date</h2><h3 class="deck">Rate decision on Thursday 19 November; most economists expect a rise; a large lender lifts its five-year rate to 7.3 per cent</h3>
+<p class="byline">By Tomas Nygaard, Karontoborg</p>
+<p>The Central Bank of Vinland will announce its next decision on interest rates on Thursday 19 November, it said on Wednesday.</p>
+<p>The bank gave no hint of what it would decide. Most economists expect it to raise its policy rate, now 3.50 per cent. Inflation is 3.9 per cent.</p>
+<p>Governor Hallvard Mikaelsen said last week that a lasting rise in oil prices would become the bank&rsquo;s &ldquo;business&rdquo;.</p>
+<p>Two large central banks abroad made decisions on Wednesday. One raised its rate. The other held.</p>
+<p>One of the large Lakes lenders did not wait. It raised its five-year fixed mortgage rate to 7.3 per cent from 7.2 per cent. The other large lenders kept theirs at 7.2 per cent.</p></article><article class="story"><h2 class="hed">Banks and Builders Fall</h2><h3 class="deck">KXC down 0.8 per cent to 21,089; chip designers the only gainers; crude slips 0.3 per cent to $117.32</h3>
+<p class="byline">By Tomas Nygaard</p>
+<p>Karontoborg shares fell on Wednesday.</p>
+<p>The KXC Composite lost 0.8 per cent to 21,089. Banks and homebuilders fell most after the mortgage rate rise. Energy producers fell with oil.</p>
+<p>Chip designers were the only group to gain. Glimra Compute led them.</p>
+<p>Benchmark crude fell 0.3 per cent to $117.32 a barrel. Traders set a report of another ship struck in the Gulf against a western navy&rsquo;s statement that the main lanes were clear. &ldquo;Two stories, one price,&rdquo; a trader said. &ldquo;It barely moved.&rdquo;</p>
+<p>The ten-year Commonwealth yield fell two basis points to 3.91 per cent. The krona was unchanged at 6.85 to the dollar and 7.92 to the euro. Gold fell $23 to $4,007 an ounce.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Four &middot; The World</span><span>The Vinland Herald</span><span>Thursday, 29 October 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">Another Ship Struck, Says One Navy. The Lanes Are Clear, Says Another</h2><h3 class="deck">North-shore power reports a second vessel hit near the strait; a western naval command calls the reports false; underwriters raise rates again; twenty-six Vinlandic ships now go round the Cape</h3>
+<p class="byline">By Halldor Vik, Defence Correspondent</p>
+<p>The navy of the north-shore power said on Wednesday that a second ship had struck mines near the strait.</p>
+<p>As on Tuesday, it did not name the ship or give its flag. It said the vessel had tried to pass &ldquo;without coordination&rdquo;. It did not say whether anyone was hurt.</p>
+<p>A few hours later a western naval command in the region said the reports were false.</p>
+<p>The main shipping lanes through the strait had been cleared of mines, the command said, and they remained clear. It said many ships had used them safely in recent weeks.</p>
+<p>The command did not say which reports it meant. It did not say whether any ship had been damaged outside the main lanes.</p>
+<p>No independent account was available on Wednesday night.</p>
+<p>&ldquo;Two navies, two maps,&rdquo; said Sigrid Holme of the Karontoborg Shipowners&rsquo; Association. &ldquo;Our captains cannot sail on a press release. Until someone they trust says the water is safe, they will wait or go round.&rdquo;</p>
+<p>No Vinlandic ship was involved, the association said.</p></article><aside class="boxed"><h4>Rates and the Cape</h4><p>Karontoborg&rsquo;s war-risk underwriters raised their published Gulf rates by one step on Wednesday. It was the third rise since Friday.</p>
+<p>One more Vinlandic-flagged ship has taken the long route round the Cape. The number is now twenty-six.</p></aside><aside class="boxed"><h4>Frigates</h4><p>The Navy had no comment on VNS <em>Gudrid</em> and VNS <em>Kjipuktuk</em>, which arrived in the region on Tuesday. Escorts have not yet begun. The initial escort period is four months.</p>
+<p>The Foreign Ministry also had no comment.</p></aside><article class="story"><h2 class="hed">No News from Leifsbudir</h2><h3 class="deck"><em>Markland</em> still in maintenance; Bjornstad still silent on the committee&rsquo;s request</h3>
+<p class="byline">By Aslak Kvande, Leifsbudir</p>
+<p>The Coast Guard said nothing new on Wednesday about VCGS <em>Markland</em>. On Tuesday it said the cutter would be back in service in mid-November.</p>
+<p>Defence Minister Ragnhild Bjornstad also said nothing. The chair of the People&rsquo;s Thing defence committee asked her on Monday for a private briefing on Sunday&rsquo;s transit of the outer Helluland Sea by a foreign state survey vessel. Her office has said she will answer the committee&rsquo;s report &ldquo;in weeks&rdquo;.</p>
+<p>The draft allied agreement on undersea infrastructure is still unsigned.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Five &middot; Nations & The Shield</span><span>The Vinland Herald</span><span>Thursday, 29 October 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">The Company Pays</h2><h3 class="deck">Grimsrud: if the Intertie takes its second route, Skjoldkraft will meet the extra VKR 1.1 billion; the company says the cost will be spread over the life of the line; Labour asks who pays in the end</h3>
+<p class="byline">By Mary Kanatiio Berg, Constitutional Affairs Correspondent</p>
+<p>For a week the Energy Minister said the question was &ldquo;not decided&rdquo;. On Wednesday he decided it.</p>
+<p>If the Shield Intertie is built on its second route, Skjoldkraft will pay the extra VKR 1.1 billion, Petter Grimsrud said. The Treasury will not add money.</p>
+<p>&ldquo;The company proposed the route,&rdquo; he said. &ldquo;The company will carry its cost. That is how we would treat any other project.&rdquo;</p>
+<p>The second route is 21 km longer than the first. It keeps wider of both burial sites and avoids one of the trapping grounds the Kaniapiskau Cree Council has named. It still crosses two others.</p>
+<p>Mr Grimsrud stressed that no route had been chosen. &ldquo;The status committee does not choose lines,&rdquo; he said. &ldquo;Nor do I, today. I am only answering the question of who pays, because it has been asked often enough.&rdquo;</p></article><aside class="boxed"><h4>Bills and years</h4><p>Skjoldkraft is owned by the state. Jostein Harkavik, its head of northern projects, said the cost would be &ldquo;spread over the life of the line&rdquo;, which the company puts at forty years or more.</p>
+<p>Would power bills rise? &ldquo;Every krona we spend is paid for in the end by the people who use the power,&rdquo; he said. &ldquo;That is true of the first route too. We will not pretend otherwise.&rdquo;</p>
+<p>He would not give a figure for a household bill.</p>
+<p>Labour&rsquo;s energy spokeswoman said the answer was &ldquo;honest, and not the end of it&rdquo;. &ldquo;So the customers pay,&rdquo; she said. &ldquo;Some of them live in the Shield. We would like to see the sums.&rdquo;</p></aside><aside class="boxed"><h4>Questions in writing</h4><p>The status committee heard the Cree Council&rsquo;s record of trapping-ground holders in private on Wednesday morning. The session ran until early afternoon.</p>
+<p>Afterwards the chair said the committee would send the Council further questions in writing. They concern how a family&rsquo;s consent is given and how it is recorded. The committee will not make a finding until it has the answers.</p>
+<p>The Council did not say when it would reply.</p>
+<p>Grand Chief Ruth Kaninaskum made a short statement outside the committee room.</p>
+<p>&ldquo;We showed the committee the families,&rdquo; she said. &ldquo;Now it wants the families&rsquo; way of agreeing in writing. That is fair. We will write it down. It has never been a secret. It has only never been asked for.&rdquo;</p>
+<p>She would not comment on Mr Grimsrud&rsquo;s announcement. &ldquo;Money is not the committee&rsquo;s question,&rdquo; she said. &ldquo;It is not ours either.&rdquo;</p></aside><article class="story"><h2 class="hed">The Road Study: No Answer Yet</h2><h3 class="deck">First Peoples&rsquo; Assembly still waiting for a written reply on who will set the study&rsquo;s terms</h3>
+<p class="byline">By Mary Kanatiio Berg</p>
+<p>The Lakes government had not answered the First Peoples&rsquo; Assembly&rsquo;s written question by Wednesday night.</p>
+<p>The Assembly asked on Tuesday whether the nations whose ground the package&rsquo;s new road may cross would help set the terms of the route study, and whether they would see the study before a route is chosen.</p>
+<p>&ldquo;We are patient,&rdquo; said Nora Sakej-Eriksen, the Assembly&rsquo;s leader. &ldquo;We are also counting.&rdquo;</p></article><aside class="boxed"><h4>The Archive</h4><p>The Archive of the Constitutional Peoples gave no new figures on Wednesday. Thirteen of the fifteen households whose holdings were open to the Hvelv portal in July have been reached. The line has had 109 calls. The Archive reports again tomorrow.</p></aside></div></section><section class="page inner"><div class="pagebar"><span>Page Six &middot; Science & Technology</span><span>The Vinland Herald</span><span>Thursday, 29 October 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">Checker in Three Days; Bill in a Week</h2><h3 class="deck">Public checker for machine-made images and audio opens on Sunday; Karontoborg publishes its comments on the bill early: it wants a date for the register</h3>
+<p class="byline">By Ingvild Sørhus, Technology Correspondent, Karontoborg</p>
+<p>The Incident Reporting Bill will wait a week for its first reading. The ministry&rsquo;s public checker will not wait at all.</p>
+<p>The checker for machine-made images and audio opens on Sunday 1 November, in three days. It looks for the hidden marks that several large developers now put in their output, and tells you what any label says.</p>
+<p>The bill itself now has its first reading on Wednesday 4 November. Committee stage is still expected in November.</p></article><aside class="boxed"><h4>The city&rsquo;s comments</h4><p>Karontoborg sent its comments on the bill to the Provincial Thing on Wednesday, ahead of time. It had said it would send them &ldquo;within the month&rdquo;.</p>
+<p>The city makes three main points. It wants a fixed date for the public register written into the law. It wants the six-month review of the developer clause finished before the register opens. And it wants any city that buys an autonomous system to see the incident reports about that system.</p>
+<p>&ldquo;We are a buyer,&rdquo; said Councillor Ylva Pashe-Hauge. &ldquo;A buyer should know when the thing it bought has gone wrong. We should not have to read it in the newspaper.&rdquo;</p>
+<p>The city&rsquo;s own draft contract terms for autonomous systems are open for public comment until Saturday.</p></aside><aside class="boxed"><h4>Flu rising</h4><p>Flu is spreading, the Commonwealth Public Health Agency said on Wednesday.</p>
+<p>In its weekly figures, seven per cent of tests for breathing illness were positive for flu, up from five per cent a week earlier. The agency said the season had &ldquo;started early&rdquo;.</p>
+<p>Its advice stands: people over sixty-five, young children and those with long-term illness should get vaccinated now. Pharmacies have stock, it said.</p></aside></div></section><section class="page inner"><div class="pagebar"><span>Page Seven &middot; Arts & Culture</span><span>The Vinland Herald</span><span>Thursday, 29 October 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">Two Sisters and the Last Crossing</h2><h3 class="deck">Marit Nesheim&rsquo;s <em>The Night Ferry</em> puts a whole town on one boat for one night; it is funny, then it is not, and it is very good</h3>
+<p class="byline">By Oda Fjellstad, Arts Critic</p>
+<p>The ferry has crossed the River at Stadakona every night for as long as anyone can remember. Tonight is its last crossing. A bridge opens in the morning.</p>
+<p>That is the whole plot of <em>The Night Ferry</em>, Marit Nesheim&rsquo;s new play at the Old Quarter Playhouse in Karontoborg. It is enough.</p>
+<p>Two sisters run the boat. Inga, the elder, steers. Tove takes the fares and does the talking. They have done this for thirty years. Neither has said what she will do tomorrow.</p>
+<p>Their passengers come and go across eight short trips: a couple going to a wedding, a nurse off a night shift, two teenage boys with nowhere else to be, and a man from the bridge company, who is not welcome.</p>
+<p>For the first hour the play is very funny. Ms Nesheim has a fine ear for how people talk when they are bored and cold. Tove&rsquo;s running fight with the bridge man is the best comedy on any stage in the city this autumn.</p>
+<p>Then, on the sixth crossing, the engine stops in the middle of the River. In the dark, the sisters finally talk.</p>
+<p>I will not say what they say. It is enough to say that the laughter of the first hour turns out to have been covering something. The audience on Tuesday went very quiet.</p>
+<p>Hedvig Sund as Inga barely raises her voice all evening, and holds the stage throughout. Anna Kahrhonnes is a warm, quick Tove.</p>
+<p>The play has faults. The teenage boys are thinly written. One trip too many is spent on the wedding couple.</p>
+<p>But the last crossing is beautiful. The sisters tie up the boat for the last time, then stand on the dock and do not leave. The lights go down slowly. Nobody in the house moved.</p>
+<p><em>The Night Ferry</em> runs until 28 November.</p></article><aside class="boxed"><h4>At the Academy</h4><p>Jonas Atsistaehron&rsquo;s <em>What the River Kept</em> has a late opening at the Royal Academy tonight, and again on Friday and Saturday, until ten o&rsquo;clock. Door tickets are held each night. The show closes on 15 November.</p></aside></div></section><section class="page inner"><div class="pagebar"><span>Page Eight &middot; Sport</span><span>The Vinland Herald</span><span>Thursday, 29 October 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">Rapids Spoil the Party Again</h2><h3 class="deck">Forsgard win 5–3 in Karontoborg; Lakers lead early, then fall away; still no home win; Rapids join the Pilots and the Storm at the top</h3>
+<p class="byline">By Kjetil Hammer</p>
+<p>For twenty minutes on Wednesday the Karontoborg Lakers played the old plan. Then they forgot it again.</p>
+<p>The Forsgard Rapids won 5–3 at the Lakers&rsquo; home ice. The Lakers are now 1–8–1. They have not won at home all season.</p>
+<p>They began well. The Lakers scored twice in the first period, once on a power play and once from a long shot that took a deflection. The crowd stood for most of the interval.</p>
+<p>The Rapids scored three times in the second period, all within eight minutes. Two came from turnovers in the Lakers&rsquo; own end.</p>
+<p>The Lakers drew level at 3–3 early in the third. The Rapids went ahead again with six minutes left and scored into an empty net in the last minute.</p>
+<p>&ldquo;We played forty minutes last week and forty minutes tonight,&rdquo; the Lakers coach said. &ldquo;Different forty. Same result. I take the blame for the second period. The players can take the blame for the rest. We will share it out on Friday morning.&rdquo;</p>
+<p>The Rapids coach was more cheerful. &ldquo;We said we respected the building,&rdquo; he said. &ldquo;We respected it enough to win in it.&rdquo;</p></article><aside class="boxed"><h4>The table</h4><p>The Sundgard Pilots, the Stadakona Storm and the Rapids share the lead at 4–2. The Hokelgard Royals are 3–2. The Laukvik Lynx are 3–4. The Lakers are 1–8–1.</p>
+<p>The Commonwealth Sport Integrity Office continues its club sessions on appetite-regulating medicines.</p></aside></div></section><section class="page inner"><div class="pagebar"><span>Page Nine &middot; Opinion</span><span>The Vinland Herald</span><span>Thursday, 29 October 2026</span></div><div class="inner-cols"><article class="editorial"><div class="edlabel">The Herald&rsquo;s View</div><h2 class="hed-ed">Good. Now Print It</h2>
+<p>On Tuesday we said the industry package needed rules that were the same for every firm. On Wednesday the Finance Minister agreed. Ms Solbakk says a standard contract will be published before applications open. Jobs will be in it. So will dividends.</p>
+<p>That is a real change, and she deserves credit for making it in a day. Some will call it a climbdown. We call it listening.</p>
+<p>But a promise of a contract is not a contract. Three things are still missing.</p>
+<p>The first is a date. &ldquo;Before applications open&rdquo; could mean next month or the last week of December. Firms need time to read the terms. So does the public.</p>
+<p>The second is substance. &ldquo;Jobs will be in it&rdquo; could mean a firm must keep every job, or that it must merely talk about jobs. &ldquo;Dividends&rdquo; could mean a ban or a limit. The difference is the whole question.</p>
+<p>The third is Laukvik. Sørstrand&rsquo;s line stops on 1 December. If the contract is not ready by then, the first test of the package will pass before its rules exist. That should not happen.</p>
+<p>Labour&rsquo;s debate on Tuesday is the right place to press all three. The First Minister answered Ms Karhagen on Wednesday with a price list. On Tuesday the Government should bring the contract, or a date for it.</p></article><aside class="boxed"><h4>Who pays for the longer line</h4><p>Mr Grimsrud has also made a decision this week. If the Shield Intertie takes its second route, Skjoldkraft will pay the extra VKR 1.1 billion.</p>
+<p>We argued last week that cost belongs to the company, the minister and the People&rsquo;s Thing, not to the status committee. The minister has now put it with the company. That is defensible. The company proposed the route, and the company should own its price.</p>
+<p>But Mr Harkavik was honest about what that means. Skjoldkraft is owned by the state, and its costs end up on power bills. The public is paying either way, as customers rather than as taxpayers. That is not wrong. But it should be done in the open. Skjoldkraft should publish what the extra cost would add to a household bill, and the People&rsquo;s Thing should be able to question it.</p>
+<p>Meanwhile the status committee has done exactly what it should. It has heard the record and asked for the families&rsquo; way of consenting in writing. Grand Chief Kaninaskum calls that fair. So do we.</p></aside><aside class="boxed"><h4>A week, well spent</h4><p>Finally, the Incident Reporting Bill. The Provincial Thing has delayed its first reading by a week because members received a corrected print that morning. That is irritating. It is also correct. A chamber should read what it is asked to receive. The checker opens on Sunday regardless.</p>
+<p>And to Treasury: you promised an answer at the table today. Bring it.</p></aside><aside class="review"><h4>From the Other Papers</h4><p><strong>The Free Thing</strong> (Hokelgard): &ldquo;One contract for Karontoborg&rsquo;s friends, published before Christmas, perhaps. Laukvik stops on 1 December. Do the sums.&rdquo;</p>
+<p><strong>The Northern Star:</strong> &ldquo;The Grand Chief said it best. The families&rsquo; way of agreeing was never a secret. It was only never asked for.&rdquo;</p>
+<p><strong>The Financial Vinlander:</strong> &ldquo;A standard contract is good news for investors, if it is short. Long contracts are where good intentions go to die.&rdquo;</p>
+<p><strong>The New World Review:</strong> &ldquo;Skjoldkraft pays, which means its customers pay, which means the public pays. Say so on the bill.&rdquo;</p>
+<p><strong>The Atlantic Chronicle:</strong> &ldquo;One navy reports mines. Another says the lanes are clear. Ship captains have learned to trust neither.&rdquo;</p>
+<p><strong>The Karontoborg Post:</strong> &ldquo;LAKERS LEAD, LAKERS LOSE. SAME SONG, NEW VERSE.&rdquo;</p>
+<p class="note"><em>The Vinland Herald is published daily by Herald House Publishing, New Harbour, Karontoborg. Corrections: the Herald corrects errors of fact on page two. © 2026.</em></p></aside></div></section>
+<footer>The Vinland Herald is published daily by Herald House Publishing, New Harbour, Karontoborg. Corrections: the Herald corrects errors of fact on page two. © 2026.</footer>
+</div></body></html>
