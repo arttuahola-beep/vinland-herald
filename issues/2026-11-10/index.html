@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<title>The Vinland Herald &middot; Tuesday, 10 November 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1b1a17;--paper:#f6f1e4;--rule:#2a2824;--muted:#5a554b;--soft:#e9e1cc}
+*{box-sizing:border-box}
+.site-nav{background:var(--paper);border-bottom:1px solid var(--rule);font-family:"Old Standard TT",serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;text-align:center;padding:6px 12px}
+.site-nav a{color:var(--ink);text-decoration:none;padding:0 14px}
+.site-nav a+a{border-left:1px solid var(--rule)}
+.site-nav a:hover,.site-nav a:focus{text-decoration:underline}
+body{margin:0;background:#d9d2c0;color:var(--ink);font-family:"Libre Caslon Text",Georgia,"Times New Roman",serif;font-size:15.5px;line-height:1.5}
+.sheet{max-width:1240px;margin:24px auto;background:var(--paper);padding:22px 34px 40px;box-shadow:0 2px 18px rgba(0,0,0,.18)}
+header.mast{text-align:center;border-bottom:4px double var(--rule);padding-bottom:6px}
+.topline{display:flex;justify-content:space-between;font-family:"Old Standard TT",serif;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;border-bottom:1px solid var(--rule);padding-bottom:5px}
+.mastrow{display:grid;grid-template-columns:1fr 2.6fr 1fr;align-items:center;gap:18px;padding:10px 0 4px}
+.ear{border:1px solid var(--rule);padding:7px 9px;font-size:11.5px;line-height:1.4;text-align:left;font-family:"Old Standard TT",serif}
+.ear strong{display:block;font-size:11px;letter-spacing:.12em;border-bottom:1px solid var(--rule);margin-bottom:3px}
+h1.title{font-family:"UnifrakturMaguntia","Old English Text MT",serif;font-weight:400;font-size:clamp(40px,6.2vw,80px);margin:0;line-height:1;white-space:nowrap}
+.founded{font-family:"Old Standard TT",serif;font-style:italic;font-size:14px;margin-top:4px}
+.dateline{display:flex;justify-content:space-between;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin-top:6px;padding:4px 0;font-family:"Old Standard TT",serif;font-size:13px;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
+h2,h3,h4{font-family:"Playfair Display",Georgia,serif;margin:0}
+.hed-lead{font-size:clamp(30px,3.9vw,50px);line-height:1.05;font-weight:900;margin:10px 0 8px;text-align:center}
+.lead .deck{font-size:19px;font-style:italic;font-weight:700;text-align:center;margin:0 0 10px;column-span:all}
+.cols2{column-count:2;column-gap:26px;column-rule:1px solid #9d968a}
+.cols2 p:first-of-type::first-letter{}
+.lead .byline{column-span:all;text-align:center}
+.byline{font-family:"Old Standard TT",serif;font-style:italic;font-size:13px;color:var(--muted);border-top:1px solid #9d968a;border-bottom:1px solid #9d968a;padding:3px 0;margin:6px 0 10px}
+p{margin:0 0 .72em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.lead .cols2 > p:nth-of-type(2)::first-letter{float:left;font-family:"Playfair Display",serif;font-size:64px;line-height:.82;padding:4px 7px 0 0;font-weight:900}
+p.note{font-size:13px;color:var(--muted);text-align:left}
+.front-grid{display:grid;grid-template-columns:2.05fr 1fr;gap:0;margin-top:12px}
+.front-main{padding-right:24px;border-right:1px solid var(--rule)}
+.front-side{padding-left:22px}
+.hed-side{font-size:23px;line-height:1.12;font-weight:900;margin:8px 0 6px}
+.side .deck{font-size:15px;font-style:italic;font-weight:700;margin-bottom:4px;line-height:1.25}
+.story.side{border-bottom:2px solid var(--rule);padding-bottom:10px;margin-bottom:12px;font-size:14.5px}
+.briefs{background:var(--soft);padding:10px 12px;font-size:13.5px;border-top:3px solid var(--rule)}
+.briefs h4,.boxed h4,.review h4{font-size:14px;letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid var(--rule);margin-bottom:6px;padding-bottom:2px}
+.page.inner{margin-top:34px;border-top:4px double var(--rule);padding-top:6px}
+.pagebar{display:flex;justify-content:space-between;font-family:"Old Standard TT",serif;font-size:12px;text-transform:uppercase;letter-spacing:.1em;border-bottom:1px solid var(--rule);padding-bottom:4px;margin-bottom:10px}
+.pagebar span:first-child{font-weight:700}
+.inner-cols{column-count:3;column-gap:26px;column-rule:1px solid #9d968a}
+.inner-cols article, .inner-cols aside{break-inside:auto}
+.hed{font-size:27px;line-height:1.1;font-weight:900;margin:4px 0 6px;break-after:avoid}
+.inner-cols .deck{font-size:15.5px;font-style:italic;font-weight:700;line-height:1.25;margin-bottom:4px}
+.inner-cols article.story{margin-bottom:18px;padding-bottom:10px;border-bottom:2px solid var(--rule)}
+.boxed{border:1px solid var(--rule);padding:9px 11px;margin:0 0 16px;font-size:13.5px;break-inside:avoid;background:#fbf8ef}
+.review{background:var(--soft);border-top:3px solid var(--rule);border-bottom:3px solid var(--rule);padding:10px 12px;font-size:13.5px;margin-top:10px}
+.editorial{border:2px solid var(--rule);padding:12px 14px;margin-bottom:16px;background:#fbf8ef}
+.edlabel{font-family:"Old Standard TT",serif;text-transform:uppercase;letter-spacing:.2em;font-size:12px;text-align:center;border-bottom:1px solid var(--rule);padding-bottom:3px;margin-bottom:6px}
+.hed-ed{font-size:26px;font-style:italic;text-align:center;margin:4px 0 10px}
+footer{margin-top:30px;border-top:4px double var(--rule);padding-top:8px;font-size:12px;color:var(--muted);text-align:center;font-family:"Old Standard TT",serif}
+@media (max-width:980px){.inner-cols{column-count:2} .mastrow{grid-template-columns:1fr 1fr} .mastrow .brand{grid-column:1/-1;order:-1} }
+@media (max-width:720px){
+ .sheet{margin:0;padding:14px 14px 28px}
+ .front-grid{grid-template-columns:1fr} .front-main{padding-right:0;border-right:none;border-bottom:2px solid var(--rule);padding-bottom:10px;margin-bottom:12px} .front-side{padding-left:0}
+ .cols2,.inner-cols{column-count:1}
+ .topline,.dateline{font-size:10.5px} .dateline{flex-wrap:wrap;gap:6px}
+ .mastrow{grid-template-columns:1fr} h1.title{white-space:normal;font-size:44px}
+}
+</style></head>
+<body>
+<nav class="site-nav" aria-label="The Vinland Herald"><a class="nav-home" href="../../">Front page</a><a class="nav-archive" href="../../archive/">Archive</a></nav>
+<div class="sheet">
+<header class="mast">
+<div class="topline"><span>Vol. CLX &middot; No. 49,350</span><span>The Commonwealth&rsquo;s Newspaper of Record</span><span>Price VKR 18</span></div>
+<div class="mastrow">
+ <div class="ear"><strong>WEATHER</strong><em>Karontoborg:</em> Grey, with drizzle clearing by afternoon; high 7°C, low 2°C.<br><em>Hokelgard:</em> Cold and bright; high 4°C, low −3°C.<br><em>Stadakona:</em> Flurries early, then cloud; −1°C.<br><em>Leifsbudir:</em> Strong south-westerly, rain at times; 6°C; Helluland Sea rough.</div>
+ <div class="brand"><h1 class="title">The Vinland Herald</h1><div class="founded">Founded 1867 &middot; Karontoborg</div></div>
+ <div class="ear"><strong>MARKETS</strong>(Monday close)<br>KXC Composite 20,762 (+0.4%)<br>VKR/USD 6.85 (unchanged)<br>VKR/EUR 7.92<br>NOK 0.652 VKR<br>CNY 0.965 VKR<br>10-yr Commonwealth 3.76% (−2 bp)<br>Benchmark crude $109.49 (−2.0%)<br>Gold $4,201/oz</div>
+</div>
+<div class="dateline"><span>Karontoborg &middot; Hokelgard</span><span>Tuesday, 10 November 2026</span><span>Late Edition</span></div>
+</header>
+<section class="page front"><div class="front-grid"><div class="front-main"><article class="lead"><h2 class="hed-lead">Second Escort Sails as Insurers Make First Cut</h2><div class="cols2"><h3 class="deck">Navy: VNS Gudrid leads five merchant ships through the southern approaches; war-risk houses trim Gulf rates by about 8 per cent, the first cut since the crisis began; a foreign party to the war says new strikes are &ldquo;unlikely while talks go on&rdquo;</h3>
+<p class="byline">By Halldor Vik, Defence Correspondent</p>
+<p>The Navy&rsquo;s second escort is under way. VNS <em>Gudrid</em> is leading five merchant ships north through the southern approaches of the Red Sea, the Admiralty said on Monday.</p>
+<p>&ldquo;We said we would announce it when it was under way,&rdquo; said Commander Einar Paul, the Navy spokesman. &ldquo;It is under way. So we are announcing it.&rdquo;</p>
+<p>On the same day the two larger Karontoborg war-risk houses cut their Gulf rates. The cut was about 8 per cent. It was the first since the crisis began. The houses had raised their rates six times in about a week, then held them for four days.</p>
+<p>In the Gulf itself, no new attack on shipping was reported on Monday. A foreign government that is a party to the war said fresh strikes were &ldquo;unlikely while talks go on&rdquo;. Crude fell 2 per cent.</p>
+<p>Sigrid Holme of the Karontoborg Shipowners&rsquo; Association called the cut &ldquo;a small kindness&rdquo;. She said her members would stay on the long route. One more Vinlandic-flagged ship joined it on Monday. The count is now thirty.</p>
+<p class="note"><em>Page 4. The Herald&rsquo;s View, Page 9.</em></p></div></article></div><div class="front-side"><article class="story side"><h2 class="hed-side">Treasury Publishes Its Half-Weight Method</h2><h3 class="deck">Paper says federal sites count at half because homes on them start about twice as late; no cap; Oyelaran-Skog: &ldquo;A method about the past&rdquo;; working group meets on Thursday</h3>
+<p class="byline">By Elise Brattli, Economics Editor</p>
+<p>The Treasury has published its method. The paper appeared on Monday afternoon, three days before the deadline it set itself.</p>
+<p>It explains why federal land counts at half weight toward the cities&rsquo; housing targets. The answer is time. Homes on federal sites, the paper says, have started about twice as late as homes on city land, chiefly because the sites lack water, sewers and roads.</p>
+<p>&ldquo;Half weight is a judgment about time, not about value,&rdquo; the paper says. It does not propose a cap.</p>
+<p>Mayor Petra Oyelaran-Skog of Karontoborg was not persuaded. &ldquo;Now we have a method,&rdquo; she said. &ldquo;It is a method about the past.&rdquo;</p>
+<p class="note"><em>Page 3.</em></p></article><article class="story side"><h2 class="hed-side">Bjornstad Answers the Committee Today</h2><h3 class="deck">Defence Minister to explain why no cutter met the foreign survey vessel on 25 October; Markland back on 19 November</h3>
+<p class="byline">By Aslak Kvande, Leifsbudir</p>
+<p>Defence Minister Ragnhild Bjornstad appears before the defence committee this morning. She will answer for the day in October when a foreign survey vessel crossed the outer Helluland Sea and no cutter went out.</p>
+<p class="note"><em>Page 4.</em></p></article><aside class="briefs"><h4>IN BRIEF</h4><p><strong>Markets.</strong> The KXC rises 0.4 per cent to 20,762 as technology shares lead; crude falls. Page 3.</p>
+<p><strong>Labour.</strong> The steelworkers&rsquo; union answers Sørstrand Steel and asks for a joint meeting. Page 3.</p>
+<p><strong>Climate.</strong> World climate talks open abroad; Energy Minister Grimsrud to lead the Commonwealth delegation. Page 4.</p>
+<p><strong>Science.</strong> Hokelgard museum buys a rare dinosaur skeleton for VKR 26 million. Page 6.</p>
+<p><strong>Arts.</strong> About 71,000 have seen <em>What the River Kept</em>, which closes on Sunday. Page 7.</p>
+<p><strong>Hockey.</strong> The Royals host the Storm tonight. Page 8.</p></aside></div></div></section><section class="page inner"><div class="pagebar"><span>Page Two &middot; The Great Thing</span><span>The Vinland Herald</span><span>Tuesday, 10 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">The Minister and the Empty Sea</h2><h3 class="deck">Bjornstad&rsquo;s reply to the defence committee is due this morning; members want to know why no cutter sailed and how the north will be watched while ships are in port</h3>
+<p class="byline">By Sunniva Rask, Hokelgard</p>
+<p>Defence Minister Ragnhild Bjornstad gives her reply to the defence committee of the People&rsquo;s Thing this morning.</p>
+<p>The committee asked her a plain question in October. On 25 October a foreign survey vessel crossed the outer Helluland Sea. No cutter went out to meet it. VCGS <em>Markland</em> was alongside in Leifsbudir. Why?</p>
+<p>Her office confirmed on Saturday that the reply would come today. It did not release any part of it in advance.</p>
+<p>Members of the committee have said they want two things. They want an account of 25 October. They also want to know how the north will be watched the next time a cutter is in port.</p>
+<p>The Coast Guard has said <em>Markland</em> will return to service on Thursday 19 November. That is nine days from today.</p>
+<p>The Herald will report the minister&rsquo;s answers tomorrow.</p></article><article class="story"><h2 class="hed">Labour: &ldquo;Late, But Welcome&rdquo;</h2><h3 class="deck">Ruud says the Treasury&rsquo;s method should have come with the figure; asks again who is drafting the standard contract due in ten days</h3>
+<p class="byline">By Sunniva Rask</p>
+<p>Oddvar Ruud, Labour&rsquo;s finance spokesman, welcomed the Treasury&rsquo;s method paper on Monday evening. He did not welcome much else.</p>
+<p>&ldquo;Late, but welcome,&rdquo; he said. &ldquo;It should have come with the figure. Now the cities can argue with the reasons and not just the number.&rdquo;</p>
+<p>He then turned to the industry package. The standard contract is due before the People&rsquo;s Thing on Friday 20 November. That is ten days away.</p>
+<p>&ldquo;We still do not know who is writing it,&rdquo; Mr Ruud said. &ldquo;The Treasury says it is a matter for the Government as a whole. The Government as a whole does not hold a pen.&rdquo;</p>
+<p>Finance Minister Ingrid Solbakk&rsquo;s office had nothing new to say on the contract. The Treasury has named the date three times. It has not named a drafting ministry.</p>
+<p>The motion passed on Tuesday last week by 194 votes to 6 locks the package. No krona of the VKR 14 billion may be paid until the contract is laid. The motion has no force in law. Ministers wrote the lock themselves.</p></article><article class="story"><h2 class="hed">The Review Is &ldquo;On Course&rdquo;</h2><h3 class="deck">Attorney General&rsquo;s office says the Hvelv minutes review will be ready by Friday 28 November</h3>
+<p class="byline">By Sunniva Rask</p>
+<p>The Attorney General&rsquo;s review of the Hvelv board minutes is &ldquo;on course&rdquo;, its office said on Monday. It is due by Friday 28 November.</p>
+<p>The office gave no other detail. The preservation notice served on 9 October remains in force.</p>
+<p>The review is one strand of the response to the Hvelv breach of the Archive of the Constitutional Peoples. Another is the Incident Reporting Bill, which goes to the Provincial Thing&rsquo;s justice and digital affairs committee on Thursday 26 November.</p>
+<p>Health Minister Gunnar Wapistan did not speak on assisted dying on Monday. The bishops of the Vinlandic Church were also silent.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Three &middot; Karontoborg & The Economy</span><span>The Vinland Herald</span><span>Tuesday, 10 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">The Method, Line by Line</h2><h3 class="deck">Treasury looked at ten years of federal land used for housing; first homes came about twice as late as on city land; paper rejects a cap; cities will argue on Thursday that serviced sites should count in full</h3>
+<p class="byline">By Elise Brattli, Economics Editor</p>
+<p>The Treasury&rsquo;s paper on &ldquo;half weight&rdquo; is short. It runs to eleven pages. It was published on Monday afternoon, ahead of the promise to publish &ldquo;before 12 November&rdquo;.</p>
+<p>It answers one question. Why should a hectare of federal land count as only half a hectare toward a city&rsquo;s first-year housing target?</p></article><aside class="boxed"><h4>Time, not value</h4><p>The Treasury looked at federal land sold or leased for housing over the past ten years. On average, it says, the first homes on those sites started about twice as late as on land the cities found for themselves.</p>
+<p>The paper gives three main reasons. Most federal sites had no water or sewer connection. Many had no road fit for building traffic. Some needed old buildings cleared or the ground cleaned.</p>
+<p>&ldquo;Half weight is a judgment about time, not about value,&rdquo; the paper says. &ldquo;A hectare that will carry homes in four years is worth half as much, to a one-year target, as a hectare that will carry them in two.&rdquo;</p></aside><aside class="boxed"><h4>No cap</h4><p>The paper does not propose a cap. Mayor Petra Oyelaran-Skog has asked for federal sites to count in full, with a limit. No city, in her plan, could meet more than a third of its first-year target from federal land.</p>
+<p>The Treasury says a cap is not needed. Half weight already limits how much a city can lean on federal land, it argues. A second limit would &ldquo;count the same problem twice&rdquo;.</p></aside><aside class="boxed"><h4>The mayor&rsquo;s answer</h4><p>Ms Oyelaran-Skog read the paper on Monday evening. She was polite about the fact of it and sharp about the content.</p>
+<p>&ldquo;Now we have a method,&rdquo; she said. &ldquo;It is a method about the past. It looks at sites that waited years for pipes. Some of the sites on this list have pipes today.&rdquo;</p>
+<p>She said Karontoborg would argue on Thursday that a federal site with water, sewers and a road already in place should count in full. &ldquo;If the problem is time,&rdquo; she said, &ldquo;then where there is no delay there should be no discount.&rdquo;</p>
+<p>Mayor Tomas Wabano-Lie of Laukvik gave no view on Monday.</p></aside><aside class="boxed"><h4>What happens next</h4><p>The housing working group meets on Thursday 12 November. Fifty federal sites, covering 613 hectares, are on the Treasury&rsquo;s list. Thirteen go to the claims table on Friday 13 November. The other thirty-seven are unclaimed.</p></aside><article class="story"><h2 class="hed">Shares Edge Up, Crude Falls</h2><h3 class="deck">KXC up 0.4 per cent to 20,762 as chip and technology shares lead; crude down 2 per cent to $109.49; gold up a sixth day to $4,201</h3>
+<p class="byline">By Tomas Nygaard, Karontoborg</p>
+<p>Karontoborg shares rose a little on Monday. The KXC Composite closed at 20,762, up 0.4 per cent.</p>
+<p>Technology shares led. Chip makers and their suppliers recovered some of the ground they lost last week. Lenders were flat.</p>
+<p>&ldquo;Friday was about a freighter,&rdquo; one trader said. &ldquo;Monday was about a sentence from somebody else&rsquo;s government. The market likes sentences that say &rsquo;unlikely&rsquo;.&rdquo;</p>
+<p>Benchmark crude fell 2 per cent to $109.49 a barrel. The fall followed the statement by a foreign party to the Gulf war that new strikes were unlikely while talks went on.</p>
+<p>Gold rose $17 to $4,201 an ounce. It has now risen six days in a row.</p>
+<p>The ten-year Commonwealth yield fell two basis points to 3.76 per cent. The krona was unchanged at 6.85 to the dollar and 7.92 to the euro.</p></article><article class="story"><h2 class="hed">Union Answers Sørstrand</h2><h3 class="deck">Steelworkers ask for a joint meeting with the company and the city before 1 December; firm says it will &ldquo;consider the request&rdquo;</h3>
+<p class="byline">By Tomas Nygaard</p>
+<p>The steelworkers&rsquo; union has answered Sørstrand Steel. Its reply came on Monday, six days after the company&rsquo;s letter of Tuesday 3 November.</p>
+<p>The union asked for a joint meeting of the company, the union and the city of Laukvik. It wants the meeting before 1 December, when one of the two strip lines pauses and about 380 workers go on short time.</p>
+<p>&ldquo;We have read the letter,&rdquo; a union official said. &ldquo;We would rather talk in one room than write in two.&rdquo;</p>
+<p>A Sørstrand spokesman said the company would &ldquo;consider the request&rdquo;. Mayor Wabano-Lie has asked for exactly such a meeting. His office said on Monday that the city &ldquo;stands ready&rdquo;.</p>
+<p>No date has been set.</p></article><article class="story"><h2 class="hed">A Week to the Statement</h2><h3 class="deck">Autumn statement on Tuesday 17 November; Central Bank on Thursday 19 November; most economists still expect a rise from 3.50 per cent</h3>
+<p class="byline">By Elise Brattli</p>
+<p>The autumn fiscal statement is a week away. Finance Minister Solbakk&rsquo;s office says it will &ldquo;hold the line&rdquo;. There will be no new spending beyond the industry package and the housing envelope.</p>
+<p>The Central Bank decides on Thursday 19 November. Governor Hallvard Mikaelsen did not speak on Monday. Most economists still expect a rise from 3.50 per cent. Inflation is 3.9 per cent.</p>
+<p>Some economists said a lower oil price, if it lasts, could make the Bank&rsquo;s choice harder. Crude is down from its peak but still well above where it stood in the summer.</p>
+<p>Large Lakes lenders kept their five-year fixed rates at 7.2 per cent, except two at 7.3.</p></article><aside class="boxed"><h4>The week ahead</h4><p>Today: Bjornstad answers the defence committee. Wednesday: status committee; weekly flu figures. Thursday: housing working group. Friday: claims table and the Archive&rsquo;s weekly report.</p></aside></div></section><section class="page inner"><div class="pagebar"><span>Page Four &middot; The World</span><span>The Vinland Herald</span><span>Tuesday, 10 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">The Second Escort</h2><h3 class="deck">VNS Gudrid leads five merchant ships north through the southern approaches; VNS Kjipuktuk with the partner navies&rsquo; group; &ldquo;quiet so far&rdquo;</h3>
+<p class="byline">By Halldor Vik, Defence Correspondent</p>
+<p>The Navy has begun its second escort through the southern approaches of the Red Sea.</p>
+<p>VNS <em>Gudrid</em> is leading five merchant ships north, the Admiralty said on Monday. VNS <em>Kjipuktuk</em> is sailing with the partner navies&rsquo; escort group, as it did on the first run.</p>
+<p>The Navy did not name the merchant ships or say when the group would be clear. It said all five were Vinlandic-owned or carried Vinlandic cargo.</p>
+<p>&ldquo;Quiet so far,&rdquo; said Commander Einar Paul. &ldquo;We would like it to stay that way. The best escort is the one nobody writes about.&rdquo;</p>
+<p>The first escort ended on Saturday 31 October. <em>Gudrid</em> brought six merchant ships clear without incident. Since then the Navy has said only that a second escort would be announced &ldquo;when it is under way&rdquo;.</p>
+<p>The four-month period set by the Things for the deployment is unchanged.</p></article><article class="story"><h2 class="hed">Rates Fall, a Little</h2><h3 class="deck">War-risk houses trim Gulf rates about 8 per cent after a weekend without a Vinlandic hit; Cape count rises to thirty; freighter to be repaired in the region</h3>
+<p class="byline">By Tomas Nygaard</p>
+<p>The two larger Karontoborg war-risk houses cut their Gulf rates on Monday. The cut was about 8 per cent. It is the first since the crisis began.</p>
+<p>An underwriter had said on Sunday that the houses would &ldquo;look again&rdquo; on Monday. They did.</p>
+<p>&ldquo;Three things,&rdquo; one underwriter said. &ldquo;No Vinlandic ship hit since Thursday. No new attack reported today. And a government saying &rsquo;unlikely&rsquo;. None of that is peace. All of it is worth a few points.&rdquo;</p>
+<p>The rates are still far above where they were before the first rises. The houses had raised them six times in about a week.</p></article><aside class="boxed"><h4>Holme: &ldquo;A small kindness&rdquo;</h4><p>Sigrid Holme of the Shipowners&rsquo; Association welcomed the cut, up to a point.</p>
+<p>&ldquo;It is a small kindness,&rdquo; she said. &ldquo;We will take it. But a cut in the price of a risk is not the end of the risk. Our ships stay on the long route.&rdquo;</p>
+<p>One more Vinlandic-flagged ship joined the long route round the Cape on Monday. The count is now thirty.</p>
+<p>&ldquo;Thirty ships, thirty crews, going the long way,&rdquo; Ms Holme said. &ldquo;When one goes through the strait and comes out whole, I will tell you. Until then, count them.&rdquo;</p></aside><aside class="boxed"><h4>The freighter</h4><p>The Vinlandic freighter struck in the outer approaches on Thursday will be repaired in the region. Its owners said so on Monday, after a first survey of the hull. They did not say how long the work would take.</p>
+<p>The ship reached an unnamed regional port under tow on Saturday. Its crew are ashore and well.</p></aside><aside class="boxed"><h4>&ldquo;Unlikely&rdquo;</h4><p>No new attack on shipping in the Gulf was reported on Monday. A foreign government that is a party to the war said fresh strikes were &ldquo;unlikely while talks go on&rdquo;. It gave no other detail.</p>
+<p>The mediators did not speak. They have still not published the text of the strait agreement.</p></aside><article class="story"><h2 class="hed">Climate Talks Open</h2><h3 class="deck">Two weeks of world talks begin abroad; Energy Minister Grimsrud to lead the Commonwealth delegation; health and food on the first day&rsquo;s agenda</h3>
+<p class="byline">By Halldor Vik</p>
+<p>The world&rsquo;s annual climate talks opened abroad on Monday. They will run for two weeks.</p>
+<p>Energy Minister Petter Grimsrud will lead the Commonwealth delegation, his office said. Officials are there already. The first day&rsquo;s sessions dealt with health systems and food supply.</p>
+<p>Mr Grimsrud&rsquo;s office said the Commonwealth would &ldquo;argue for northern grids and northern power&rdquo;. It gave no detail.</p>
+<p>The talks open as the Shield Intertie waits on a finding from the status committee. Mr Grimsrud has said a second route, if one is needed, would cost Skjoldkraft an extra VKR 1.1 billion.</p></article><article class="story"><h2 class="hed">Bjornstad Today</h2><h3 class="deck">Minister&rsquo;s reply on the 25 October transit due this morning; Markland returns on 19 November</h3>
+<p class="byline">By Aslak Kvande, Leifsbudir</p>
+<p>Ragnhild Bjornstad answers the defence committee this morning. The questions concern the transit of the outer Helluland Sea by a foreign survey vessel on 25 October. No cutter went out that day.</p>
+<p>In Leifsbudir, VCGS <em>Markland</em> was still alongside on Monday. The Coast Guard has said it will return to service on Thursday 19 November.</p>
+<p>&ldquo;People here watch that quay,&rdquo; a harbour worker said. &ldquo;They will watch the minister today, too.&rdquo;</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Five &middot; Nations & The Shield</span><span>The Vinland Herald</span><span>Tuesday, 10 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">The Committee Sits Tomorrow</h2><h3 class="deck">Status committee takes up the Cree Council&rsquo;s written answers on Wednesday; Grand Chief Kaninaskum will attend; no date for a finding; no household figure from Skjoldkraft</h3>
+<p class="byline">By Mary Kanatiio Berg, Constitutional Affairs Correspondent</p>
+<p>The status committee of the Provincial Thing sits tomorrow. It will take up the written answers sent by the Kaniapiskau Cree Council on 29 October.</p>
+<p>The Shield Intertie would carry northern hydro power to the Lakes. It would cross 310 kilometres of Cree land.</p>
+<p>Grand Chief Ruth Kaninaskum said on Sunday that the Council would attend. &ldquo;We have said what we have to say, in writing,&rdquo; she said. &ldquo;On Wednesday we will say it again, out loud.&rdquo;</p>
+<p>She did not add to that on Monday. The chair&rsquo;s office has given no date for a finding. The written answers, like the record of the holders, remain private.</p></article><aside class="boxed"><h4>Still no figure</h4><p>Skjoldkraft again gave no figure on Monday for what a second route would add to a household power bill. No route has been chosen.</p>
+<p>Energy Minister Grimsrud leaves this week for the climate talks abroad. His office said he would follow the committee &ldquo;closely, from wherever he is&rdquo;.</p></aside><article class="story"><h2 class="hed">Fifty-Two Days</h2><h3 class="deck">Lakes government&rsquo;s comment window on the road study closes on 1 January; Assembly unchanged</h3>
+<p class="byline">By Mary Kanatiio Berg</p>
+<p>The Lakes government&rsquo;s sixty-day window for nations to comment on the terms of its road study has fifty-two days left. It closes on 1 January.</p>
+<p>There was no change on Monday. Nora Sakej-Eriksen of the First Peoples&rsquo; Assembly has called the window &ldquo;a countdown, not a consultation&rdquo;.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Six &middot; Science & Technology</span><span>The Vinland Herald</span><span>Tuesday, 10 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">A Dinosaur Comes to Hokelgard</h2><h3 class="deck">Commonwealth Museum of Natural History buys a meat-eating dinosaur skeleton, the only known specimen of its kind, for VKR 26 million; it was withdrawn from auction after the deal</h3>
+<p class="byline">By Gunnhild Paquette, Science Correspondent</p>
+<p>The Commonwealth Museum of Natural History in Hokelgard has bought a dinosaur.</p>
+<p>The skeleton is that of a meat-eating dinosaur more than 150 million years old. It is the only known specimen of its species. The museum paid VKR 26 million, it said on Monday.</p>
+<p>The skeleton was due to be sold at auction in Karontoborg. It was withdrawn from the sale after the museum agreed a price with the seller.</p>
+<p>&ldquo;A thing like this should not go into a private room,&rdquo; the museum&rsquo;s director said. &ldquo;There is only one. Scientists need to be able to measure it. Children need to be able to stand under it.&rdquo;</p></article><aside class="boxed"><h4>Why it matters</h4><p>Palaeontologists have known about the skeleton for some years. It sat in a private collection. Only a few scientists had seen it.</p>
+<p>A specimen that is the only one of its kind is called a type specimen. Every later find of the same animal is compared with it. If it is locked away, the work stops.</p>
+<p>&ldquo;Now it can be studied properly,&rdquo; the museum said. &ldquo;That is the point.&rdquo;</p></aside><aside class="boxed"><h4>When it can be seen</h4><p>The skeleton will go on show next year. The museum gave no date. It said the bones would first be cleaned, checked and mounted.</p></aside><article class="story"><h2 class="hed">The Minister on the Checker</h2><h3 class="deck">Lindqvist calls the first week &ldquo;a good start&rdquo;; a plain warning will be added to the result page; &ldquo;No label does not mean real&rdquo;</h3>
+<p class="byline">By Ingvild Sørhus, Technology Correspondent, Karontoborg</p>
+<p>Minister for Digital Affairs Kari Lindqvist spoke about the public checker on Monday afternoon. She called its first week &ldquo;a good start&rdquo;.</p>
+<p>The ministry said on Monday morning that the checker had been used about 222,000 times in its first eight days. About nine checks in a hundred found a label showing that an image or recording had been made by a machine.</p>
+<p>&ldquo;People want to know what they are looking at,&rdquo; Ms Lindqvist said. &ldquo;That is healthy.&rdquo;</p>
+<p>She said the ministry would add a plain warning to the result page this week. It will say that a missing label does not prove a file is real.</p>
+<p>&ldquo;We said it in the report,&rdquo; she said. &ldquo;It belongs on the screen, where people read it.&rdquo;</p>
+<p>The ministry has not broken the figure down by image and sound. It says that will come with the monthly report.</p></article><aside class="boxed"><h4>The city&rsquo;s summary</h4><p>The city of Karontoborg has still to publish its summary of the 860 comments on its draft contract terms for autonomous systems. It has promised that, with a revised draft, &ldquo;before the end of the year&rdquo;.</p></aside><article class="story"><h2 class="hed">Flu Figures Tomorrow</h2><h3 class="deck">Agency silent on Monday; last week 13 per cent of tests positive</h3>
+<p class="byline">By Ingvild Sørhus</p>
+<p>The Commonwealth Public Health Agency gave no new flu figures on Monday. Its next weekly figures are due tomorrow.</p>
+<p>The last share of positive tests was 13 per cent, up from 7 per cent the week before. Advice has not changed. People over sixty-five and other vulnerable groups should be vaccinated now.</p>
+<p>The Archive of the Constitutional Peoples said nothing on Monday. Its next weekly report is due on Friday.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Seven &middot; Arts & Culture</span><span>The Vinland Herald</span><span>Tuesday, 10 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">Seventy-One Thousand, and Five Days Left</h2><h3 class="deck">What the River Kept has drawn about 71,000 visitors; it closes on Sunday 15 November; no extension</h3>
+<p class="byline">By Oda Fjellstad, Arts Critic</p>
+<p>About 71,000 people have now seen Jonas Atsistaehron&rsquo;s <em>What the River Kept</em> at the Royal Academy. The Academy gave the figure on Monday. On Thursday it had said about 64,000.</p>
+<p>That is about 7,000 visitors in four days.</p>
+<p>The show closes on Sunday 15 November. The Academy said again that it had no plans to extend.</p>
+<p>&ldquo;People have heard it is ending,&rdquo; an Academy spokeswoman said. &ldquo;That always helps.&rdquo;</p>
+<p>Those still planning a visit should go early on a weekday. The three screens are worth a slow walk, and the rooms fill after noon.</p></article><article class="story"><h2 class="hed">The Ferry, Still Full</h2><h3 class="deck">Night Ferry run continues to 28 November; matinee sold out; returns only</h3>
+<p class="byline">By Oda Fjellstad</p>
+<p>Marit Nesheim&rsquo;s <em>The Night Ferry</em> continues at the Old Quarter Playhouse in Hokelgard until 28 November.</p>
+<p>The extra Sunday matinee on 22 November sold out at the weekend. The Playhouse has said it will add no further date. A few returns may come back to the box office.</p>
+<p>Hedvig Sund and Anna Kahrhonnes play the two sisters who run a river ferry on its last night.</p></article><aside class="boxed"><h4>Still running</h4><p>The Kjipuktuk College of Art&rsquo;s two shows run until 12 December. They are Ingeborg Sylliboy&rsquo;s tide-chart prints and Halvard Denny&rsquo;s burnt-wood panels.</p></aside></div></section><section class="page inner"><div class="pagebar"><span>Page Eight &middot; Sport</span><span>The Vinland Herald</span><span>Tuesday, 10 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">Two Teams Coming Off a Loss</h2><h3 class="deck">Royals host the Storm in Hokelgard tonight; both lost at the weekend; no games on Monday</h3>
+<p class="byline">By Kjetil Hammer</p>
+<p>The Hokelgard Royals and the Stadakona Storm meet tonight at the Royals Arena. Both arrive with something to put right.</p>
+<p>The Storm lost 3–2 at home to the Laukvik Lynx on Friday. The defeat cost them their share of first place. They are 5–3.</p>
+<p>The Royals lost 5–4 in Karontoborg on Saturday. They gave the Karontoborg Lakers their first home win of the season. They are 3–3.</p>
+<p>&ldquo;Nobody here enjoyed Saturday,&rdquo; the Royals coach said on Monday. &ldquo;We had a lead in the third period and we gave it away. We would like to keep one tonight.&rdquo;</p>
+<p>The Storm coach said his side had played well for fifty minutes on Friday. &ldquo;Hockey is sixty,&rdquo; he said.</p>
+<p>There were no games on Monday. The puck drops at seven o&rsquo;clock.</p></article><aside class="boxed"><h4>The table</h4><p>The Sundgard Pilots lead alone at 6–3. The Forsgard Rapids and the Storm are both 5–3. The Lynx are 5–5. The Royals are 3–3. The Lakers are 2–10–1.</p>
+<p>The Commonwealth Sport Integrity Office continues its club sessions on appetite-regulating medicines. It gave no new note on Monday.</p></aside></div></section><section class="page inner"><div class="pagebar"><span>Page Nine &middot; Opinion</span><span>The Vinland Herald</span><span>Tuesday, 10 November 2026</span></div><div class="inner-cols"><article class="editorial"><div class="edlabel">The Herald&rsquo;s View</div><h2 class="hed-ed">A Paper, an Escort and a Cut</h2>
+<p>Monday was a better day than most this autumn. Three things went the right way. None of them settles anything. All of them are worth noting.</p></article><aside class="boxed"><h4>The paper</h4><p>The Treasury published its method. It did so three days early. We asked for it for weeks. We said so plainly, and the Treasury has answered plainly. That deserves credit.</p>
+<p>The paper is short and clear. Its case is that federal land is slow. Sites have lacked pipes and roads, so homes on them have started late. Half weight, it says, is a judgment about time.</p>
+<p>That is a real argument. It is also open to a real reply, and Mayor Oyelaran-Skog has made it. If the problem is time, a site with pipes and a road already in place has no problem. It should count in full. The Treasury&rsquo;s figure looks at the past. The cities need a rule that looks at each site.</p>
+<p>On Thursday the working group can now argue about reasons, not just a number. That is progress. We hope the Treasury comes ready to move.</p></aside><aside class="boxed"><h4>The escort</h4><p>The second escort is under way. VNS <em>Gudrid</em> is leading five merchant ships north. The first escort was, in the Navy&rsquo;s word, dull. We hope for a second dull week.</p>
+<p>The Navy kept its promise. It said it would announce the escort when it was under way, and it did. That is not secrecy. It is good sense.</p></aside><aside class="boxed"><h4>The cut</h4><p>The war-risk houses cut their rates for the first time. Shipowners will feel it. But Ms Holme is right. A lower price for a risk is not the end of the risk. The count on the long route rose to thirty on Monday. The strait will be judged by ships that come out the far side. So far there are none.</p>
+<p>A foreign government says new strikes are &ldquo;unlikely&rdquo;. We hope it means it. &ldquo;Unlikely&rdquo; is a word, not a guarantee. The mediators still have not published the text.</p></aside><aside class="boxed"><h4>The minister</h4><p>This morning the Defence Minister answers the defence committee. We said yesterday that she should explain how the north will be watched the next time a cutter is in port. We say it again. The north needs an account of that day, and a plan for the next one. <em>Markland</em> returns on 19 November. A plan should not depend on one ship.</p></aside><aside class="boxed"><h4>The contract</h4><p>Ten days remain to Friday 20 November. Labour asks who holds the pen. So do we. The Treasury has shown on Monday that it can publish when it chooses. It should choose again.</p></aside><aside class="review"><h4>From the Other Papers</h4><p><strong>The Free Thing</strong> (Hokelgard): &ldquo;A method at last. It confirms what Landvern said: federal land counts slowly because the federal government builds slowly.&rdquo;</p>
+<p><strong>The Northern Star:</strong> &ldquo;The status committee sits tomorrow. The Cree Council has answered in writing. Now the committee must answer in time.&rdquo;</p>
+<p><strong>The Financial Vinlander:</strong> &ldquo;Rates cut, crude down, gold up a sixth day. Markets are pricing a word. Words can be taken back.&rdquo;</p>
+<p><strong>The New World Review:</strong> &ldquo;The Treasury&rsquo;s paper is honest about the past. The mayor is right about the future. Thursday should split the difference: serviced sites in full.&rdquo;</p>
+<p><strong>The Atlantic Chronicle:</strong> &ldquo;Gudrid sails again. The Navy&rsquo;s habit of quiet competence is the best news from the south this month.&rdquo;</p>
+<p><strong>The Karontoborg Post:</strong> &ldquo;SEVENTY-ONE THOUSAND AND COUNTING! LAST CHANCE TO SEE THE RIVER SHOW!&rdquo;</p>
+<p class="note"><em>The Vinland Herald is published daily by Herald House Publishing, New Harbour, Karontoborg. Corrections: the Herald corrects errors of fact on page two. © 2026.</em></p></aside></div></section>
+<footer>The Vinland Herald is published daily by Herald House Publishing, New Harbour, Karontoborg. Corrections: the Herald corrects errors of fact on page two. © 2026.</footer>
+</div></body></html>
