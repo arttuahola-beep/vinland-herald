@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<title>The Vinland Herald &middot; Wednesday, 11 November 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1b1a17;--paper:#f6f1e4;--rule:#2a2824;--muted:#5a554b;--soft:#e9e1cc}
+*{box-sizing:border-box}
+.site-nav{background:var(--paper);border-bottom:1px solid var(--rule);font-family:"Old Standard TT",serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;text-align:center;padding:6px 12px}
+.site-nav a{color:var(--ink);text-decoration:none;padding:0 14px}
+.site-nav a+a{border-left:1px solid var(--rule)}
+.site-nav a:hover,.site-nav a:focus{text-decoration:underline}
+body{margin:0;background:#d9d2c0;color:var(--ink);font-family:"Libre Caslon Text",Georgia,"Times New Roman",serif;font-size:15.5px;line-height:1.5}
+.sheet{max-width:1240px;margin:24px auto;background:var(--paper);padding:22px 34px 40px;box-shadow:0 2px 18px rgba(0,0,0,.18)}
+header.mast{text-align:center;border-bottom:4px double var(--rule);padding-bottom:6px}
+.topline{display:flex;justify-content:space-between;font-family:"Old Standard TT",serif;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;border-bottom:1px solid var(--rule);padding-bottom:5px}
+.mastrow{display:grid;grid-template-columns:1fr 2.6fr 1fr;align-items:center;gap:18px;padding:10px 0 4px}
+.ear{border:1px solid var(--rule);padding:7px 9px;font-size:11.5px;line-height:1.4;text-align:left;font-family:"Old Standard TT",serif}
+.ear strong{display:block;font-size:11px;letter-spacing:.12em;border-bottom:1px solid var(--rule);margin-bottom:3px}
+h1.title{font-family:"UnifrakturMaguntia","Old English Text MT",serif;font-weight:400;font-size:clamp(40px,6.2vw,80px);margin:0;line-height:1;white-space:nowrap}
+.founded{font-family:"Old Standard TT",serif;font-style:italic;font-size:14px;margin-top:4px}
+.dateline{display:flex;justify-content:space-between;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin-top:6px;padding:4px 0;font-family:"Old Standard TT",serif;font-size:13px;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
+h2,h3,h4{font-family:"Playfair Display",Georgia,serif;margin:0}
+.hed-lead{font-size:clamp(30px,3.9vw,50px);line-height:1.05;font-weight:900;margin:10px 0 8px;text-align:center}
+.lead .deck{font-size:19px;font-style:italic;font-weight:700;text-align:center;margin:0 0 10px;column-span:all}
+.cols2{column-count:2;column-gap:26px;column-rule:1px solid #9d968a}
+.cols2 p:first-of-type::first-letter{}
+.lead .byline{column-span:all;text-align:center}
+.byline{font-family:"Old Standard TT",serif;font-style:italic;font-size:13px;color:var(--muted);border-top:1px solid #9d968a;border-bottom:1px solid #9d968a;padding:3px 0;margin:6px 0 10px}
+p{margin:0 0 .72em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.lead .cols2 > p:nth-of-type(2)::first-letter{float:left;font-family:"Playfair Display",serif;font-size:64px;line-height:.82;padding:4px 7px 0 0;font-weight:900}
+p.note{font-size:13px;color:var(--muted);text-align:left}
+.front-grid{display:grid;grid-template-columns:2.05fr 1fr;gap:0;margin-top:12px}
+.front-main{padding-right:24px;border-right:1px solid var(--rule)}
+.front-side{padding-left:22px}
+.hed-side{font-size:23px;line-height:1.12;font-weight:900;margin:8px 0 6px}
+.side .deck{font-size:15px;font-style:italic;font-weight:700;margin-bottom:4px;line-height:1.25}
+.story.side{border-bottom:2px solid var(--rule);padding-bottom:10px;margin-bottom:12px;font-size:14.5px}
+.briefs{background:var(--soft);padding:10px 12px;font-size:13.5px;border-top:3px solid var(--rule)}
+.briefs h4,.boxed h4,.review h4{font-size:14px;letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid var(--rule);margin-bottom:6px;padding-bottom:2px}
+.page.inner{margin-top:34px;border-top:4px double var(--rule);padding-top:6px}
+.pagebar{display:flex;justify-content:space-between;font-family:"Old Standard TT",serif;font-size:12px;text-transform:uppercase;letter-spacing:.1em;border-bottom:1px solid var(--rule);padding-bottom:4px;margin-bottom:10px}
+.pagebar span:first-child{font-weight:700}
+.inner-cols{column-count:3;column-gap:26px;column-rule:1px solid #9d968a}
+.inner-cols article, .inner-cols aside{break-inside:auto}
+.hed{font-size:27px;line-height:1.1;font-weight:900;margin:4px 0 6px;break-after:avoid}
+.inner-cols .deck{font-size:15.5px;font-style:italic;font-weight:700;line-height:1.25;margin-bottom:4px}
+.inner-cols article.story{margin-bottom:18px;padding-bottom:10px;border-bottom:2px solid var(--rule)}
+.boxed{border:1px solid var(--rule);padding:9px 11px;margin:0 0 16px;font-size:13.5px;break-inside:avoid;background:#fbf8ef}
+.review{background:var(--soft);border-top:3px solid var(--rule);border-bottom:3px solid var(--rule);padding:10px 12px;font-size:13.5px;margin-top:10px}
+.editorial{border:2px solid var(--rule);padding:12px 14px;margin-bottom:16px;background:#fbf8ef}
+.edlabel{font-family:"Old Standard TT",serif;text-transform:uppercase;letter-spacing:.2em;font-size:12px;text-align:center;border-bottom:1px solid var(--rule);padding-bottom:3px;margin-bottom:6px}
+.hed-ed{font-size:26px;font-style:italic;text-align:center;margin:4px 0 10px}
+footer{margin-top:30px;border-top:4px double var(--rule);padding-top:8px;font-size:12px;color:var(--muted);text-align:center;font-family:"Old Standard TT",serif}
+@media (max-width:980px){.inner-cols{column-count:2} .mastrow{grid-template-columns:1fr 1fr} .mastrow .brand{grid-column:1/-1;order:-1} }
+@media (max-width:720px){
+ .sheet{margin:0;padding:14px 14px 28px}
+ .front-grid{grid-template-columns:1fr} .front-main{padding-right:0;border-right:none;border-bottom:2px solid var(--rule);padding-bottom:10px;margin-bottom:12px} .front-side{padding-left:0}
+ .cols2,.inner-cols{column-count:1}
+ .topline,.dateline{font-size:10.5px} .dateline{flex-wrap:wrap;gap:6px}
+ .mastrow{grid-template-columns:1fr} h1.title{white-space:normal;font-size:44px}
+}
+</style></head>
+<body>
+<nav class="site-nav" aria-label="The Vinland Herald"><a class="nav-home" href="../../">Front page</a><a class="nav-archive" href="../../archive/">Archive</a></nav>
+<div class="sheet">
+<header class="mast">
+<div class="topline"><span>Vol. CLX &middot; No. 49,351</span><span>The Commonwealth&rsquo;s Newspaper of Record</span><span>Price VKR 18</span></div>
+<div class="mastrow">
+ <div class="ear"><strong>WEATHER</strong><em>Karontoborg:</em> Cloudy and mild, a shower possible late; high 9°C, low 4°C.<br><em>Hokelgard:</em> Sunny spells, cold wind off the river; high 5°C, low −2°C.<br><em>Stadakona:</em> Bright and cold; high 1°C, low −6°C.<br><em>Leifsbudir:</em> Gales easing by evening; 5°C; Helluland Sea very rough.</div>
+ <div class="brand"><h1 class="title">The Vinland Herald</h1><div class="founded">Founded 1867 &middot; Karontoborg</div></div>
+ <div class="ear"><strong>MARKETS</strong>(Tuesday close)<br>KXC Composite 21,044 (+1.4%)<br>VKR/USD 6.87 (weaker)<br>VKR/EUR 7.94<br>NOK 0.654 VKR<br>CNY 0.968 VKR<br>10-yr Commonwealth 3.80% (+4 bp)<br>Benchmark crude $110.22 (+0.7%)<br>Gold $4,076/oz</div>
+</div>
+<div class="dateline"><span>Karontoborg &middot; Hokelgard</span><span>Wednesday, 11 November 2026</span><span>Late Edition</span></div>
+</header>
+<section class="page front"><div class="front-grid"><div class="front-main"><article class="lead"><h2 class="hed-lead">Bjornstad Admits a Gap in the North</h2><div class="cols2"><h3 class="deck">Defence Minister tells committee no cutter was free on 25 October; extra patrol-aircraft hours until Markland returns; review of the northern rota; chair: &ldquo;Not enough. Publish the review&rdquo;</h3>
+<p class="byline">By Sunniva Rask, Hokelgard</p>
+<p>Defence Minister Ragnhild Bjornstad told the defence committee on Tuesday that there had been a gap in the watch on the north.</p>
+<p>On 25 October a foreign survey vessel crossed the outer Helluland Sea. No cutter went out to meet it. VCGS <em>Markland</em> was in maintenance at Leifsbudir. The minister said no other cutter was free to take its place.</p>
+<p>&ldquo;The vessel was watched,&rdquo; she said. &ldquo;A patrol aircraft tracked it for most of the day. But a watch from the air is not the same as a ship on the water. On that day we did not have a ship to send. That was a gap, and I will not pretend otherwise.&rdquo;</p>
+<p>She announced two steps. Navy patrol aircraft will fly extra hours over the outer Helluland Sea until <em>Markland</em> returns on Thursday 19 November. Her ministry will also review how cutters are scheduled for maintenance in the north, so that the region is never left without one.</p>
+<p>The committee chair was not satisfied. &ldquo;An admission is better than a denial,&rdquo; the chair said after the hearing. &ldquo;It is not enough. We want the review published, with a date.&rdquo;</p>
+<p class="note"><em>Page 2. The Herald&rsquo;s View, Page 9.</em></p></div></article></div><div class="front-side"><article class="story side"><h2 class="hed-side">The Finance Ministry Will Hold the Pen</h2><h3 class="deck">Solbakk&rsquo;s office names the drafting ministry for the industry package&rsquo;s standard contract; text still due on 20 November; Ruud: &ldquo;Now we know whom to ask&rdquo;</h3>
+<p class="byline">By Elise Brattli, Economics Editor</p>
+<p>The Finance Ministry will draft the standard contract for the VKR 14 billion industry package. Finance Minister Ingrid Solbakk&rsquo;s office said so on Tuesday afternoon.</p>
+<p>It is the first time the Government has named a drafting ministry. Labour has asked the question for weeks. So has this newspaper.</p>
+<p>The contract is still due before the People&rsquo;s Thing on Friday 20 November. No krona of the package can be paid until it is laid.</p>
+<p class="note"><em>Page 3.</em></p></article><article class="story side"><h2 class="hed-side">Prices Hold at 3.9 Per Cent</h2><h3 class="deck">Statistics Office says October inflation was unchanged; energy up, food a little lower; Central Bank decides in eight days</h3>
+<p class="byline">By Elise Brattli</p>
+<p>Consumer prices rose 3.9 per cent in the year to October, the Commonwealth Statistics Office said on Tuesday. The rate was the same as in September.</p>
+<p class="note"><em>Page 3.</em></p></article><aside class="briefs"><h4>IN BRIEF</h4><p><strong>Markets.</strong> The KXC rises 1.4 per cent to 21,044; gold ends a six-day run. Page 3.</p>
+<p><strong>Shipping.</strong> Gulf talks stall; more tankers reported burning near the strait. The Cape count rises to thirty-one. Page 4.</p>
+<p><strong>Steel.</strong> Sørstrand Steel, the union and the city of Laukvik will meet on Friday 20 November. Page 3.</p>
+<p><strong>Nations.</strong> The status committee hears the Cree Council today. Page 5.</p>
+<p><strong>Technology.</strong> The public checker now warns that a missing label does not prove a file is real. Page 6.</p>
+<p><strong>Hockey.</strong> Storm 3, Royals 1. Page 8.</p></aside></div></div></section><section class="page inner"><div class="pagebar"><span>Page Two &middot; The Great Thing</span><span>The Vinland Herald</span><span>Wednesday, 11 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">&ldquo;That Was a Gap&rdquo;</h2><h3 class="deck">Bjornstad gives the committee an account of 25 October; Navy aircraft to add patrol hours over the outer Helluland Sea; maintenance rota to be reviewed; chair wants the review in public</h3>
+<p class="byline">By Sunniva Rask, Hokelgard</p>
+<p>Ragnhild Bjornstad spoke for about twenty minutes and answered questions for an hour. It was her first public account of the day the north was left without a cutter.</p></article><aside class="boxed"><h4>The account</h4><p>The foreign survey vessel entered the outer Helluland Sea on the morning of Sunday 25 October. It left northbound the next morning. The Defence Forces have said it did not stop near any undersea cable.</p>
+<p>A Navy patrol aircraft tracked it for most of the day. VCGS <em>Markland</em> was in scheduled maintenance at Leifsbudir.</p>
+<p>&ldquo;Members asked me why no cutter went out,&rdquo; the minister said. &ldquo;The plain answer is that none was free. <em>Markland</em> was in maintenance. The other cutters were on duties further south that we judged could not be left.&rdquo;</p>
+<p>She did not say what those duties were. Asked by one member whether that could be said in public, she replied: &ldquo;Not in detail. I have given the chair the detail.&rdquo;</p></aside><aside class="boxed"><h4>The two steps</h4><p>Ms Bjornstad announced two measures.</p>
+<p>First, Navy patrol aircraft will fly extra hours over the outer Helluland Sea until <em>Markland</em> returns to service on Thursday 19 November. She did not give the number of hours.</p>
+<p>Second, her ministry will review how cutters in the north are scheduled for maintenance. &ldquo;The aim is simple,&rdquo; she said. &ldquo;There should always be a ship that can sail.&rdquo; The review would report &ldquo;early in the new year&rdquo;.</p></aside><aside class="boxed"><h4>The chair</h4><p>The committee&rsquo;s chair, who had asked for a private briefing in October and received it on 2 November, was cool after the hearing.</p>
+<p>&ldquo;The minister has admitted a gap,&rdquo; the chair said. &ldquo;An admission is better than a denial. It is not enough. We want the review published, and we want a date for it, not a season.&rdquo;</p>
+<p>Members from several parties asked the same question in different words. Will the public see the review? The minister said she would &ldquo;consider what can be published&rdquo;.</p></aside><aside class="boxed"><h4>Labour</h4><p>Liv Karhagen, the Labour leader, said the minister had been &ldquo;honest about the past and vague about the future&rdquo;.</p>
+<p>&ldquo;She says there was a gap,&rdquo; Ms Karhagen said. &ldquo;Good. Now tell us how big the next one could be. A review that reports in the new year, in private, is not a plan. It is a promise to think.&rdquo;</p></aside><aside class="boxed"><h4>In Leifsbudir</h4><p>VCGS <em>Markland</em> remained alongside on Tuesday. The Coast Guard said again that it would return on 19 November. That is eight days from today.</p></aside><article class="story"><h2 class="hed">Labour Welcomes a Name</h2><h3 class="deck">Ruud: &ldquo;Now we know whom to ask&rdquo;; Treasury had said for weeks the contract was &ldquo;a matter for the Government as a whole&rdquo;</h3>
+<p class="byline">By Sunniva Rask</p>
+<p>Oddvar Ruud, Labour&rsquo;s finance spokesman, welcomed the news that the Finance Ministry will draft the industry package&rsquo;s standard contract.</p>
+<p>&ldquo;Now we know whom to ask,&rdquo; he said. &ldquo;For weeks the answer was &rsquo;the Government as a whole&rsquo;. Today the answer is a ministry with a minister. That is better.&rdquo;</p>
+<p>He added a warning. &ldquo;Naming the pen is not the same as writing the page. Nine days remain. We will be asking the Finance Minister every one of them.&rdquo;</p>
+<p>The motion passed by 194 votes to 6 on Tuesday last week locks the package until the contract is laid. The motion has no force in law. Ministers wrote the lock themselves.</p></article><article class="story"><h2 class="hed">Nothing New on the Minutes</h2><p class="byline">By Sunniva Rask</p>
+<p>The Attorney General&rsquo;s office gave no new word on its review of the Hvelv board minutes on Tuesday. It said on Monday that the review was &ldquo;on course&rdquo; for Friday 28 November. The preservation notice served on 9 October remains in force.</p>
+<p>Health Minister Gunnar Wapistan did not speak on assisted dying.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Three &middot; Karontoborg & The Economy</span><span>The Vinland Herald</span><span>Wednesday, 11 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">Solbakk&rsquo;s Ministry Takes the Contract</h2><h3 class="deck">One ministry will draft the standard terms for every firm in the VKR 14 billion package; cities and the steel union have asked to see the draft early; no reply yet</h3>
+<p class="byline">By Elise Brattli, Economics Editor</p>
+<p>The question has been asked in the People&rsquo;s Thing, in the steel towns and on this page. Who is writing the contract?</p>
+<p>On Tuesday the Government answered. Finance Minister Ingrid Solbakk&rsquo;s office said the Finance Ministry would draft the standard contract for the industry package.</p>
+<p>&ldquo;The Finance Ministry will hold the pen,&rdquo; a spokesman said. &ldquo;Other ministries will be consulted. The text will be laid before the People&rsquo;s Thing on Friday 20 November, as promised.&rdquo;</p></article><aside class="boxed"><h4>Why it matters</h4><p>The package is worth VKR 14 billion. It is meant to keep heavy industry working through a hard winter. Every firm that takes money will sign the same contract. That contract will set the conditions: jobs kept, plants kept open, money paid back if promises are broken.</p>
+<p>Until the contract is laid, no money can be paid. Ministers agreed to that lock in the People&rsquo;s Thing last week. It passed by 194 votes to 6.</p>
+<p>For weeks the Treasury said the drafting was &ldquo;a matter for the Government as a whole&rdquo;. Labour pressed. The Treasury named the date three times. It did not name the drafter until Tuesday.</p></aside><aside class="boxed"><h4>Early sight</h4><p>The steelworkers&rsquo; union has asked to see a draft before the text is laid. So has the city of Laukvik. The ministry spokesman said only that the ministry &ldquo;will talk to those who need to be talked to&rdquo;.</p>
+<p>The spokesman would not say whether the contract would set a minimum period for keeping jobs. &ldquo;That is what the contract is for,&rdquo; he said. &ldquo;You will see it on the 20th.&rdquo;</p></aside><article class="story"><h2 class="hed">Prices Steady at 3.9 Per Cent</h2><h3 class="deck">October inflation unchanged; energy higher, food a little lower; economists still expect a rate rise on 19 November, but &ldquo;the case did not get stronger&rdquo;</h3>
+<p class="byline">By Elise Brattli</p>
+<p>Inflation did not move in October. Consumer prices were 3.9 per cent higher than a year before, the Commonwealth Statistics Office said on Tuesday. That was the same rate as in September.</p>
+<p>Energy prices rose again. Fuel and heating bills reflect the costs of the Gulf crisis and the long route round the Cape. Food prices fell a little in the month. Rents in the Lakes rose again.</p>
+<p>Hedda Vang of the Lakes Mortgage Institute said the figure would not change many minds.</p>
+<p>&ldquo;The case for a rise did not get weaker,&rdquo; she said. &ldquo;It did not get stronger either. The Bank was hoping October would make the decision for it. October declined.&rdquo;</p>
+<p>The Central Bank decides on Thursday 19 November. The policy rate is 3.50 per cent. Most economists still expect a rise. Governor Hallvard Mikaelsen did not speak on Tuesday.</p>
+<p>Large Lakes lenders kept their five-year fixed rates at 7.2 per cent, except two at 7.3.</p></article><article class="story"><h2 class="hed">Shares Rise as Gold Falls</h2><h3 class="deck">KXC up 1.4 per cent to 21,044, back above 21,000; lenders and miners lead; gold down $125, its first fall in seven days; crude edges up</h3>
+<p class="byline">By Tomas Nygaard, Karontoborg</p>
+<p>Karontoborg shares had a good day on Tuesday. The KXC Composite rose 1.4 per cent to 21,044. It closed above 21,000 for the first time since Wednesday last week.</p>
+<p>Lenders and miners led. Technology shares were mixed.</p>
+<p>Gold fell $125 to $4,076 an ounce. It was the first fall in seven trading days. Traders said higher bond yields abroad, after a strong price figure in another large economy, had made gold less attractive.</p>
+<p>&ldquo;Gold had a long run,&rdquo; one trader said. &ldquo;Long runs end. This one ended with a bang.&rdquo;</p>
+<p>Benchmark crude rose 0.7 per cent to $110.22 a barrel. It fell early, then recovered after both sides in the Gulf talks said the talks were stuck.</p>
+<p>The ten-year Commonwealth yield rose four basis points to 3.80 per cent. The krona weakened to 6.87 to the dollar and 7.94 to the euro.</p></article><article class="story"><h2 class="hed">A Date for Sørstrand</h2><h3 class="deck">Company, union and city of Laukvik to meet on Friday 20 November; strip-line pause still set for 1 December</h3>
+<p class="byline">By Tomas Nygaard</p>
+<p>Sørstrand Steel has agreed to meet the steelworkers&rsquo; union and the city of Laukvik. The meeting will be held on Friday 20 November in Laukvik.</p>
+<p>The company said so on Tuesday, a day after the union asked for a joint meeting. &ldquo;We have considered the request,&rdquo; a Sørstrand spokesman said. &ldquo;We accept it.&rdquo;</p>
+<p>The date is the same day the industry package&rsquo;s standard contract is due before the People&rsquo;s Thing.</p>
+<p>&ldquo;That may be useful,&rdquo; a union official said. &ldquo;We will know the terms in the morning and talk about them in the afternoon.&rdquo;</p>
+<p>Mayor Tomas Wabano-Lie&rsquo;s office said the city would attend. One of the plant&rsquo;s two strip lines is due to pause on 1 December. About 380 workers would go on short time.</p></article><article class="story"><h2 class="hed">The Mayor and the Pen</h2><p class="byline">By Elise Brattli</p>
+<p>Mayor Petra Oyelaran-Skog said on Tuesday that naming the drafter was &ldquo;good news for steel and no news for housing&rdquo;.</p>
+<p>&ldquo;We meet the Treasury tomorrow,&rdquo; she said. &ldquo;The question there is not who holds the pen. It is whether a site with pipes still counts at half.&rdquo;</p>
+<p>The housing working group meets on Thursday 12 November. Karontoborg will argue that federal sites with water, sewers and a road already in place should count in full. Thirteen sites go to the claims table on Friday 13 November.</p></article><aside class="boxed"><h4>The week ahead</h4><p>Today: status committee; weekly flu figures. Thursday: housing working group; Grimsrud leaves for the climate talks. Friday: claims table and the Archive&rsquo;s weekly report. Next Tuesday: autumn statement.</p></aside></div></section><section class="page inner"><div class="pagebar"><span>Page Four &middot; The World</span><span>The Vinland Herald</span><span>Wednesday, 11 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">Talks Stall in the Gulf</h2><h3 class="deck">Both sides say talks are stuck; more foreign tankers reported burning on an &ldquo;unauthorized route&rdquo; near the strait; claims not confirmed; no Vinlandic ship involved</h3>
+<p class="byline">By Halldor Vik, Defence Correspondent</p>
+<p>The talks to end the Gulf war stalled on Tuesday, a day after one party said fresh strikes were &ldquo;unlikely while talks go on&rdquo;.</p>
+<p>A senior official of one government called the other side&rsquo;s terms unrealistic. An official of the other said there were &ldquo;no negotiations at present&rdquo;. The mediators did not speak. They have still not published the text of the strait agreement.</p></article><aside class="boxed"><h4>More fires</h4><p>One of the parties to the war said on Tuesday morning that two tankers had caught fire on what it called an &ldquo;unauthorized route&rdquo; near the strait. Later reports said a third had struck a mine. None of the claims has been confirmed, and no ships were named.</p>
+<p>No Vinlandic-owned or Vinlandic-flagged ship was involved, the Shipowners&rsquo; Association said.</p></aside><aside class="boxed"><h4>Holme: &ldquo;One day&rdquo;</h4><p>Sigrid Holme of the Shipowners&rsquo; Association said Monday&rsquo;s hopes had lasted a day.</p>
+<p>&ldquo;On Monday we were told strikes were unlikely,&rdquo; she said. &ldquo;On Tuesday we were told ships were burning. Our captains do not plan by the day. They plan by the voyage. The long route is the only plan that works.&rdquo;</p>
+<p>One more Vinlandic-flagged ship joined the long route round the Cape on Tuesday. The count is now thirty-one.</p></aside><article class="story"><h2 class="hed">Rates Hold, With a Warning</h2><h3 class="deck">War-risk houses keep Monday&rsquo;s cut; underwriters say it &ldquo;could be taken back&rdquo; if the fires are confirmed</h3>
+<p class="byline">By Tomas Nygaard</p>
+<p>The two larger Karontoborg war-risk houses held their Gulf rates on Tuesday. They had cut them by about 8 per cent on Monday, the first cut since the crisis began.</p>
+<p>&ldquo;We are holding,&rdquo; one underwriter said. &ldquo;We are not promising. If these fires are confirmed, the cut could be taken back by the end of the week.&rdquo;</p></article><article class="story"><h2 class="hed">The Escort, Quiet</h2><h3 class="deck">VNS Gudrid&rsquo;s group &ldquo;on course&rdquo;; Navy gives no date for it to clear</h3>
+<p class="byline">By Halldor Vik</p>
+<p>The Navy&rsquo;s second escort through the southern approaches of the Red Sea was quiet on Tuesday.</p>
+<p>VNS <em>Gudrid</em> is leading five merchant ships north. &ldquo;On course and quiet,&rdquo; said Commander Einar Paul, the Navy spokesman. &ldquo;Nothing to report is the report we want.&rdquo;</p>
+<p>The Navy gave no date for the group to clear the approaches. VNS <em>Kjipuktuk</em> remains with the partner navies&rsquo; escort group.</p></article><article class="story"><h2 class="hed">Grimsrud to Leave on Thursday</h2><p class="byline">By Halldor Vik</p>
+<p>Energy Minister Petter Grimsrud will leave for the climate talks abroad on Thursday, his office said. He will lead the Commonwealth delegation in the second half of the talks&rsquo; first week. Officials are already there.</p>
+<p>His office said he wanted to hear the status committee today before he left.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Five &middot; Nations & The Shield</span><span>The Vinland Herald</span><span>Wednesday, 11 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">The Cree Council Comes to the Committee</h2><h3 class="deck">Status committee sits today on the Council&rsquo;s written answers; Kaninaskum: &ldquo;We are coming to be heard, not to be thanked&rdquo;; no date for a finding</h3>
+<p class="byline">By Mary Kanatiio Berg, Constitutional Affairs Correspondent</p>
+<p>The status committee of the Provincial Thing sits today in Hokelgard. It will take up the written answers sent by the Kaniapiskau Cree Council on 29 October.</p>
+<p>Grand Chief Ruth Kaninaskum will attend. She spoke briefly on Tuesday evening.</p>
+<p>&ldquo;We are coming to be heard, not to be thanked,&rdquo; she said. &ldquo;The committee has had our answers for thirteen days. We would like to know what it thinks of them.&rdquo;</p>
+<p>The Shield Intertie would carry northern hydro power to the Lakes. It would cross 310 kilometres of Cree land. The committee must find whether the line touches the constitutional status of the Cree. If it does, the 1652 veto of the Provincial Thing comes into play.</p></article><aside class="boxed"><h4>What to watch</h4><p>The committee has given no date for a finding. The written answers, like the record of the holders, remain private. Members may ask the Council to explain them in public today. They may also sit in private for part of the session.</p>
+<p>Skjoldkraft again gave no figure on Tuesday for what a second route would add to a household power bill. Energy Minister Grimsrud has said a second route would cost the company an extra VKR 1.1 billion.</p>
+<p>The Herald will report the session tomorrow.</p></aside><article class="story"><h2 class="hed">Fifty-One Days</h2><p class="byline">By Mary Kanatiio Berg</p>
+<p>The Lakes government&rsquo;s comment window on the terms of its road study has fifty-one days left. It closes on 1 January. There was no change on Tuesday. Nora Sakej-Eriksen of the First Peoples&rsquo; Assembly has called it &ldquo;a countdown, not a consultation&rdquo;.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Six &middot; Science & Technology</span><span>The Vinland Herald</span><span>Wednesday, 11 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">The Warning Goes on the Screen</h2><h3 class="deck">Public checker now tells users that a missing label &ldquo;does not show that a file is real&rdquo;; Lindqvist: &ldquo;We said it in the report. Now it is where people read it&rdquo;</h3>
+<p class="byline">By Ingvild Sørhus, Technology Correspondent, Karontoborg</p>
+<p>The public checker for machine-made images and recordings has a new line on its result page.</p>
+<p>When a check finds no label, the page now says: &ldquo;No label was found. This does not show that the file is real. It means the checker cannot tell.&rdquo;</p>
+<p>The Ministry for Digital Affairs added the line on Tuesday. Minister Kari Lindqvist had promised it on Monday.</p>
+<p>&ldquo;We said it in the report,&rdquo; she said. &ldquo;Now it is where people read it.&rdquo;</p></article><aside class="boxed"><h4>Why the line matters</h4><p>The checker looks for a hidden label that some tools add to the files they make. If it finds the label, it can say a machine made the file. If it finds nothing, it cannot say anything.</p>
+<p>In its first eight days the checker was used about 222,000 times. About nine checks in a hundred found a label. That means about ninety-one in a hundred did not. Officials worry that people read those ninety-one as proof that a picture is genuine.</p>
+<p>&ldquo;A missing label is silence,&rdquo; a ministry official said. &ldquo;Silence is not a witness.&rdquo;</p>
+<p>The ministry will break the figures down by image and sound in its monthly report.</p></aside><article class="story"><h2 class="hed">Flu Figures Today</h2><h3 class="deck">Agency&rsquo;s weekly figures due this afternoon; last week 13 per cent of tests positive</h3>
+<p class="byline">By Ingvild Sørhus</p>
+<p>The Commonwealth Public Health Agency publishes its weekly flu figures this afternoon.</p>
+<p>Last week 13 per cent of tests for breathing illness were positive for flu. The week before it was 7 per cent. Advice has not changed. People over sixty-five and other vulnerable groups should be vaccinated now.</p>
+<p>The Archive of the Constitutional Peoples said nothing on Tuesday. Its next weekly report is due on Friday.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Seven &middot; Arts & Culture</span><span>The Vinland Herald</span><span>Wednesday, 11 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">Four Days for the River</h2><h3 class="deck">What the River Kept closes on Sunday; late openings on Thursday and Friday; queues expected at the weekend</h3>
+<p class="byline">By Oda Fjellstad, Arts Critic</p>
+<p>Jonas Atsistaehron&rsquo;s <em>What the River Kept</em> has four days left at the Royal Academy. It closes on Sunday 15 November.</p>
+<p>The Academy said on Monday that about 71,000 people had seen it. It gave no new figure on Tuesday.</p>
+<p>The last two late openings, on Thursday and Friday, run until ten o&rsquo;clock. The Academy expects queues on Saturday and Sunday. It has said again that the show will not be extended.</p>
+<p>For those who have not yet gone, the advice is simple. Go on Thursday or Friday evening. Stand at the back of the main room and let the three screens come to you. The river sound is best from the middle of the floor.</p></article><article class="story"><h2 class="hed">The Night Ferry, Seventeen Days Left</h2><h3 class="deck">Run ends on 28 November; matinee sold out; returns only</h3>
+<p class="byline">By Oda Fjellstad</p>
+<p>Marit Nesheim&rsquo;s <em>The Night Ferry</em> has a little over two weeks left at the Old Quarter Playhouse in Hokelgard. The run ends on 28 November.</p>
+<p>The extra matinee on Sunday 22 November is sold out. The Playhouse will add no further date. Returns come back to the box office in small numbers, most often on the day.</p>
+<p>Hedvig Sund and Anna Kahrhonnes play the two sisters who run a river ferry on its last night.</p></article><aside class="boxed"><h4>Still running</h4><p>The Kjipuktuk College of Art&rsquo;s two shows run until 12 December. They are Ingeborg Sylliboy&rsquo;s tide-chart prints and Halvard Denny&rsquo;s burnt-wood panels.</p></aside></div></section><section class="page inner"><div class="pagebar"><span>Page Eight &middot; Sport</span><span>The Vinland Herald</span><span>Wednesday, 11 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">Storm Take Back a Share of First</h2><h3 class="deck">Stadakona win 3–1 in Hokelgard; Royals lose a second game in a row; Storm level with the Pilots at the top</h3>
+<p class="byline">By Kjetil Hammer</p>
+<p>The Stadakona Storm beat the Hokelgard Royals 3–1 at the Royals Arena on Tuesday night. The win put them level with the Sundgard Pilots at the top of the table.</p>
+<p>The Storm scored first, midway through the first period. The Royals drew level early in the second. The Storm went ahead again with a power-play goal late in the second period. They added a third into an empty net with a minute left.</p>
+<p>&ldquo;We said we wanted to keep a lead tonight,&rdquo; the Royals coach said. &ldquo;We never had one to keep.&rdquo;</p>
+<p>The Storm coach was brief. &ldquo;Sixty minutes,&rdquo; he said. &ldquo;That was the point.&rdquo;</p>
+<p>The Royals have now lost two in a row. They are 3–4. The Storm are 6–3.</p></article><aside class="boxed"><h4>Tonight</h4><p>The Pilots host the Laukvik Lynx in Sundgard tonight at seven o&rsquo;clock. The Pilots are 6–3. The Lynx are 5–5.</p></aside><aside class="boxed"><h4>The table</h4><p>The Pilots and the Storm lead at 6–3. The Forsgard Rapids are 5–3. The Lynx are 5–5. The Royals are 3–4. The Karontoborg Lakers are 2–10–1.</p>
+<p>The Commonwealth Sport Integrity Office gave no new note on Tuesday.</p></aside></div></section><section class="page inner"><div class="pagebar"><span>Page Nine &middot; Opinion</span><span>The Vinland Herald</span><span>Wednesday, 11 November 2026</span></div><div class="inner-cols"><article class="editorial"><div class="edlabel">The Herald&rsquo;s View</div><h2 class="hed-ed">The Gap, and the Pen</h2>
+<p>Tuesday brought two answers we have asked for. Both are welcome. Neither is the end of the matter.</p></article><aside class="boxed"><h4>The gap</h4><p>Ragnhild Bjornstad told the defence committee the truth. On 25 October no cutter went out because no cutter was free. <em>Markland</em> was in maintenance. The others were busy further south. The minister called that a gap. It was.</p>
+<p>Ministers do not often say such things plainly. She deserves credit for doing so. An admission is the start of a repair.</p>
+<p>But the chair of the committee is right. It is not enough. The minister offers extra flying hours until 19 November and a review that reports &ldquo;early in the new year&rdquo;. The flying hours help for eight days. The review is the real answer, and it will be written in private unless the minister decides otherwise.</p>
+<p>She should decide otherwise. The question is not secret. How many cutters does the north need, so that one can always sail while another is in dock? The public can understand that question. It can understand the answer too. The detail of duties further south can stay with the committee. The rota should not.</p>
+<p>We also ask for a date. &ldquo;Early in the new year&rdquo; is a season. The committee asked for a date. So do we.</p></aside><aside class="boxed"><h4>The pen</h4><p>For weeks we asked who was drafting the industry package&rsquo;s standard contract. On Tuesday the Government told us. The Finance Ministry holds the pen.</p>
+<p>That is good. A contract with no author is a contract nobody answers for. Now Ms Solbakk answers for it.</p>
+<p>Mr Ruud is right that naming the pen is not writing the page. Nine days remain to 20 November. The union and the city of Laukvik have asked to see a draft first. The ministry should show it to them. A contract that keeps jobs should be read by the people whose jobs it keeps.</p>
+<p>The meeting at Sørstrand on the same day is a happy accident. The terms will be known in the morning. The talking can start in the afternoon.</p></aside><aside class="boxed"><h4>The price</h4><p>Inflation held at 3.9 per cent. That will not make the Central Bank&rsquo;s choice easier. The Bank has now had its October figure, and the figure said nothing new. It should decide on the evidence of the autumn, not of one month.</p></aside><aside class="boxed"><h4>The strait</h4><p>On Monday a foreign government said strikes were unlikely. On Tuesday ships were reported burning. Ms Holme is right to plan by the voyage, not by the day. The long route now carries thirty-one Vinlandic ships. The strait agreement is still unpublished. The mediators should publish it.</p></aside><aside class="review"><h4>From the Other Papers</h4><p><strong>The Free Thing</strong> (Hokelgard): &ldquo;The minister admits what everyone in Leifsbudir knew. One cutter in dock, and the north is empty. Landvern has said for years the Coast Guard is too small.&rdquo;</p>
+<p><strong>The Northern Star:</strong> &ldquo;Today the Cree Council speaks to the committee in person. Thirteen days with the answers. The committee should not need thirteen more.&rdquo;</p>
+<p><strong>The Financial Vinlander:</strong> &ldquo;Inflation steady, gold down, shares up. The Bank is left with the decision it hoped October would make.&rdquo;</p>
+<p><strong>The New World Review:</strong> &ldquo;A gap admitted is a gap that can be closed. Publish the review.&rdquo;</p>
+<p><strong>The Atlantic Chronicle:</strong> &ldquo;Monday&rsquo;s &rsquo;unlikely&rsquo; lasted one day. The strait remains a promise on paper, and the paper is still unpublished.&rdquo;</p>
+<p><strong>The Karontoborg Post:</strong> &ldquo;STORM BLOW THROUGH HOKELGARD! ROYALS SUNK AGAIN!&rdquo;</p>
+<p class="note"><em>The Vinland Herald is published daily by Herald House Publishing, New Harbour, Karontoborg. Corrections: the Herald corrects errors of fact on page two. © 2026.</em></p></aside></div></section>
+<footer>The Vinland Herald is published daily by Herald House Publishing, New Harbour, Karontoborg. Corrections: the Herald corrects errors of fact on page two. © 2026.</footer>
+</div></body></html>
