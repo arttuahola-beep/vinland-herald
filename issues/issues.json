@@ -101,7 +101,7 @@
     "date": "2026-10-15",
     "volume": "CLX",
     "number": "49,332",
-    "lead_headline": "Solbakk Sets Housing Range at VKR 3.5\u20134.5 Billion; Frigates Get a Window; Intertie Committee Named for 22 October",
+    "lead_headline": "Solbakk Sets Housing Range at VKR 3.5–4.5 Billion; Frigates Get a Window; Intertie Committee Named for 22 October",
     "path": "issues/2026-10-15/"
   },
   {
@@ -236,5 +236,12 @@
     "number": "49,351",
     "lead_headline": "Bjornstad Admits a Gap in the North",
     "path": "issues/2026-11-11/"
+  },
+  {
+    "date": "2026-11-12",
+    "volume": "CLX",
+    "number": "49,352",
+    "lead_headline": "\"We Were Heard. We Were Not Answered.\"",
+    "path": "issues/2026-11-12/"
   }
 ]
