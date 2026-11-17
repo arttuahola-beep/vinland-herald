@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<title>The Vinland Herald &middot; Tuesday, 17 November 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1b1a17;--paper:#f6f1e4;--rule:#2a2824;--muted:#5a554b;--soft:#e9e1cc}
+*{box-sizing:border-box}
+.site-nav{background:var(--paper);border-bottom:1px solid var(--rule);font-family:"Old Standard TT",serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;text-align:center;padding:6px 12px}
+.site-nav a{color:var(--ink);text-decoration:none;padding:0 14px}
+.site-nav a+a{border-left:1px solid var(--rule)}
+.site-nav a:hover,.site-nav a:focus{text-decoration:underline}
+body{margin:0;background:#d9d2c0;color:var(--ink);font-family:"Libre Caslon Text",Georgia,"Times New Roman",serif;font-size:15.5px;line-height:1.5}
+.sheet{max-width:1240px;margin:24px auto;background:var(--paper);padding:22px 34px 40px;box-shadow:0 2px 18px rgba(0,0,0,.18)}
+header.mast{text-align:center;border-bottom:4px double var(--rule);padding-bottom:6px}
+.topline{display:flex;justify-content:space-between;font-family:"Old Standard TT",serif;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;border-bottom:1px solid var(--rule);padding-bottom:5px}
+.mastrow{display:grid;grid-template-columns:1fr 2.6fr 1fr;align-items:center;gap:18px;padding:10px 0 4px}
+.ear{border:1px solid var(--rule);padding:7px 9px;font-size:11.5px;line-height:1.4;text-align:left;font-family:"Old Standard TT",serif}
+.ear strong{display:block;font-size:11px;letter-spacing:.12em;border-bottom:1px solid var(--rule);margin-bottom:3px}
+h1.title{font-family:"UnifrakturMaguntia","Old English Text MT",serif;font-weight:400;font-size:clamp(40px,6.2vw,80px);margin:0;line-height:1;white-space:nowrap}
+.founded{font-family:"Old Standard TT",serif;font-style:italic;font-size:14px;margin-top:4px}
+.dateline{display:flex;justify-content:space-between;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin-top:6px;padding:4px 0;font-family:"Old Standard TT",serif;font-size:13px;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
+h2,h3,h4{font-family:"Playfair Display",Georgia,serif;margin:0}
+.hed-lead{font-size:clamp(30px,3.9vw,50px);line-height:1.05;font-weight:900;margin:10px 0 8px;text-align:center}
+.lead .deck{font-size:19px;font-style:italic;font-weight:700;text-align:center;margin:0 0 10px;column-span:all}
+.cols2{column-count:2;column-gap:26px;column-rule:1px solid #9d968a}
+.cols2 p:first-of-type::first-letter{}
+.lead .byline{column-span:all;text-align:center}
+.byline{font-family:"Old Standard TT",serif;font-style:italic;font-size:13px;color:var(--muted);border-top:1px solid #9d968a;border-bottom:1px solid #9d968a;padding:3px 0;margin:6px 0 10px}
+p{margin:0 0 .72em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.lead .cols2 > p:nth-of-type(2)::first-letter{float:left;font-family:"Playfair Display",serif;font-size:64px;line-height:.82;padding:4px 7px 0 0;font-weight:900}
+p.note{font-size:13px;color:var(--muted);text-align:left}
+.front-grid{display:grid;grid-template-columns:2.05fr 1fr;gap:0;margin-top:12px}
+.front-main{padding-right:24px;border-right:1px solid var(--rule)}
+.front-side{padding-left:22px}
+.hed-side{font-size:23px;line-height:1.12;font-weight:900;margin:8px 0 6px}
+.side .deck{font-size:15px;font-style:italic;font-weight:700;margin-bottom:4px;line-height:1.25}
+.story.side{border-bottom:2px solid var(--rule);padding-bottom:10px;margin-bottom:12px;font-size:14.5px}
+.briefs{background:var(--soft);padding:10px 12px;font-size:13.5px;border-top:3px solid var(--rule)}
+.briefs h4,.boxed h4,.review h4{font-size:14px;letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid var(--rule);margin-bottom:6px;padding-bottom:2px}
+.page.inner{margin-top:34px;border-top:4px double var(--rule);padding-top:6px}
+.pagebar{display:flex;justify-content:space-between;font-family:"Old Standard TT",serif;font-size:12px;text-transform:uppercase;letter-spacing:.1em;border-bottom:1px solid var(--rule);padding-bottom:4px;margin-bottom:10px}
+.pagebar span:first-child{font-weight:700}
+.inner-cols{column-count:3;column-gap:26px;column-rule:1px solid #9d968a}
+.inner-cols article, .inner-cols aside{break-inside:auto}
+.hed{font-size:27px;line-height:1.1;font-weight:900;margin:4px 0 6px;break-after:avoid}
+.inner-cols .deck{font-size:15.5px;font-style:italic;font-weight:700;line-height:1.25;margin-bottom:4px}
+.inner-cols article.story{margin-bottom:18px;padding-bottom:10px;border-bottom:2px solid var(--rule)}
+.boxed{border:1px solid var(--rule);padding:9px 11px;margin:0 0 16px;font-size:13.5px;break-inside:avoid;background:#fbf8ef}
+.review{background:var(--soft);border-top:3px solid var(--rule);border-bottom:3px solid var(--rule);padding:10px 12px;font-size:13.5px;margin-top:10px}
+.editorial{border:2px solid var(--rule);padding:12px 14px;margin-bottom:16px;background:#fbf8ef}
+.edlabel{font-family:"Old Standard TT",serif;text-transform:uppercase;letter-spacing:.2em;font-size:12px;text-align:center;border-bottom:1px solid var(--rule);padding-bottom:3px;margin-bottom:6px}
+.hed-ed{font-size:26px;font-style:italic;text-align:center;margin:4px 0 10px}
+footer{margin-top:30px;border-top:4px double var(--rule);padding-top:8px;font-size:12px;color:var(--muted);text-align:center;font-family:"Old Standard TT",serif}
+@media (max-width:980px){.inner-cols{column-count:2} .mastrow{grid-template-columns:1fr 1fr} .mastrow .brand{grid-column:1/-1;order:-1} }
+@media (max-width:720px){
+ .sheet{margin:0;padding:14px 14px 28px}
+ .front-grid{grid-template-columns:1fr} .front-main{padding-right:0;border-right:none;border-bottom:2px solid var(--rule);padding-bottom:10px;margin-bottom:12px} .front-side{padding-left:0}
+ .cols2,.inner-cols{column-count:1}
+ .topline,.dateline{font-size:10.5px} .dateline{flex-wrap:wrap;gap:6px}
+ .mastrow{grid-template-columns:1fr} h1.title{white-space:normal;font-size:44px}
+}
+</style></head>
+<body>
+<nav class="site-nav" aria-label="The Vinland Herald"><a class="nav-home" href="../../">Front page</a><a class="nav-archive" href="../../archive/">Archive</a></nav>
+<div class="sheet">
+<header class="mast">
+<div class="topline"><span>Vol. CLX &middot; No. 49,355</span><span>The Commonwealth&rsquo;s Newspaper of Record</span><span>Price VKR 18</span></div>
+<div class="mastrow">
+ <div class="ear"><strong>WEATHER</strong><em>Karontoborg:</em> Clear and cold after last night&rsquo;s sleet; high 2°C, low −4°C.<br><em>Hokelgard:</em> Light snow; high −3°C, low −9°C.<br><em>Stadakona:</em> Bright, bitter wind; high −6°C, low −13°C.<br><em>Leifsbudir:</em> Cloud and showers; 4°C; Helluland Sea rough.</div>
+ <div class="brand"><h1 class="title">The Vinland Herald</h1><div class="founded">Founded 1867 &middot; Karontoborg</div></div>
+ <div class="ear"><strong>MARKETS</strong>(Monday close)<br>KXC Composite 20,469 (−2.0%)<br>VKR/USD 6.97 (+0.02)<br>VKR/EUR 7.98<br>NOK 0.652 VKR<br>CNY 0.976 VKR<br>10-yr Commonwealth 3.83% (−2bp)<br>Benchmark crude $112.01 (+1.0%)<br>Gold $3,895/oz</div>
+</div>
+<div class="dateline"><span>Karontoborg &middot; Hokelgard</span><span>Tuesday, 17 November 2026</span><span>Late Edition</span></div>
+</header>
+<section class="page front"><div class="front-grid"><div class="front-main"><article class="lead"><h2 class="hed-lead">Rebels Take the Heights Over the Southern Strait</h2><div class="cols2"><h3 class="deck">Government forces leave the coast to defend the main southern port; rebels hold high ground and an island in the strait; Defence Minister silent on a third escort</h3>
+<p class="byline">By Halldor Vik, Defence Correspondent</p>
+<p>Rebel fighters now hold the high ground above the narrow southern strait that leads into the Red Sea. On Monday they also took an island that sits in the strait itself.</p>
+<p>Government forces left the coast over the weekend. They said they needed the men to defend the main port in the south of the country. The rebels moved in behind them.</p>
+<p>For ships, that matters more than any line on a map. Every ship that enters the Red Sea from the south must pass through the strait. From the hills and from the island, the rebels can see every one of them.</p>
+<p>&ldquo;Two days ago the coast was contested,&rdquo; one retired Navy officer said. &ldquo;Today it is theirs. Anyone who plans a convoy has to start again from that fact.&rdquo;</p>
+<p>Defence Minister Ragnhild Bjornstad did not comment on Monday. The Navy has not announced a third escort.</p>
+<p class="note"><em>Page 4. The Herald&rsquo;s View, Page 9.</em></p></div></article></div><div class="front-side"><article class="story side"><h2 class="hed-side">Solbakk Speaks at Two</h2><h3 class="deck">Finance Ministry signals the VKR 14 billion will be spread over three budgets; markets fall 2 per cent on the eve</h3>
+<p class="byline">By Elise Brattli, Economics Editor</p>
+<p>Finance Minister Ingrid Solbakk gives her autumn statement in the People&rsquo;s Thing at two o&rsquo;clock this afternoon.</p>
+<p>On Monday evening the Finance Ministry gave one strong hint. The VKR 14 billion industry package for steel, vehicles and a road north would be paid &ldquo;across three budgets, not one&rdquo;, a senior official said. The official would not say how the money would be split between the years.</p>
+<p>The KXC Composite fell 2.0 per cent on Monday, as technology shares slid abroad and at home.</p>
+<p class="note"><em>Pages 2 and 3.</em></p></article><article class="story side"><h2 class="hed-side">Union: Contract &ldquo;Stronger Than We Feared&rdquo;</h2><h3 class="deck">First reading of the draft finds a firm local-hiring clause, but no numbers for training</h3>
+<p class="byline">By Tomas Nygaard, Karontoborg</p>
+<p>The steelworkers&rsquo; union read the draft standard contract for most of Monday. By the evening it had a first view. The local-hiring clause was &ldquo;stronger than we feared&rdquo;, a union official said. But the clause on training gives no numbers.</p>
+<p class="note"><em>Page 3.</em></p></article><aside class="briefs"><h4>IN BRIEF</h4><p><strong>Gulf.</strong> Two foreign tankers hit sea mines near the strait. Page 4.</p>
+<p><strong>Climate talks.</strong> Grimsrud speaks of costs &ldquo;shared fairly between south and north&rdquo;. Page 2.</p>
+<p><strong>Food chain.</strong> Lindqvist&rsquo;s letters go to 61 firms. Page 6.</p>
+<p><strong>Arts.</strong> <em>What the River Kept</em> will travel to Hokelgard in the spring. Page 7.</p>
+<p><strong>Sport.</strong> A quiet Monday; the league returns on Wednesday. Page 8.</p></aside></div></div></section><section class="page inner"><div class="pagebar"><span>Page Two &middot; The Great Thing</span><span>The Vinland Herald</span><span>Tuesday, 17 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">What to Listen For at Two O&rsquo;Clock</h2><h3 class="deck">Solbakk has promised to &ldquo;hold the line&rdquo;; the ministry&rsquo;s three-budget hint answers one question and raises another</h3>
+<p class="byline">By Sunniva Rask, Political Correspondent</p>
+<p>Ingrid Solbakk will stand up in the People&rsquo;s Thing at two o&rsquo;clock. She will speak for about an hour. Then the opposition replies.</p>
+<p>Last Thursday she said rising borrowing costs would not change her course. She has said little since. On Monday evening her ministry broke the silence with one line: the VKR 14 billion industry package would be paid &ldquo;across three budgets, not one&rdquo;.</p>
+<p>That line answers a question this newspaper has asked for three weeks. The money will not all come at once. It also raises a new one. If the first year carries only part of the cost, what happens to the rest if the economy turns down?</p></article><aside class="boxed"><h4>Three things to listen for</h4><p>The first is the split. How much of the VKR 14 billion is spent next year, and how much later? A small first year protects the Treasury. It also delays the jobs.</p>
+<p>The second is borrowing. The ten-year Commonwealth yield eased to 3.83 per cent on Monday. That is still high by the standards of recent years. Ms Solbakk has said she will not borrow more to soften the blow. Listen for whether she says how much the Commonwealth will borrow in total next year.</p>
+<p>The third is housing. The cities want to know whether the Treasury&rsquo;s half weight on federal land is a matter of method or of money. Friday&rsquo;s claims table may depend on the answer.</p></aside><aside class="boxed"><h4>The opposition</h4><p>Labour said nothing new on Monday. It will reply in the chamber this afternoon. Landvern, whose votes the Government has needed since the party&rsquo;s rise in the Lakes, also kept quiet. Its leader, Bjarne Tollefsrud, has said he will read Friday&rsquo;s contract &ldquo;line by line&rdquo;.</p></aside><article class="story"><h2 class="hed">Grimsrud: Costs &ldquo;Shared Fairly Between South and North&rdquo;</h2><h3 class="deck">Energy Minister speaks at the climate talks; he does not name the Shield Intertie</h3>
+<p class="byline">By Sunniva Rask</p>
+<p>Energy Minister Petter Grimsrud spoke for the Commonwealth at the climate talks on Monday afternoon. He did not name the Shield Intertie.</p>
+<p>He spoke for about twelve minutes on &ldquo;northern grids&rdquo;. Clean power, he said, is often made far from the cities that use it. Moving it costs money, and it crosses land where other people live.</p>
+<p>&ldquo;The cost of moving clean power must be shared fairly between south and north,&rdquo; he said. &ldquo;The cities in the south should not get cheap power while the north gets only the lines.&rdquo;</p>
+<p>He said the Commonwealth would publish a plan for its northern grid &ldquo;in the coming year&rdquo;. He took no questions.</p>
+<p>At home, the speech was read for what it left out. The largest northern grid project in the Commonwealth is the Shield Intertie. Skjoldkraft wants to build it across 310 kilometres of Kaniapiskau Cree land. The Provincial Thing&rsquo;s status committee is still weighing whether the line touches the Cree people&rsquo;s constitutional status. If it does, the Provincial Thing&rsquo;s veto applies.</p>
+<p>Mr Grimsrud spoke about cost. He did not speak about consent.</p>
+<p class="note"><em>Reaction from Hokelgard, Page 5.</em></p></article><article class="story"><h2 class="hed">The Week Ahead</h2><p class="note"><em>Herald staff</em></p>
+<p><strong>Today.</strong> Autumn statement, two o&rsquo;clock.</p>
+<p><strong>Wednesday 18 November.</strong> Flu figures from the Public Health Agency. Hockey returns.</p>
+<p><strong>Thursday 19 November.</strong> Central Bank rate decision. VCGS <em>Markland</em> returns to service.</p>
+<p><strong>Friday 20 November.</strong> Standard contract laid in the People&rsquo;s Thing. Treasury claims table on federal land. Sørstrand Steel, the union and Laukvik meet. Archive of the Constitutional Peoples weekly report.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Three &middot; Karontoborg & The Economy</span><span>The Vinland Herald</span><span>Tuesday, 17 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">&ldquo;Stronger Than We Feared&rdquo;</h2><h3 class="deck">Union&rsquo;s first reading finds a firm local-hiring clause; training has words but no numbers; Laukvik still reading</h3>
+<p class="byline">By Tomas Nygaard, Karontoborg</p>
+<p>The draft standard contract reached the steelworkers&rsquo; union and the city of Laukvik at nine o&rsquo;clock on Monday morning. By the evening the union had read the clause it cared about most.</p>
+<p>&ldquo;The local-hiring clause is stronger than we feared,&rdquo; a union official said. &ldquo;It says firms that take public money must hire from the region first, and it says how that will be checked. That is more than we expected.&rdquo;</p>
+<p>The training clause is a different matter, she said. &ldquo;It says firms will train young workers. It does not say how many, or for how long. A promise without a number is not a promise we can hold anyone to.&rdquo;</p>
+<p>The union will read the rest of the draft over the next three days. It will give a full view before the contract is laid in the People&rsquo;s Thing on Friday.</p></article><aside class="boxed"><h4>Laukvik</h4><p>Laukvik&rsquo;s council is still reading. The office of Mayor Tomas Wabano-Lie said it would comment &ldquo;when we have read every page, not before&rdquo;.</p></aside><aside class="boxed"><h4>Sørstrand</h4><p>Sørstrand Steel, which owns the Laukvik mill, gave no comment. It meets the union and the city on Friday. It plans to pause one of its two strip lines there from 1 December. About 380 workers would go on short time.</p></aside><aside class="boxed"><h4>What happens next</h4><p>The draft is still confidential. The union and the city may comment on it, but they have agreed not to publish it. The full text becomes public on Friday. The People&rsquo;s Thing committee that will examine it first sits on Thursday 26 November.</p></aside><article class="story"><h2 class="hed">Three Budgets, Not One</h2><h3 class="deck">Ministry&rsquo;s evening hint on the industry package; no split given</h3>
+<p class="byline">By Elise Brattli, Economics Editor</p>
+<p>The VKR 14 billion industry package will be paid over three budgets, a senior Finance Ministry official said on Monday evening.</p>
+<p>The official would not say how the money would be divided. &ldquo;The minister will give the numbers at two o&rsquo;clock,&rdquo; the official said. &ldquo;What I can say is that it is three budgets, not one.&rdquo;</p>
+<p>Economists said the hint made sense. &ldquo;Spreading the cost keeps next year&rsquo;s deficit smaller,&rdquo; one bank economist said. &ldquo;It also means the later years carry a promise, not money. That is the part to watch.&rdquo;</p>
+<p>The steelworkers&rsquo; union said the timing mattered less than the terms. &ldquo;Three years is fine,&rdquo; the union official said, &ldquo;if the jobs come in the first one.&rdquo;</p></article><article class="story"><h2 class="hed">A Hard Monday for Shares</h2><h3 class="deck">KXC falls 2.0 per cent as technology shares slide abroad and at home; crude rises after mines in the Gulf; krona weakens</h3>
+<p class="byline">By Tomas Nygaard</p>
+<p>The KXC Composite fell 413 points, or 2.0 per cent, to 20,469 on Monday.</p>
+<p>Technology shares led the fall. A sell-off in large computing companies abroad spread to Karontoborg in the afternoon. Glimra Compute, still without a chief executive, fell 3.4 per cent.</p>
+<p>&ldquo;Everybody was waiting for the statement and the Bank,&rdquo; one trader said. &ldquo;Then the big computing names abroad started falling, and nobody wanted to wait any more.&rdquo;</p>
+<p>Benchmark crude rose 1.0 per cent to $112.01 a barrel after two tankers hit sea mines near the Gulf strait. Some traders had expected a bigger rise. Shipments from the Gulf have been slowly recovering, they said, and that held prices back.</p>
+<p>Gold fell $18 to $3,895 an ounce.</p>
+<p>Investors bought Commonwealth bonds as shares fell. The ten-year yield eased two basis points to 3.83 per cent. The krona weakened to 6.97 to the dollar.</p>
+<p>The Central Bank decides on Thursday. The policy rate is 3.50 per cent. Inflation is 3.9 per cent.</p></article><article class="story"><h2 class="hed">The Mayor Publishes Her First Map</h2><h3 class="deck">Karontoborg puts the pipes on paper for one federal site; Treasury still silent</h3>
+<p class="byline">By Elise Brattli</p>
+<p>Karontoborg published the first of its promised maps on Monday. It shows a federal site on the east side of the harbour, with the water main, the sewers and the road already in place.</p>
+<p>&ldquo;This is one of the sites the Treasury says is slow to build on,&rdquo; Mayor Petra Oyelaran-Skog said. &ldquo;Here are the pipes. They are already in the ground. We will publish the others before Friday.&rdquo;</p>
+<p>The Treasury gave no new word on Monday. It last said, on Thursday, that half weight &ldquo;applies to all federal land&rdquo; and that &ldquo;the method is the method&rdquo;.</p>
+<p>The claims table sits on Friday 20 November. Thirteen sites are on the list.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Four &middot; The World</span><span>The Vinland Herald</span><span>Tuesday, 17 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">The Southern Gate Closes a Little</h2><h3 class="deck">Rebels take the heights and an island in the strait as government forces fall back to the main port; Navy says nothing new; insurers hold their rates</h3>
+<p class="byline">By Halldor Vik, Defence Correspondent</p>
+<p>On Saturday the government&rsquo;s forces left the coast near the southern strait. On Monday the rebels took what they had left.</p>
+<p>Rebel fighters now hold the hills that look down on the strait, reports from the region said. They also took a small island that sits in the middle of the narrow water. Government forces have moved east, towards the main port in the south of the country. Officials there said they were defending the city. The government&rsquo;s foreign backers replaced their military commander in the area, according to the same reports.</p></article><aside class="boxed"><h4>Why it matters</h4><p>The southern strait is the only way into the Red Sea from the south. It is narrow enough that a ship passing through can be seen from both shores. Whoever holds the hills and the island can reach the shipping lane with drones and missiles in minutes.</p>
+<p>&ldquo;Before, the rebels had to fire from far away,&rdquo; the retired Navy officer said. &ldquo;Now they can watch every ship go past. That is a different sea.&rdquo;</p></aside><aside class="boxed"><h4>The Navy</h4><p>The Navy said nothing new on Monday. On Sunday Commander Einar Paul, its spokesman, said it had &ldquo;adjusted the route&rdquo; for any future escort. VNS <em>Gudrid</em> brought five merchant ships safely through on Saturday. VNS <em>Kjipuktuk</em> remains with the partner navies&rsquo; escort group.</p>
+<p>Defence Minister Ragnhild Bjornstad did not comment. The People&rsquo;s Thing gave its consent to the escort mission on 1 October. It has not been asked to look again.</p></aside><aside class="boxed"><h4>Insurers</h4><p>The two larger Karontoborg war-risk houses held their Red Sea and Gulf rates on Monday. One underwriter said they would &ldquo;look again on Wednesday, when we know what the hills mean in practice&rdquo;.</p>
+<p>The count of Vinlandic-flagged ships on the long route round the Cape was unchanged at thirty-one.</p></aside><article class="story"><h2 class="hed">Mines in the Gulf</h2><h3 class="deck">Two foreign tankers hit mines near the strait; fires, but crews safe</h3>
+<p class="byline">By Halldor Vik</p>
+<p>Two foreign tankers struck sea mines near the Gulf strait on Monday, shipping officials in the region said. Both caught fire. The crews left the ships and were picked up by nearby vessels. No one was reported hurt.</p>
+<p>It was the first time this autumn that ships in the Gulf had been hit by mines rather than by drones or missiles. No group said it had laid them.</p>
+<p>&ldquo;A drone you can sometimes shoot down,&rdquo; said Sigrid Holme of the Karontoborg Shipowners&rsquo; Association. &ldquo;A mine you have to find first. That is slow, and it is dangerous.&rdquo;</p>
+<p>She said no Vinlandic-owned or Vinlandic-flagged ship was near the area.</p></article><article class="story"><h2 class="hed">Three Leaders, No Date</h2><p class="byline">By Halldor Vik</p>
+<p>The leaders of the world&rsquo;s three largest powers have still not confirmed when they will meet. Officials in two of the capitals said on Monday that the meeting was &ldquo;likely this week&rdquo;. Neither would give a date or a city.</p>
+<p>Foreign Minister Anders Ohkwari-Dahl said on Sunday that the Commonwealth would &ldquo;read what they agree&rdquo;.</p></article><article class="story"><h2 class="hed">Summits in the East</h2><p class="byline">By Halldor Vik</p>
+<p>Leaders from the countries of the western Pacific met on Monday for their yearly summit, with a larger trade meeting to follow. Energy and food supplies are at the top of the agenda.</p>
+<p>The Commonwealth is not a member. The Trade Ministry said its officials would follow the talks &ldquo;for anything that touches our grain and our ore&rdquo;.</p></article><article class="story"><h2 class="hed">Flights South Delayed</h2><p class="byline">By Halldor Vik</p>
+<p>Some Commonwealth flights to the south were delayed on Monday because of air-traffic problems abroad. A large neighbouring country is still clearing a backlog after its own control system failed on Friday. The Commonwealth air-navigation service said its own systems were working normally.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Five &middot; Nations & The Shield</span><span>The Vinland Herald</span><span>Tuesday, 17 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">&ldquo;We Listened&rdquo;</h2><h3 class="deck">Grimsrud speaks of fairness between south and north; Cree Council says little; status committee still silent</h3>
+<p class="byline">By Mary Kanatiio Berg, Constitutional Affairs Correspondent, Hokelgard</p>
+<p>Energy Minister Petter Grimsrud&rsquo;s speech at the climate talks was watched closely in Hokelgard on Monday. It did not name the Shield Intertie. It did not mention the Kaniapiskau Cree.</p>
+<p>The Kaniapiskau Cree Council made no statement. One Council adviser said only: &ldquo;We listened.&rdquo;</p>
+<p>Asked whether the Council had heard what it wanted, the adviser said: &ldquo;The minister spoke about who pays. We have been speaking about who decides. Those are different questions.&rdquo;</p>
+<p>Mr Grimsrud said the cost of moving clean power &ldquo;must be shared fairly between south and north&rdquo;. Supporters of the Intertie in Hokelgard read that as a sign that the Government still wants the line built. Some Cree trappers read it differently. One said by telephone from the Shield: &ldquo;Fair to the north is not the same as fair to us. We are not just the north.&rdquo;</p></article><aside class="boxed"><h4>The committee</h4><p>The Provincial Thing&rsquo;s status committee gave no word on Monday. Its chair has said it will set a date for its finding before the end of the month. That means a date by Monday 30 November.</p>
+<p>Grand Chief Ruth Kaninaskum said last Thursday that the Council would ask for the committee&rsquo;s reasons in writing.</p>
+<p>Skjoldkraft, which would build the line, gave no new figure. It has still not said what a second route would add to household power bills.</p></aside><article class="story"><h2 class="hed">Forty-Five Days</h2><p class="byline">By Mary Kanatiio Berg</p>
+<p>The Lakes government&rsquo;s comment window on the terms of its road study has forty-five days left. It closes on 1 January.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Six &middot; Science & Technology</span><span>The Vinland Herald</span><span>Tuesday, 17 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">Sixty-One Letters</h2><h3 class="deck">Lindqvist writes to the largest firms in the food chain; three questions, and a deadline at the end of the year</h3>
+<p class="byline">By Ingvild Sørhus, Technology Correspondent, Karontoborg</p>
+<p>Kari Lindqvist, the Minister for Digital Affairs, sent letters to 61 food firms on Monday. They include the largest grocers, wholesalers, cold stores and food carriers in the Commonwealth.</p>
+<p>Each letter asks the same three questions. Which machines are on the network? Who can reach them? What do you do when the screens go dark?</p>
+<p>&ldquo;We picked the firms that would hurt most if they stopped,&rdquo; Ms Lindqvist said. &ldquo;If one of them goes dark for a week, people notice on their plates.&rdquo;</p>
+<p>Firms have until 31 December to reply. The ministry said it would publish a short summary of the answers, without naming firms, in the new year.</p></article><aside class="boxed"><h4>Two firms so far</h4><p>Kaldhus Logistics was hit by a computer attack last Wednesday. Its control systems are now working again at all seven of its cold stores. On Sunday the ministry said a food wholesaler had also reported an attempt to break in last week. That attempt was stopped.</p>
+<p>The police and Cyber Command are looking at both. They said nothing new on Monday.</p></aside><aside class="boxed"><h4>What firms say</h4><p>The grocers&rsquo; trade body said its members would answer. &ldquo;Nobody wants to be the next Kaldhus,&rdquo; a spokesman said. &ldquo;But some of our smaller members will need help to answer the third question. Many of them have never asked it.&rdquo;</p></aside><article class="story"><h2 class="hed">Glimra Slides With the Market</h2><p class="byline">By Ingvild Sørhus</p>
+<p>Glimra Compute fell 3.4 per cent on Monday as computing shares dropped abroad. Its board hired a search firm on Saturday to find a new chief executive and aims to name one &ldquo;before the new year&rdquo;. The company said nothing new on Monday.</p></article><article class="story"><h2 class="hed">Flu Figures Tomorrow</h2><p class="byline">By Gunnhild Paquette, Science Correspondent</p>
+<p>The Public Health Agency publishes its weekly flu figures tomorrow. Last week 16 per cent of tests were positive, up from 13 per cent the week before.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Seven &middot; Arts & Culture</span><span>The Vinland Herald</span><span>Tuesday, 17 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">The River Goes North</h2><h3 class="deck">What the River Kept will travel to Hokelgard in the spring, the Royal Academy says</h3>
+<p class="byline">By Oda Fjellstad, Arts Critic</p>
+<p>Jonas Atsistaehron&rsquo;s <em>What the River Kept</em> will go to Hokelgard in the spring, the Royal Academy said on Monday. It closed in Karontoborg on Sunday after about 83,100 visits.</p>
+<p>The Academy did not name the hall or the dates. &ldquo;We want it to open when the ice goes out,&rdquo; a spokeswoman said. &ldquo;That seemed right for this work.&rdquo;</p>
+<p>It does seem right. The show is about water that looks still and is not. In Karontoborg it asked a busy city to stand and wait. In Hokelgard, where the river freezes for months and then breaks all at once, it will ask a different question. People there know what waiting for a river means.</p>
+<p>The artist did not comment. He has said little in public during the run, and the work has done his talking.</p></article><article class="story"><h2 class="hed">Still Running</h2><p class="byline">By Oda Fjellstad</p>
+<p>Marit Nesheim&rsquo;s <em>The Night Ferry</em> runs at the Old Quarter Playhouse in Hokelgard until 28 November. The extra matinee on Sunday 22 November is sold out.</p>
+<p>The Kjipuktuk College of Art&rsquo;s two shows run until 12 December: Ingeborg Sylliboy&rsquo;s tide-chart prints and Halvard Denny&rsquo;s burnt-wood panels.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Eight &middot; Sport</span><span>The Vinland Herald</span><span>Tuesday, 17 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">A Quiet Monday on the Ice</h2><h3 class="deck">No games after a busy weekend; the Pilots lead by a point; the league returns on Wednesday</h3>
+<p class="byline">By Kjetil Hammer</p>
+<p>There was no hockey on Monday. After four games in three days, most teams gave their players the day off.</p>
+<p>The Karontoborg Lakers trained anyway. The coach said the team had earned a rest after Friday&rsquo;s overtime win over the Forsgard Rapids, &ldquo;but one win is not a habit yet&rdquo;.</p>
+<p>The league returns on Wednesday.</p></article><article class="story"><h2 class="hed">The Table</h2><p class="byline">By Kjetil Hammer</p>
+<p>The Sundgard Pilots are 7–3–1. The Stadakona Storm are 7–3. The Laukvik Lynx are 6–6. The Forsgard Rapids are 5–5–1. The Hokelgard Royals are 4–5. The Lakers are 3–10–1.</p>
+<p>The Pilots lead the Storm by one point, with a game more played.</p>
+<p>The Commonwealth Sport Integrity Office gave no new note on Monday.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Nine &middot; Opinion</span><span>The Vinland Herald</span><span>Tuesday, 17 November 2026</span></div><div class="inner-cols"><article class="editorial"><div class="edlabel">The Herald&rsquo;s View</div><h2 class="hed-ed">The Sea Has Changed. Ask Again.</h2>
+<p>On 1 October the People&rsquo;s Thing gave its consent to the Navy&rsquo;s escort mission in the Red Sea. It was a careful decision, made for a particular sea. Since then the Navy has brought two convoys through without harm. That is good work, and the crews deserve thanks.</p>
+<p>But the sea of 1 October is not the sea of today.</p></article><aside class="boxed"><h4>What changed</h4><p>Over the weekend the government&rsquo;s forces left the coast at the southern strait. On Monday the rebels took the hills above it and an island in the middle of it. Every ship that enters the Red Sea from the south must now pass within sight of fighters who have attacked ships before.</p>
+<p>The Navy says it has &ldquo;adjusted the route&rdquo;. We do not ask how. That is rightly secret. But the question of whether to send Vinlandic sailors through that strait again is not only a question of route. It is a question of risk, and the People&rsquo;s Thing owns that question.</p></aside><aside class="boxed"><h4>What the minister should do</h4><p>Defence Minister Ragnhild Bjornstad has said nothing since the weekend. Silence was reasonable while the Navy brought <em>Gudrid</em> home. It is less reasonable now.</p>
+<p>Before any third escort sails, Ms Bjornstad should go to the People&rsquo;s Thing defence committee. She should tell it, in private if she must, what the Navy thinks the new coast means for its ships. Then the committee should decide whether the consent of 1 October still fits the facts. It may well say yes. But it should say so knowing what has changed.</p>
+<p>Asking again is not a sign of doubt in the Navy. It is how a parliament keeps its consent honest.</p></aside><aside class="boxed"><h4>The contract</h4><p>There was better news from Laukvik. The union&rsquo;s first reading of the draft contract found a local-hiring clause &ldquo;stronger than we feared&rdquo;. That is to the Finance Ministry&rsquo;s credit. The training clause, the union says, has no numbers. A promise to train &ldquo;young workers&rdquo; with no number is easy to keep and hard to check. The ministry has until Friday to add one. It should.</p></aside><aside class="boxed"><h4>This afternoon</h4><p>Ms Solbakk speaks at two. Her ministry has told us the VKR 14 billion will be paid over three budgets. We asked for a date and we got a shape. This afternoon we need the numbers: how much next year, and what happens to the rest if times get harder.</p></aside><aside class="review"><h4>From the Other Papers</h4><p><strong>The Financial Vinlander:</strong> &ldquo;Three budgets, not one. The market heard &rsquo;less now&rsquo; and sold first. The statement will tell us whether it was right.&rdquo;</p>
+<p><strong>The Northern Star:</strong> &ldquo;The minister spoke of fairness between south and north. The Cree did not ask for fairness. They asked to be asked.&rdquo;</p>
+<p><strong>The Free Thing</strong> (Hokelgard): &ldquo;A strong hiring clause is a start. A training clause with no numbers is a wish.&rdquo;</p>
+<p><strong>The New World Review:</strong> &ldquo;The rebels now hold the gate. The People&rsquo;s Thing should hold the question.&rdquo;</p>
+<p><strong>The Atlantic Chronicle:</strong> &ldquo;Mines in the Gulf, rebels at the strait, and still thirty-one ships on the Cape. The long way round is starting to look like the only way.&rdquo;</p>
+<p><strong>The Karontoborg Post:</strong> &ldquo;BLOODBATH ON THE KXC! TECH CRASH WIPES 2% BEFORE SOLBAKK EVEN SPEAKS!&rdquo;</p>
+<p class="note"><em>The Vinland Herald is published daily by Herald House Publishing, New Harbour, Karontoborg. Corrections: the Herald corrects errors of fact on page two. © 2026.</em></p></aside></div></section>
+<footer>The Vinland Herald is published daily by Herald House Publishing, New Harbour, Karontoborg. Corrections: the Herald corrects errors of fact on page two. © 2026.</footer>
+</div></body></html>
