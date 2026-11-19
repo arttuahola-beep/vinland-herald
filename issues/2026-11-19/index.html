@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<title>The Vinland Herald &middot; Thursday, 19 November 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1b1a17;--paper:#f6f1e4;--rule:#2a2824;--muted:#5a554b;--soft:#e9e1cc}
+*{box-sizing:border-box}
+.site-nav{background:var(--paper);border-bottom:1px solid var(--rule);font-family:"Old Standard TT",serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;text-align:center;padding:6px 12px}
+.site-nav a{color:var(--ink);text-decoration:none;padding:0 14px}
+.site-nav a+a{border-left:1px solid var(--rule)}
+.site-nav a:hover,.site-nav a:focus{text-decoration:underline}
+body{margin:0;background:#d9d2c0;color:var(--ink);font-family:"Libre Caslon Text",Georgia,"Times New Roman",serif;font-size:15.5px;line-height:1.5}
+.sheet{max-width:1240px;margin:24px auto;background:var(--paper);padding:22px 34px 40px;box-shadow:0 2px 18px rgba(0,0,0,.18)}
+header.mast{text-align:center;border-bottom:4px double var(--rule);padding-bottom:6px}
+.topline{display:flex;justify-content:space-between;font-family:"Old Standard TT",serif;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;border-bottom:1px solid var(--rule);padding-bottom:5px}
+.mastrow{display:grid;grid-template-columns:1fr 2.6fr 1fr;align-items:center;gap:18px;padding:10px 0 4px}
+.ear{border:1px solid var(--rule);padding:7px 9px;font-size:11.5px;line-height:1.4;text-align:left;font-family:"Old Standard TT",serif}
+.ear strong{display:block;font-size:11px;letter-spacing:.12em;border-bottom:1px solid var(--rule);margin-bottom:3px}
+h1.title{font-family:"UnifrakturMaguntia","Old English Text MT",serif;font-weight:400;font-size:clamp(40px,6.2vw,80px);margin:0;line-height:1;white-space:nowrap}
+.founded{font-family:"Old Standard TT",serif;font-style:italic;font-size:14px;margin-top:4px}
+.dateline{display:flex;justify-content:space-between;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin-top:6px;padding:4px 0;font-family:"Old Standard TT",serif;font-size:13px;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
+h2,h3,h4{font-family:"Playfair Display",Georgia,serif;margin:0}
+.hed-lead{font-size:clamp(30px,3.9vw,50px);line-height:1.05;font-weight:900;margin:10px 0 8px;text-align:center}
+.lead .deck{font-size:19px;font-style:italic;font-weight:700;text-align:center;margin:0 0 10px;column-span:all}
+.cols2{column-count:2;column-gap:26px;column-rule:1px solid #9d968a}
+.cols2 p:first-of-type::first-letter{}
+.lead .byline{column-span:all;text-align:center}
+.byline{font-family:"Old Standard TT",serif;font-style:italic;font-size:13px;color:var(--muted);border-top:1px solid #9d968a;border-bottom:1px solid #9d968a;padding:3px 0;margin:6px 0 10px}
+p{margin:0 0 .72em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.lead .cols2 > p:nth-of-type(2)::first-letter{float:left;font-family:"Playfair Display",serif;font-size:64px;line-height:.82;padding:4px 7px 0 0;font-weight:900}
+p.note{font-size:13px;color:var(--muted);text-align:left}
+.front-grid{display:grid;grid-template-columns:2.05fr 1fr;gap:0;margin-top:12px}
+.front-main{padding-right:24px;border-right:1px solid var(--rule)}
+.front-side{padding-left:22px}
+.hed-side{font-size:23px;line-height:1.12;font-weight:900;margin:8px 0 6px}
+.side .deck{font-size:15px;font-style:italic;font-weight:700;margin-bottom:4px;line-height:1.25}
+.story.side{border-bottom:2px solid var(--rule);padding-bottom:10px;margin-bottom:12px;font-size:14.5px}
+.briefs{background:var(--soft);padding:10px 12px;font-size:13.5px;border-top:3px solid var(--rule)}
+.briefs h4,.boxed h4,.review h4{font-size:14px;letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid var(--rule);margin-bottom:6px;padding-bottom:2px}
+.page.inner{margin-top:34px;border-top:4px double var(--rule);padding-top:6px}
+.pagebar{display:flex;justify-content:space-between;font-family:"Old Standard TT",serif;font-size:12px;text-transform:uppercase;letter-spacing:.1em;border-bottom:1px solid var(--rule);padding-bottom:4px;margin-bottom:10px}
+.pagebar span:first-child{font-weight:700}
+.inner-cols{column-count:3;column-gap:26px;column-rule:1px solid #9d968a}
+.inner-cols article, .inner-cols aside{break-inside:auto}
+.hed{font-size:27px;line-height:1.1;font-weight:900;margin:4px 0 6px;break-after:avoid}
+.inner-cols .deck{font-size:15.5px;font-style:italic;font-weight:700;line-height:1.25;margin-bottom:4px}
+.inner-cols article.story{margin-bottom:18px;padding-bottom:10px;border-bottom:2px solid var(--rule)}
+.boxed{border:1px solid var(--rule);padding:9px 11px;margin:0 0 16px;font-size:13.5px;break-inside:avoid;background:#fbf8ef}
+.review{background:var(--soft);border-top:3px solid var(--rule);border-bottom:3px solid var(--rule);padding:10px 12px;font-size:13.5px;margin-top:10px}
+.editorial{border:2px solid var(--rule);padding:12px 14px;margin-bottom:16px;background:#fbf8ef}
+.edlabel{font-family:"Old Standard TT",serif;text-transform:uppercase;letter-spacing:.2em;font-size:12px;text-align:center;border-bottom:1px solid var(--rule);padding-bottom:3px;margin-bottom:6px}
+.hed-ed{font-size:26px;font-style:italic;text-align:center;margin:4px 0 10px}
+footer{margin-top:30px;border-top:4px double var(--rule);padding-top:8px;font-size:12px;color:var(--muted);text-align:center;font-family:"Old Standard TT",serif}
+@media (max-width:980px){.inner-cols{column-count:2} .mastrow{grid-template-columns:1fr 1fr} .mastrow .brand{grid-column:1/-1;order:-1} }
+@media (max-width:720px){
+ .sheet{margin:0;padding:14px 14px 28px}
+ .front-grid{grid-template-columns:1fr} .front-main{padding-right:0;border-right:none;border-bottom:2px solid var(--rule);padding-bottom:10px;margin-bottom:12px} .front-side{padding-left:0}
+ .cols2,.inner-cols{column-count:1}
+ .topline,.dateline{font-size:10.5px} .dateline{flex-wrap:wrap;gap:6px}
+ .mastrow{grid-template-columns:1fr} h1.title{white-space:normal;font-size:44px}
+}
+</style></head>
+<body>
+<nav class="site-nav" aria-label="The Vinland Herald"><a class="nav-home" href="../../">Front page</a><a class="nav-archive" href="../../archive/">Archive</a></nav>
+<div class="sheet">
+<header class="mast">
+<div class="topline"><span>Vol. CLX &middot; No. 49,357</span><span>The Commonwealth&rsquo;s Newspaper of Record</span><span>Price VKR 18</span></div>
+<div class="mastrow">
+ <div class="ear"><strong>WEATHER</strong><em>Karontoborg:</em> Milder, with rain by afternoon; high 5°C, low 1°C.<br><em>Hokelgard:</em> Sleet turning to rain; high 1°C, low −3°C.<br><em>Stadakona:</em> Light snow; high −2°C, low −8°C.<br><em>Leifsbudir:</em> Gales and heavy rain; 6°C; Helluland Sea very rough.</div>
+ <div class="brand"><h1 class="title">The Vinland Herald</h1><div class="founded">Founded 1867 &middot; Karontoborg</div></div>
+ <div class="ear"><strong>MARKETS</strong>(Wednesday close)<br>KXC Composite 20,658 (+0.4%)<br>VKR/USD 6.98 (unch.)<br>VKR/EUR 7.98<br>NOK 0.651 VKR<br>CNY 0.976 VKR<br>10-yr Commonwealth 3.87% (unch.)<br>Benchmark crude $110.39 (−0.8%)<br>Gold $3,800/oz</div>
+</div>
+<div class="dateline"><span>Karontoborg &middot; Hokelgard</span><span>Thursday, 19 November 2026</span><span>Late Edition</span></div>
+</header>
+<section class="page front"><div class="front-grid"><div class="front-main"><article class="lead"><h2 class="hed-lead">Bank Holds Rates by a Single Vote</h2><div class="cols2"><h3 class="deck">Monetary Council keeps the policy rate at 3.50 per cent on a four-to-three vote; three members wanted a rise; the door to a rise &ldquo;is open&rdquo;</h3>
+<p class="byline">By Elise Brattli, Economics Editor</p>
+<p>The Central Bank of Vinland held its policy rate at 3.50 per cent this morning. But it was close.</p>
+<p>Four members of the Monetary Council voted to hold. Three voted to raise the rate by a quarter point, to 3.75 per cent.</p>
+<p>&ldquo;We have decided to wait,&rdquo; Governor Hallvard Mikaelsen said. &ldquo;We have not decided that the work is done.&rdquo;</p>
+<p>Inflation is 3.9 per cent. The Bank wants it much lower. In its statement it named two new risks. The krona is weaker than it was in the summer. And central banks abroad are raising their own rates, or saying they will.</p>
+<p>&ldquo;The door to a rise is open,&rdquo; the Governor said. &ldquo;Whether we walk through it depends on what the next figures show.&rdquo;</p>
+<p>Finance Minister Ingrid Solbakk declined to comment. &ldquo;The Bank decides,&rdquo; her office said. &ldquo;I do not.&rdquo;</p>
+<p class="note"><em>Pages 2 and 3. The Herald&rsquo;s View, Page 9.</em></p></div></article></div><div class="front-side"><article class="story side"><h2 class="hed-side">Bjornstad Faces the Committee Today</h2><h3 class="deck">Defence Minister briefs the People&rsquo;s Thing in private this afternoon; no third escort has sailed; one insurer raises its Red Sea rate</h3>
+<p class="byline">By Halldor Vik, Defence Correspondent</p>
+<p>Defence Minister Ragnhild Bjornstad goes before the People&rsquo;s Thing defence committee this afternoon. The briefing on the southern strait will be held in private.</p>
+<p>She has promised that no third escort will sail before she has spoken to the committee. None has.</p>
+<p>On Wednesday the larger of Karontoborg&rsquo;s two war-risk insurers raised its Red Sea rate by about 7 per cent. &ldquo;Quiet is not the same as safe,&rdquo; one underwriter said again.</p>
+<p class="note"><em>Page 4.</em></p></article><article class="story side"><h2 class="hed-side">IN BRIEF</h2><p><strong>Flu.</strong> One test in five is now positive. Page 6.</p>
+<p><strong>Housing.</strong> Karontoborg publishes its last seven site maps, a day before the claims table. Page 3.</p>
+<p><strong>Steel.</strong> The union will put its view of the contract to a members&rsquo; vote. Page 3.</p>
+<p><strong>Coast Guard.</strong> VCGS <em>Markland</em> returns to service today. Page 5.</p>
+<p><strong>Sport.</strong> The Storm and the Pilots both win. One point now separates them. Page 8.</p></article></div></div></section><section class="page inner"><div class="pagebar"><span>Page Two &middot; The Great Thing</span><span>The Vinland Herald</span><span>Thursday, 19 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">Four to Three</h2><h3 class="deck">The Governor names the krona and foreign rates as risks; he says the Commonwealth&rsquo;s borrowing is &ldquo;in our forecast&rdquo;</h3>
+<p class="byline">By Elise Brattli</p>
+<p>The Central Bank&rsquo;s decision came at nine o&rsquo;clock this morning. Most economists had said it would be close. They were right.</p>
+<p>The Monetary Council has seven members. In October it raised the rate from 3.25 to 3.50 per cent. This time four voted to hold and three voted for another quarter point.</p>
+<p>The Bank does not name who voted which way. It publishes the count, and a short account of the reasons on each side.</p></article><aside class="boxed"><h4>The case for holding</h4><p>The four who voted to hold said growth was slowing. Shops and builders are reporting fewer orders. Firms are hiring more slowly. &ldquo;The rise in October has not yet worked its way through,&rdquo; the statement said. &ldquo;It is right to see its full effect before acting again.&rdquo;</p>
+<p>They also pointed to oil. Benchmark crude has fallen for much of this month as shipments from the Gulf have recovered. Cheaper fuel will take some pressure off prices in the new year.</p></aside><aside class="boxed"><h4>The case for raising</h4><p>The three who wanted a rise said inflation was still too high, and too slow to fall. Rents and services are still rising quickly.</p>
+<p>They also named the krona. A weaker krona makes imports dearer. And abroad, the picture has changed. One large foreign central bank raised its rate this autumn. Another published minutes on Wednesday showing that almost all of its officials expect to raise rates again.</p>
+<p>&ldquo;If others raise and we do not, the krona may weaken further,&rdquo; the statement said. &ldquo;That would add to inflation here.&rdquo;</p></aside><aside class="boxed"><h4>The borrowing</h4><p>Mr Mikaelsen was asked about Tuesday&rsquo;s autumn statement. The Commonwealth will borrow VKR 105 billion next year, up from VKR 101 billion this year.</p>
+<p>&ldquo;The VKR 105 billion is in our forecast,&rdquo; the Governor said. &ldquo;We took the statement into account. We will not tell the Finance Minister how to spend. That is for the People&rsquo;s Thing.&rdquo;</p>
+<p>Some in the People&rsquo;s Thing heard that as a warning. Others heard it as a plain statement of fact. The Governor would not say which he meant. &ldquo;I mean what I said,&rdquo; he told one reporter.</p></aside><aside class="boxed"><h4>Reaction</h4><p>Ms Solbakk made no comment beyond her office&rsquo;s short line. On Tuesday she told the People&rsquo;s Thing: &ldquo;The Bank decides. I do not.&rdquo;</p>
+<p>Liv Karhagen, the Leader of the Opposition, also said nothing on Thursday morning. Labour has spent the week on the autumn statement and the steel package.</p>
+<p>The krona was steady in early trading. Bond dealers said the vote had been close to what they expected.</p></aside><article class="story"><h2 class="hed">Landvern to Decide on Monday</h2><p class="byline">By Sunniva Rask, Political Correspondent</p>
+<p>Bjarne Tollefsrud&rsquo;s Landvern will decide on Monday how to vote on the autumn statement as a whole.</p>
+<p>The party has said it will vote for the first VKR 4.5 billion of the steel package. It has not said whether it will back the statement itself. &ldquo;We will read Friday&rsquo;s contract first,&rdquo; a Landvern spokesman said on Wednesday. &ldquo;Then the group will meet. Then we will tell you.&rdquo;</p>
+<p>The vote on the statement is due next week. Landvern&rsquo;s votes have kept the Government&rsquo;s majority since its rise in the Lakes.</p></article><article class="story"><h2 class="hed">The Week Ahead</h2><p class="note"><em>Herald staff</em></p>
+<p><strong>Today.</strong> The Bank&rsquo;s decision (above). Bjornstad briefs the defence committee in private. VCGS <em>Markland</em> returns to service. The union gives its full view of the draft contract at noon. Tickets for the extra week of <em>The Night Ferry</em> go on sale.</p>
+<p><strong>Friday 20 November.</strong> Standard contract laid in the People&rsquo;s Thing. Treasury claims table on federal land. Sørstrand Steel, the union and Laukvik meet. Archive of the Constitutional Peoples weekly report.</p>
+<p><strong>Monday 23 November.</strong> Landvern decides how to vote on the autumn statement.</p>
+<p><strong>Later.</strong> Statement vote next week. People&rsquo;s Thing committee, Thursday 26 November. Status committee date by Monday 30 November.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Three &middot; Karontoborg & The Economy</span><span>The Vinland Herald</span><span>Thursday, 19 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">Thirteen Maps on the Table</h2><h3 class="deck">Karontoborg publishes its last seven federal sites a day before the claims table; &ldquo;Now everyone can see them&rdquo;</h3>
+<p class="byline">By Elise Brattli</p>
+<p>Karontoborg has now published all thirteen of its federal-site maps.</p>
+<p>The city put out the last seven on Wednesday. Four are on the old rail lands north of the river. Two are near the eastern docks. One is a former army depot on the edge of the Old Quarter.</p>
+<p>Like the first six, each map shows the water mains, the sewers and the roads already in place. Each also gives the number of homes the city says the site could hold.</p>
+<p>&ldquo;Now everyone can see them,&rdquo; Mayor Petra Oyelaran-Skog said. &ldquo;Thirteen sites. Pipes, roads, power. The Treasury says these sites are slow. We say look.&rdquo;</p>
+<p>The Treasury gives federal land only half weight when it measures what the cities can build. On Tuesday Finance Minister Ingrid Solbakk said that rule would be reviewed, but only after Friday&rsquo;s claims table.</p>
+<p>The Mayor said the city would make its claims on Friday under the present rule. &ldquo;We will play by the rule,&rdquo; she said. &ldquo;And then we will ask for the count to be done again.&rdquo;</p>
+<p>The Treasury gave no comment on Wednesday. It has not said what time the table will sit.</p></article><article class="story"><h2 class="hed">The Union Will Ask Its Members</h2><h3 class="deck">Steelworkers give their full view of the contract at noon; the leadership will put it to a vote</h3>
+<p class="byline">By Tomas Nygaard, Karontoborg</p>
+<p>The steelworkers&rsquo; union at Laukvik gives its full view of the draft standard contract at noon today. On Wednesday evening it said one more thing. Whatever the leaders think, the members will decide.</p>
+<p>&ldquo;This contract is about their jobs,&rdquo; the union official said. &ldquo;So they will vote on it. We will tell them what we think. Then they will tell us.&rdquo;</p>
+<p>The vote will be held after the contract is laid in the People&rsquo;s Thing on Friday. The union did not give a date. It said it hoped to count the votes &ldquo;within a week&rdquo;.</p>
+<p>The union has praised the local-hiring clause. It has asked for a number in the training clause. On Tuesday the Finance Minister said training would be paid from the later parts of the package. &ldquo;That tells us when,&rdquo; the official said. &ldquo;It does not tell us how many.&rdquo;</p>
+<p>The city of Laukvik is still reading the draft. Mayor Tomas Wabano-Lie&rsquo;s office said it had nothing to add.</p>
+<p>Sørstrand Steel gave no comment. It plans to pause one of its two strip lines at Laukvik from 1 December. About 380 workers would go on short time. The company meets the union and the city on Friday.</p></article><article class="story"><h2 class="hed">Shares Rise as Oil and Gold Fall</h2><h3 class="deck">KXC gains 0.4 per cent; gold drops $76 to $3,800; bonds and the krona steady before the Bank</h3>
+<p class="byline">By Tomas Nygaard</p>
+<p>The KXC Composite rose 84 points, or 0.4 per cent, to 20,658 on Wednesday. Computing shares led the way. Energy shares fell.</p>
+<p>&ldquo;Cheaper oil hurts the oil companies and helps everyone else,&rdquo; one trader said. &ldquo;Today everyone else won.&rdquo;</p>
+<p>Benchmark crude fell 0.8 per cent to $110.39 a barrel. Stores of oil abroad rose by more than traders had expected. Shipments from the Gulf kept recovering, even as more ships were hit by mines.</p>
+<p>Gold fell $76 to $3,800 an ounce, its lowest in more than a year, dealers said. Minutes from a large foreign central bank showed that almost all of its officials expect to raise rates again. That lifted the currency of that country and pushed gold down.</p>
+<p>Shares abroad were mixed. The largest foreign index fell for a fifth day in a row, its longest losing run since the summer. Computing shares rose there too.</p>
+<p>The ten-year Commonwealth yield was unchanged at 3.87 per cent. The krona was unchanged at 6.98 to the dollar. &ldquo;Nobody wanted to bet before the Bank,&rdquo; a bond dealer said.</p></article><aside class="boxed"><h4>Mortgages</h4><p>One large Lakes lender held its five-year fixed rate at 7.3 per cent on Wednesday. It said it would &ldquo;look again after the Bank&rdquo;. Most other lenders quote 7.2 per cent.</p></aside></div></section><section class="page inner"><div class="pagebar"><span>Page Four &middot; The World</span><span>The Vinland Herald</span><span>Thursday, 19 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">The Minister Will Speak Today</h2><h3 class="deck">Bjornstad&rsquo;s private briefing this afternoon; strait quiet for a second day; government forces hold their ground before the main port</h3>
+<p class="byline">By Halldor Vik, Defence Correspondent</p>
+<p>Ragnhild Bjornstad will brief the People&rsquo;s Thing defence committee on the southern strait this afternoon. The briefing will be held in private.</p>
+<p>The Defence Minister has said little in public. On Tuesday evening she said the committee would &ldquo;hear what the Navy thinks the new coast means for our ships&rdquo;. She promised that no third escort would sail before she had spoken to it.</p>
+<p>No third escort sailed on Wednesday. The Defence Ministry had nothing new to say. The Navy said nothing new about its ships.</p>
+<p>Members of the committee were also quiet. &ldquo;We will ask our questions in the room,&rdquo; one member said. &ldquo;Not in the corridor.&rdquo;</p>
+<p>The committee gave its consent to the escorts on 1 October. The rebels did not then hold the heights above the strait, or the island in it. Whether that consent still fits is the question many members want answered.</p></article><aside class="boxed"><h4>On the ground</h4><p>The strait was quiet again on Wednesday. No attacks on ships were reported.</p>
+<p>Inland, government forces held the district on the road to the main southern port. They sent more troops there on Tuesday. Officials in the region said there was some fighting on the edge of the district on Wednesday, but no change in the line.</p>
+<p>The rebels made no new statement.</p></aside><aside class="boxed"><h4>The ships</h4><p>VNS <em>Gudrid</em> brought five merchant ships through the strait on Saturday 14 November. VNS <em>Kjipuktuk</em> remains with the partner navies&rsquo; escort group.</p></aside><article class="story"><h2 class="hed">Larger Insurer Raises Its Red Sea Rate</h2><h3 class="deck">Increase of about 7 per cent; the other house holds; Cape count falls to twenty-nine</h3>
+<p class="byline">By Halldor Vik</p>
+<p>The larger of Karontoborg&rsquo;s two war-risk insurers raised its Red Sea rate by about 7 per cent at noon on Wednesday. It held its Gulf rate.</p>
+<p>The other house held both its rates.</p>
+<p>&ldquo;The strait has been quiet for two days,&rdquo; an underwriter at the larger house said. &ldquo;But the hills above it have changed hands. That changes the risk, whether or not anyone fires.&rdquo;</p>
+<p>Sigrid Holme of the Karontoborg Shipowners&rsquo; Association said the rise was &ldquo;not a surprise, and not a help&rdquo;. &ldquo;Our members will now pay more to take the short way,&rdquo; she said. &ldquo;Some of them will keep taking the long way instead.&rdquo;</p>
+<p>The count of Vinlandic-flagged ships on the long route round the Cape fell by one, to twenty-nine. A container ship reached its port in the East. No new ship joined the route.</p></article><article class="story"><h2 class="hed">Three Tankers Hit by Mines in the Gulf</h2><p class="byline">By Halldor Vik</p>
+<p>Three foreign oil tankers were disabled by sea mines east of the Gulf strait on Wednesday, shipping officials in the region said. Their crews were reported safe.</p>
+<p>That makes six ships hit by mines in three days. No group has said it laid them.</p>
+<p>Separately, a small Gulf state said it had shot down drones aimed at a base used by a foreign navy. The attack followed a strike by that navy on an island in the strait earlier in the week.</p>
+<p>Ms Holme said no Vinlandic-owned or Vinlandic-flagged ship was in the area. &ldquo;Our members are staying away,&rdquo; she said. &ldquo;That has not changed.&rdquo;</p></article><article class="story"><h2 class="hed">Three Leaders, Still No Date</h2><p class="byline">By Halldor Vik</p>
+<p>The leaders of the world&rsquo;s three largest powers have still not said in public when or where they will meet. Officials in two of the capitals now say the meeting will come &ldquo;within days&rdquo;.</p>
+<p>Smaller countries are watching closely. Several have said in private that they fear decisions about them may be taken without them.</p>
+<p>Foreign Minister Anders Ohkwari-Dahl repeated on Wednesday that the Commonwealth would &ldquo;read what they agree&rdquo;. The Foreign Ministry had nothing to add.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Five &middot; Nations & The Shield</span><span>The Vinland Herald</span><span>Thursday, 19 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">The Council Asks About the Road</h2><h3 class="deck">Kaniapiskau Cree Council writes to the Finance Ministry; &ldquo;A road crosses land, and land has owners&rdquo;</h3>
+<p class="byline">By Mary Kanatiio Berg, Constitutional Affairs Correspondent, Hokelgard</p>
+<p>The Kaniapiskau Cree Council has asked the Finance Ministry where the new road north will run.</p>
+<p>The Council sent a short letter on Wednesday. It asked three questions. Where will the road go? Whose land will it cross? And when will the nations be asked?</p>
+<p>&ldquo;A road crosses land, and land has owners,&rdquo; Grand Chief Ruth Kaninaskum said. &ldquo;We have read that the money is set for the later years. That gives the Ministry time to ask us first. We would like it to use that time.&rdquo;</p>
+<p>The road is part of the VKR 14 billion package. Finance Minister Ingrid Solbakk said on Tuesday that the later parts of the money would pay for it. She did not say where it would run.</p>
+<p>The Finance Ministry said it had received the letter and would reply. It gave no date.</p></article><aside class="boxed"><h4>Not the Intertie</h4><p>The Council&rsquo;s letter did not mention the Shield Intertie. Its dispute over the power line is a separate matter. It is before the Provincial Thing&rsquo;s status committee.</p>
+<p>That committee was silent again on Wednesday. Its chair has said it will set a date for its finding on the Intertie by Monday 30 November.</p>
+<p>Skjoldkraft, which would build the Intertie, gave no new figure.</p></aside><article class="story"><h2 class="hed">Markland Back on Watch</h2><h3 class="deck">Coast Guard cutter returns to service at Leifsbudir today after maintenance</h3>
+<p class="byline">By Mary Kanatiio Berg</p>
+<p>VCGS <em>Markland</em> returns to service today, the Coast Guard said. The cutter has been out of service for maintenance.</p>
+<p>The Coast Guard said in late October that the cutter would be back &ldquo;in mid-November&rdquo;. It has kept to that date.</p>
+<p>&ldquo;<em>Markland</em> is ready,&rdquo; a Coast Guard spokesman said. &ldquo;She will go back to her normal patrols on the Helluland Sea when the weather allows.&rdquo; Gales are forecast off Leifsbudir today.</p>
+<p>The Defence Ministry&rsquo;s review of the northern cutter rota is still under way. It is due early in the new year. The Ministry has not said whether it will be published.</p></article><article class="story"><h2 class="hed">Forty-Three Days</h2><p class="byline">By Mary Kanatiio Berg</p>
+<p>The Lakes government&rsquo;s comment window on the terms of its road study has forty-three days left. It closes on 1 January.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Six &middot; Science & Technology</span><span>The Vinland Herald</span><span>Thursday, 19 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">One Test in Five Is Flu</h2><h3 class="deck">Positive share rises to 20 per cent; almost three times the level of three weeks ago; agency repeats its advice</h3>
+<p class="byline">By Gunnhild Paquette, Science Correspondent</p>
+<p>One in five tests for breathing illness was positive for flu last week, the Commonwealth Public Health Agency said on Wednesday afternoon.</p>
+<p>The figure was 20 per cent. The week before it was 16 per cent. Before that it was 13 per cent, and before that 7 per cent. In three weeks the share has almost tripled.</p>
+<p>Last week the share rose by three points. This week it rose by four. &ldquo;It is still going up, and a little faster,&rdquo; an agency official said. &ldquo;We do not yet see the top.&rdquo;</p>
+<p>The agency said hospital admissions for flu were still rising. It again did not give a number.</p></article><aside class="boxed"><h4>The advice</h4><p>The advice has not changed. People over sixty-five and other vulnerable groups should be vaccinated now. People who are ill should stay at home.</p>
+<p>&ldquo;The vaccine takes about two weeks to work,&rdquo; the official said. &ldquo;If you get it now, you are protected in December, when families meet. That is when it matters.&rdquo;</p>
+<p>Family doctors in Karontoborg said waiting rooms were busier than last week.</p></aside><article class="story"><h2 class="hed">Glimra Rises With the Chip Makers</h2><p class="byline">By Ingvild Sørhus, Technology Correspondent, Karontoborg</p>
+<p>Glimra Compute rose nearly 1 per cent on Wednesday. Computing shares recovered at home and abroad after Tuesday&rsquo;s selling.</p>
+<p>Investors abroad are still unsure how long the boom in computing will last. Minutes from a large foreign central bank on Wednesday said its officials were worried about the debt some computing firms have taken on.</p>
+<p>Glimra is still without a chief executive. Its board aims to name one &ldquo;before the new year&rdquo;.</p></article><article class="story"><h2 class="hed">First Replies to Lindqvist</h2><h3 class="deck">Six of the sixty-one food firms have answered; the rest have until 31 December</h3>
+<p class="byline">By Ingvild Sørhus</p>
+<p>The first answers to Kari Lindqvist&rsquo;s letters have arrived. Six of the sixty-one food firms she wrote to have replied, the Ministry for Digital Affairs said on Wednesday.</p>
+<p>The Ministry did not say which firms had replied or what they said. &ldquo;We will read every answer before we say anything about any of them,&rdquo; a spokesman said.</p>
+<p>Each letter asks three questions. Which machines are on the network? Who can reach them? What do you do when the screens go dark?</p>
+<p>The other fifty-five firms have until 31 December.</p>
+<p>Kaldhus Logistics is working normally. The police and Cyber Command said nothing new about the attack on its cold stores.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Seven &middot; Arts & Culture</span><span>The Vinland Herald</span><span>Thursday, 19 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">A Queue in the Rain for The Night Ferry</h2><h3 class="deck">Tickets for the extra week go on sale this morning; people waited outside the playhouse overnight</h3>
+<p class="byline">By Oda Fjellstad, Arts Critic</p>
+<p>By ten o&rsquo;clock on Wednesday night there was a queue outside the Old Quarter Playhouse. It was raining. Nobody left.</p>
+<p>Tickets for the extra week of Marit Nesheim&rsquo;s <em>The Night Ferry</em> go on sale at nine this morning. The play will now close on Saturday 5 December, a week later than planned.</p>
+<p>&ldquo;We did not ask anyone to queue,&rdquo; a playhouse spokesman said. &ldquo;We would rather they had stayed warm. But we have put out coffee.&rdquo; Tickets are also on sale by telephone.</p>
+<p>A student at the front of the queue said she had seen the play twice. &ldquo;I want my mother to see it,&rdquo; she said. &ldquo;She ran a shop for thirty years. She will understand it.&rdquo;</p></article><aside class="boxed"><h4>Why it lasts</h4><p>The play follows two sisters, Inga and Tove, on the last night of the ferry they have run for thirty years. A bridge opens in the morning. Hedvig Sund plays Inga, who steers. Anna Kahrhonnes plays Tove, who takes the fares and does the talking.</p>
+<p>For an hour it is a comedy. Then the engine stops in the middle of the River, and the sisters finally talk. At the end they tie up the boat and stand on the dock, and do not leave.</p>
+<p>It is a small play about a large thing: what we owe to work that nobody thanks us for. That is perhaps why people will stand in the rain for it.</p></aside><article class="story"><h2 class="hed">Still Running</h2><p class="byline">By Oda Fjellstad</p>
+<p>The Kjipuktuk College of Art&rsquo;s two shows run until 12 December: Ingeborg Sylliboy&rsquo;s tide-chart prints and Halvard Denny&rsquo;s burnt-wood panels.</p>
+<p>Jonas Atsistaehron&rsquo;s <em>What the River Kept</em> will go to Hokelgard in the spring. The Royal Academy has not yet named the hall or the dates.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Eight &middot; Sport</span><span>The Vinland Herald</span><span>Thursday, 19 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">Storm and Pilots Both Win</h2><h3 class="deck">Stadakona beat the Lynx 3–1; Sundgard win 4–2 in Karontoborg; one point between the top two</h3>
+<p class="byline">By Kjetil Hammer</p>
+<p>The race at the top of the league stayed tight on Wednesday night. Both leaders won.</p>
+<p>In Stadakona the Storm beat the Laukvik Lynx 3–1. Their leading scorer came back from his sore shoulder and scored the second goal early in the third period.</p>
+<p>&ldquo;He said he felt fine,&rdquo; the Storm coach said. &ldquo;Then he showed us.&rdquo;</p>
+<p>The Lynx scored first, late in the first period, and led for most of the second. The Storm equalised two minutes before the second interval. The third goal came into an empty net in the final minute.</p>
+<p>&ldquo;We played well for forty minutes,&rdquo; the Lynx coach said. &ldquo;The game is sixty.&rdquo;</p></article><aside class="boxed"><h4>Pilots at the Lakers</h4><p>In Karontoborg the Sundgard Pilots beat the Lakers 4–2.</p>
+<p>Sindre Kawennote scored once and set up another. The Lakers had stopped him for a period. They could not stop him for three.</p>
+<p>&ldquo;We had a chance for half the game,&rdquo; the Lakers coach said. &ldquo;Then he found space, and that was that.&rdquo;</p>
+<p>The Lakers had won in overtime on Friday. Their fans had hoped for a second win in a row. Many left early, in the rain.</p></aside><article class="story"><h2 class="hed">The Table</h2><p class="byline">By Kjetil Hammer</p>
+<p>The Sundgard Pilots are 8–3–1, with 17 points from 12 games. The Stadakona Storm are 8–3, with 16 points from 11 games. The Storm have a game in hand.</p>
+<p>The Laukvik Lynx are 6–7. The Forsgard Rapids are 5–5–1. The Hokelgard Royals are 4–5. The Lakers are 3–11–1.</p>
+<p>The Commonwealth Sport Integrity Office gave no new note on Wednesday.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Nine &middot; Opinion</span><span>The Vinland Herald</span><span>Thursday, 19 November 2026</span></div><div class="inner-cols"><article class="editorial"><div class="edlabel">The Herald&rsquo;s View</div><h2 class="hed-ed">One Vote Is Not a Green Light</h2>
+<p>The Central Bank held its rate this morning. That will be welcome in many homes. A family with a mortgage near 7 per cent did not need another quarter point before Christmas.</p>
+<p>But nobody should read this decision as good news and leave it there. The vote was four to three. Almost half the Monetary Council now thinks the rate should already be higher.</p></article><aside class="boxed"><h4>What the three are saying</h4><p>The three who wanted a rise gave clear reasons. Inflation is 3.9 per cent and falling slowly. The krona is weaker. Central banks abroad are raising rates, or are about to.</p>
+<p>Those reasons have not gone away overnight. If the next figures are poor, one member changing his or her mind is enough to raise the rate in the new year.</p>
+<p>The Governor said as much. &ldquo;The door to a rise is open,&rdquo; he said. That is plain speaking, and we welcome it.</p></aside><aside class="boxed"><h4>What the Governor said about borrowing</h4><p>Hallvard Mikaelsen also said something the Finance Minister should hear. &ldquo;The VKR 105 billion is in our forecast.&rdquo;</p>
+<p>The Governor was careful. He did not criticise the autumn statement. He said, rightly, that spending is for the People&rsquo;s Thing. But he made it clear that the Bank counts what the Commonwealth borrows. More borrowing means more pressure on prices. More pressure on prices means higher rates for longer.</p>
+<p>Ms Solbakk says the Bank decides and she does not. That is the correct answer, and she has given it all week. But it is not the whole answer. The Finance Minister does not set the rate. She does help to set the weather in which the rate is set.</p></aside><aside class="boxed"><h4>What should follow</h4><p>This newspaper does not ask the Government to cut its steel package. Laukvik needs the first VKR 4.5 billion, and needs it soon.</p>
+<p>We ask for something more modest. When the contract is laid on Friday, the Finance Ministry should say how the package fits the Bank&rsquo;s forecast. When the statement is voted next week, members should know what the Bank has assumed.</p>
+<p>And Landvern, which decides on Monday, should remember that a vote for more borrowing is also, in part, a vote on the price of every mortgage in the Lakes.</p></aside><aside class="boxed"><h4>The committee</h4><p>Finally, this afternoon the defence committee will hear Ragnhild Bjornstad in private. She has kept her promise: no third escort has sailed. The committee should now ask the question that matters. Does the consent of 1 October still fit the sea as it is? It should not leave the room without an answer.</p></aside><aside class="review"><h4>From the Other Papers</h4><p><strong>The Financial Vinlander:</strong> &ldquo;Four to three is not a hold. It is a rise postponed. Markets should price it that way, and so should the Finance Ministry.&rdquo;</p>
+<p><strong>The Free Thing</strong> (Hokelgard): &ldquo;The Governor says the borrowing is &rsquo;in our forecast&rsquo;. In the language of central banks, that is very nearly a raised voice.&rdquo;</p>
+<p><strong>The New World Review:</strong> &ldquo;Thirteen maps, one rule and a Treasury that will not say what time it sits. Karontoborg has done its homework. Has anyone else?&rdquo;</p>
+<p><strong>The Northern Star:</strong> &ldquo;The Cree Council has asked the right question early. Where does the road go? A Ministry that wants the road built should want to answer it.&rdquo;</p>
+<p><strong>The Atlantic Chronicle:</strong> &ldquo;Today the committee hears the minister in private. Tomorrow the country should hear, in public, what the committee decided.&rdquo;</p>
+<p><strong>The Karontoborg Post:</strong> &ldquo;PHEW! BANK BLINKS&#8201;&mdash;&#8201;BY ONE VOTE! BUT GOVERNOR WARNS: DON&rsquo;T GET COMFY!&rdquo;</p>
+<p class="note"><em>The Vinland Herald is published daily by Herald House Publishing, New Harbour, Karontoborg. Corrections: the Herald corrects errors of fact on page two. © 2026.</em></p></aside></div></section>
+<footer>The Vinland Herald is published daily by Herald House Publishing, New Harbour, Karontoborg. Corrections: the Herald corrects errors of fact on page two. © 2026.</footer>
+</div></body></html>
