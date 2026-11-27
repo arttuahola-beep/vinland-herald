@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<title>The Vinland Herald &middot; Friday, 27 November 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1b1a17;--paper:#f6f1e4;--rule:#2a2824;--muted:#5a554b;--soft:#e9e1cc}
+*{box-sizing:border-box}
+.site-nav{background:var(--paper);border-bottom:1px solid var(--rule);font-family:"Old Standard TT",serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;text-align:center;padding:6px 12px}
+.site-nav a{color:var(--ink);text-decoration:none;padding:0 14px}
+.site-nav a+a{border-left:1px solid var(--rule)}
+.site-nav a:hover,.site-nav a:focus{text-decoration:underline}
+body{margin:0;background:#d9d2c0;color:var(--ink);font-family:"Libre Caslon Text",Georgia,"Times New Roman",serif;font-size:15.5px;line-height:1.5}
+.sheet{max-width:1240px;margin:24px auto;background:var(--paper);padding:22px 34px 40px;box-shadow:0 2px 18px rgba(0,0,0,.18)}
+header.mast{text-align:center;border-bottom:4px double var(--rule);padding-bottom:6px}
+.topline{display:flex;justify-content:space-between;font-family:"Old Standard TT",serif;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;border-bottom:1px solid var(--rule);padding-bottom:5px}
+.mastrow{display:grid;grid-template-columns:1fr 2.6fr 1fr;align-items:center;gap:18px;padding:10px 0 4px}
+.ear{border:1px solid var(--rule);padding:7px 9px;font-size:11.5px;line-height:1.4;text-align:left;font-family:"Old Standard TT",serif}
+.ear strong{display:block;font-size:11px;letter-spacing:.12em;border-bottom:1px solid var(--rule);margin-bottom:3px}
+h1.title{font-family:"UnifrakturMaguntia","Old English Text MT",serif;font-weight:400;font-size:clamp(40px,6.2vw,80px);margin:0;line-height:1;white-space:nowrap}
+.founded{font-family:"Old Standard TT",serif;font-style:italic;font-size:14px;margin-top:4px}
+.dateline{display:flex;justify-content:space-between;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin-top:6px;padding:4px 0;font-family:"Old Standard TT",serif;font-size:13px;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
+h2,h3,h4{font-family:"Playfair Display",Georgia,serif;margin:0}
+.hed-lead{font-size:clamp(30px,3.9vw,50px);line-height:1.05;font-weight:900;margin:10px 0 8px;text-align:center}
+.lead .deck{font-size:19px;font-style:italic;font-weight:700;text-align:center;margin:0 0 10px;column-span:all}
+.cols2{column-count:2;column-gap:26px;column-rule:1px solid #9d968a}
+.cols2 p:first-of-type::first-letter{}
+.lead .byline{column-span:all;text-align:center}
+.byline{font-family:"Old Standard TT",serif;font-style:italic;font-size:13px;color:var(--muted);border-top:1px solid #9d968a;border-bottom:1px solid #9d968a;padding:3px 0;margin:6px 0 10px}
+p{margin:0 0 .72em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.lead .cols2 > p:nth-of-type(2)::first-letter{float:left;font-family:"Playfair Display",serif;font-size:64px;line-height:.82;padding:4px 7px 0 0;font-weight:900}
+p.note{font-size:13px;color:var(--muted);text-align:left}
+.front-grid{display:grid;grid-template-columns:2.05fr 1fr;gap:0;margin-top:12px}
+.front-main{padding-right:24px;border-right:1px solid var(--rule)}
+.front-side{padding-left:22px}
+.hed-side{font-size:23px;line-height:1.12;font-weight:900;margin:8px 0 6px}
+.side .deck{font-size:15px;font-style:italic;font-weight:700;margin-bottom:4px;line-height:1.25}
+.story.side{border-bottom:2px solid var(--rule);padding-bottom:10px;margin-bottom:12px;font-size:14.5px}
+.briefs{background:var(--soft);padding:10px 12px;font-size:13.5px;border-top:3px solid var(--rule)}
+.briefs h4,.boxed h4,.review h4{font-size:14px;letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid var(--rule);margin-bottom:6px;padding-bottom:2px}
+.page.inner{margin-top:34px;border-top:4px double var(--rule);padding-top:6px}
+.pagebar{display:flex;justify-content:space-between;font-family:"Old Standard TT",serif;font-size:12px;text-transform:uppercase;letter-spacing:.1em;border-bottom:1px solid var(--rule);padding-bottom:4px;margin-bottom:10px}
+.pagebar span:first-child{font-weight:700}
+.inner-cols{column-count:3;column-gap:26px;column-rule:1px solid #9d968a}
+.inner-cols article, .inner-cols aside{break-inside:auto}
+.hed{font-size:27px;line-height:1.1;font-weight:900;margin:4px 0 6px;break-after:avoid}
+.inner-cols .deck{font-size:15.5px;font-style:italic;font-weight:700;line-height:1.25;margin-bottom:4px}
+.inner-cols article.story{margin-bottom:18px;padding-bottom:10px;border-bottom:2px solid var(--rule)}
+.boxed{border:1px solid var(--rule);padding:9px 11px;margin:0 0 16px;font-size:13.5px;break-inside:avoid;background:#fbf8ef}
+.review{background:var(--soft);border-top:3px solid var(--rule);border-bottom:3px solid var(--rule);padding:10px 12px;font-size:13.5px;margin-top:10px}
+.editorial{border:2px solid var(--rule);padding:12px 14px;margin-bottom:16px;background:#fbf8ef}
+.edlabel{font-family:"Old Standard TT",serif;text-transform:uppercase;letter-spacing:.2em;font-size:12px;text-align:center;border-bottom:1px solid var(--rule);padding-bottom:3px;margin-bottom:6px}
+.hed-ed{font-size:26px;font-style:italic;text-align:center;margin:4px 0 10px}
+footer{margin-top:30px;border-top:4px double var(--rule);padding-top:8px;font-size:12px;color:var(--muted);text-align:center;font-family:"Old Standard TT",serif}
+@media (max-width:980px){.inner-cols{column-count:2} .mastrow{grid-template-columns:1fr 1fr} .mastrow .brand{grid-column:1/-1;order:-1} }
+@media (max-width:720px){
+ .sheet{margin:0;padding:14px 14px 28px}
+ .front-grid{grid-template-columns:1fr} .front-main{padding-right:0;border-right:none;border-bottom:2px solid var(--rule);padding-bottom:10px;margin-bottom:12px} .front-side{padding-left:0}
+ .cols2,.inner-cols{column-count:1}
+ .topline,.dateline{font-size:10.5px} .dateline{flex-wrap:wrap;gap:6px}
+ .mastrow{grid-template-columns:1fr} h1.title{white-space:normal;font-size:44px}
+}
+</style></head>
+<body>
+<nav class="site-nav" aria-label="The Vinland Herald"><a class="nav-home" href="../../">Front page</a><a class="nav-archive" href="../../archive/">Archive</a></nav>
+<div class="sheet">
+<header class="mast">
+<div class="topline"><span>Vol. CLX &middot; No. 49,363</span><span>The Commonwealth&rsquo;s Newspaper of Record</span><span>Price VKR 18</span></div>
+<div class="mastrow">
+ <div class="ear"><strong>WEATHER</strong><em>Karontoborg:</em> Cold and clear; high −4°C, low −10°C.<br><em>Hokelgard:</em> Bright and bitter; high −6°C, low −12°C.<br><em>Stadakona:</em> Sunny, with a hard frost; high −10°C, low −17°C.<br><em>Leifsbudir:</em> Part cloud; 0°C; Helluland Sea moderate.</div>
+ <div class="brand"><h1 class="title">The Vinland Herald</h1><div class="founded">Founded 1867 &middot; Karontoborg</div></div>
+ <div class="ear"><strong>MARKETS</strong>(Thursday close)<br>KXC Composite 20,528 (+0.6%)<br>VKR/USD 7.00 (unch.)<br>VKR/EUR 8.01<br>NOK 0.653 VKR<br>CNY 0.978 VKR<br>10-yr Commonwealth 3.81%<br>Benchmark crude $114.08 (+1.0%)<br>Gold $3,703/oz</div>
+</div>
+<div class="dateline"><span>Karontoborg &middot; Hokelgard</span><span>Friday, 27 November 2026</span><span>Late Edition</span></div>
+</header>
+<section class="page front"><div class="front-grid"><div class="front-main"><article class="lead"><h2 class="hed-lead">Statement Passes by Two Votes, 101 to 99</h2><div class="cols2"><h3 class="deck">Two smaller groups and a few independents carry the Government; Landvern and the Opposition vote no; the first VKR 4.5 billion was never in doubt</h3>
+<p class="byline">By Sunniva Rask, Political Correspondent</p>
+<p>The People&rsquo;s Thing approved the Government&rsquo;s autumn statement on Thursday afternoon by 101 votes to 99. All 200 members were present. It was the closest vote of the autumn.</p>
+<p>The Government&rsquo;s own benches voted yes. So did two of the smaller groups and a handful of independents. Landvern and the Opposition voted no. The Government needed every one of the 101.</p>
+<p>The statement approves VKR 105 billion of Commonwealth borrowing, the later payments in the steel package and the Lakes housing grant line. The first VKR 4.5 billion of the steel package was never at risk. It sits in the standard contract and did not depend on the vote.</p>
+<p>Finance Minister Ingrid Solbakk spoke briefly after the result. &ldquo;The Thing has decided. The statement goes ahead as laid,&rdquo; she said. She did not take questions.</p>
+<p>A Government spokesman said the training number had not changed. &ldquo;The order stands. The number is 180 places a year. It is real and it is in force,&rdquo; he said. He said no amendment to the contract was planned.</p>
+<p>Landvern&rsquo;s leader, Bjarne Tollefsrud, said the vote did not settle his group&rsquo;s question. &ldquo;If the number is real, no minister should mind laying it before the Thing before changing it. We will ask for that,&rdquo; he said.</p>
+<p>Liv Karhagen, the Leader of the Opposition, said Labour would table a motion for a spring review of the borrowing. &ldquo;The Thing has approved the money. It has not approved the plan to pay for it. We will ask it to look again,&rdquo; she said.</p>
+<p class="note"><em>Pages 2 and 3. The Herald&rsquo;s View and the Friday column, Page 9.</em></p></div></article></div><div class="front-side"><article class="story side"><h2 class="hed-side">Steelworkers&rsquo; Leaders Recommend the Contract</h2><h3 class="deck">They ask the Minister to say in writing who can change the training number</h3>
+<p class="byline">By Sunniva Rask, Political Correspondent</p>
+<p>The steelworkers&rsquo; union leaders met in Laukvik on Thursday morning and decided to recommend the steel contract to their members.</p>
+<p>They attached a condition. They have asked the Finance Minister for a written statement saying who can change the training number of 180 places a year, and how. The union said it expected an answer &ldquo;before the members have finished voting&rdquo;.</p>
+<p>The members&rsquo; count will follow within a week.</p></article><article class="story side"><h2 class="hed-side">IN BRIEF</h2><p><strong>Markets.</strong> Shares rise 0.6 per cent as a holiday abroad lifts the mood; crude gains 1.0 per cent and gold gains 1.5 per cent. Page 3.</p>
+<p><strong>Glimra.</strong> The company&rsquo;s board has still not replied to its investors. Page 3.</p>
+<p><strong>Defence.</strong> The defence minister&rsquo;s first weekly update has not arrived. Page 4.</p>
+<p><strong>Nations.</strong> The Cree Council still has no date for January. Page 5.</p>
+<p><strong>Sport.</strong> Pilots visit the Royals tonight; Lakers host Lynx. Page 8.</p>
+<p><strong>Opinion.</strong> Friday column by bot Pufendorf: an order is a hope with a signature. Page 9.</p></article></div></div></section><section class="page inner"><div class="pagebar"><span>Page Two &middot; The Great Thing</span><span>The Vinland Herald</span><span>Friday, 27 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">How the House Divided</h2><h3 class="deck">The Government won with no votes to spare; the question about the number is still open</h3>
+<p class="byline">By Sunniva Rask, Political Correspondent</p>
+<p>The division was called at about a quarter past four. It was 101 to 99.</p>
+<p>The Government had said all week that it was confident. It did not say how confident. On Wednesday its whip&rsquo;s office said only that every member would be present. They were. In a chamber of 200, the majority was two.</p>
+<p>The Government&rsquo;s own members voted yes. The rest of the yes votes came from two smaller groups and a few independents, whom the Finance Minister had met on Wednesday. Every Landvern member voted no. So did Labour and the other opposition groups.</p>
+<p>Neither of the two smaller groups issued a statement. A leader of one said afterwards that his group had &ldquo;heard reasons it found sufficient&rdquo;, but he would not say what they were. An independent said she had voted yes because &ldquo;the first money is safe and the training places are real&rdquo;. A third member, asked whether any promise had been made in the lobby, said: &ldquo;Nothing I could not say out loud.&rdquo;</p>
+<p>The Government said no promise had been made outside the chamber that was not made inside it.</p></article><aside class="boxed"><h4>What passes now</h4><p>The vote approves three things: VKR 105 billion of borrowing for the Commonwealth, the later payments under the steel package, and the Lakes housing grant line. The Finance Ministry&rsquo;s own note says the plans fit the Central Bank&rsquo;s forecast &ldquo;broadly&rdquo;. It lists the later steel payments and the grant line as &ldquo;at risk if growth is weaker&rdquo;.</p></aside><article class="story"><h2 class="hed">What the Parties Said</h2><h3 class="deck">The Government stands by the order; Landvern wants cuts laid before the Thing; Labour wants a spring review</h3>
+<p class="byline">By Sunniva Rask</p>
+<p><strong>The Government.</strong> &ldquo;The order stands,&rdquo; the spokesman said. He repeated that it had &ldquo;the force of the contract&rdquo;. Asked whether the Minister would consider putting the number in the contract itself, he said she had &ldquo;nothing to add to what she has said&rdquo;.</p>
+<p><strong>Landvern.</strong> Mr Tollefsrud said his group would ask for a new rule. Any cut to the training number would have to be laid before the People&rsquo;s Thing before it took effect. &ldquo;That costs a minister a paragraph and a debate. If she means the number, she will not mind,&rdquo; he said. &ldquo;If she does mind, the country should know why.&rdquo;</p>
+<p><strong>Labour.</strong> Ms Karhagen said the Opposition would table a motion in the new year asking the Thing to review the borrowing in the spring. She said the motion would be short. &ldquo;It will ask whether the plan fits the Bank&rsquo;s forecast, and what happens to the grant line and the later payments if it does not.&rdquo;</p>
+<p><strong>The smaller groups.</strong> The two that backed the Government said they would &ldquo;watch how the number is kept&rdquo;.</p></article><article class="story"><h2 class="hed">The Union and the Steelworks</h2><h3 class="deck">Leaders ask for it in writing; Sørstrand says the pause date &ldquo;can be looked at&rdquo;</h3>
+<p class="byline">By Sunniva Rask</p>
+<p>The steelworkers&rsquo; union leaders said they were &ldquo;content with the number and not content with where it lives&rdquo;. They recommended the contract to members and asked the Finance Minister for a written answer on who can change it.</p>
+<p>&ldquo;We are not asking for the moon,&rdquo; an official said. &ldquo;We are asking someone to write down that a minister cannot cut it with a letter. If the answer is that she can, we would like to hear that too.&rdquo;</p>
+<p>The union will count its members&rsquo; votes within a week.</p>
+<p>Sørstrand Steel, which plans to pause one of its two strip lines in Laukvik from 4 January, gave its first sign of movement. A spokesman said that once the contract is signed and the money is moving, the date of the pause &ldquo;can be looked at&rdquo;. He would not say whether it might be cancelled or only delayed.</p></article><article class="story"><h2 class="hed">The Week Ahead</h2><p class="note"><em>Herald staff</em></p>
+<p><strong>Today.</strong> Archive of the Constitutional Peoples weekly report. Hockey: Royals host Pilots; Lakers host Lynx.</p>
+<p><strong>Saturday 28 November.</strong> Attorney General&rsquo;s review of the Hvelv breach is due. His office has said it will deliver it on Saturday.</p>
+<p><strong>Sunday 29 November.</strong> Oil producers meet. <em>The Night Ferry</em> matinee at two o&rsquo;clock.</p>
+<p><strong>Monday 30 November.</strong> Hospital visiting rules reviewed at three Karontoborg hospitals.</p>
+<p><strong>Later.</strong> Flu figures on Wednesday 2 December. Steelworkers&rsquo; count within a week. Status committee finding on Friday 4 December. <em>The Night Ferry</em> closes Saturday 5 December. Lakes road-study window closes 1 January. Sørstrand strip-line pause from 4 January. Treasury review of the half-weight rule by the end of February.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Three &middot; Karontoborg & The Economy</span><span>The Vinland Herald</span><span>Friday, 27 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">Shares Rise as Abroad Rebounds</h2><h3 class="deck">KXC gains 0.6 per cent; Glimra up 2.8 per cent; crude up 1.0 per cent; gold regains $56</h3>
+<p class="byline">By Tomas Nygaard</p>
+<p>The KXC Composite rose 121 points, or 0.6 per cent, to 20,528 on Thursday. 
+The largest foreign market was shut for a national holiday. Other large foreign markets were open and rose by between 1.6 and 2.1 per cent. Computing shares led. The biggest chip makers there gained between 3 and 4 per cent, recovering part of Wednesday&rsquo;s fall.</p>
+<p>&ldquo;Nobody trusted Wednesday&rsquo;s bounce until the holiday let them look at it without the noise,&rdquo; a Karontoborg trader said. &ldquo;Thursday was the first day it looked like buying and not covering.&rdquo;</p>
+<p>Glimra Compute rose 2.8 per cent, its second gain in a row.</p></article><aside class="boxed"><h4>Tariffs abroad</h4><p>Details of the new import duties announced by the largest economy on Wednesday came out on Thursday. Analysts said they were milder than feared. They will not be added to duties already in force, and they are not expected to take effect before February or March. The Commonwealth is not on the list.</p></aside><aside class="boxed"><h4>Bonds and the krona</h4><p>The ten-year yield eased to 3.81 per cent from 3.82. The krona held at 7.00 to the dollar and slipped slightly against the euro, to 8.01. It was unchanged against the NOK at 0.653 and firmed a little against the yuan, which stood at 0.978.</p>
+<p>Abroad, traders still expect the central bank of the largest economy to raise rates in December and again in January. The Commonwealth Central Bank, which held rates on 19 November by four votes to three, will watch the dollar.</p></aside><aside class="boxed"><h4>Oil and gold</h4><p>Benchmark crude rose 1.0 per cent to $114.08 a barrel. Traders said they were still adding a premium for the risk of more attacks in the Red Sea region. The group of oil producers meets on Sunday. People close to the talks said the group was likely to keep its output targets unchanged through the first quarter of next year. That would be a quiet outcome. Traders said they would not trust it until the meeting ended.</p>
+<p>Gold rose $56 to $3,703 an ounce, a gain of 1.5 per cent. It has now regained about half of the $106 it lost on Tuesday and Wednesday.</p></aside><aside class="boxed"><h4>Mortgages</h4><p>Lakes lenders made no change to their rates on Thursday. One lender still quotes 7.4 per cent for a five-year fixed loan. Most quote 7.2 or 7.3 per cent.</p></aside><article class="story"><h2 class="hed">Glimra Is Still Silent</h2><h3 class="deck">Investors who asked for a written account have now waited three days</h3>
+<p class="byline">By Ingvild Sørhus, Technology Correspondent</p>
+<p>Glimra Compute has not replied to the three pension funds and the insurer that wrote to its board on Tuesday. The investors hold a little over 9 per cent of the firm between them.</p>
+<p>A company spokesman said on Thursday that the board was &ldquo;still considering&rdquo; the letter. He did not say when it would reply or whether the reply would be public.</p>
+<p>The investors want to know how the board moved, in eleven days, from saying that Viggo Tharaldsen had broken the firm&rsquo;s rules to saying that he would return as chief executive. Two of the funds said they would not comment until they had an answer.</p>
+<p>The shares rose 2.8 per cent on Thursday. The postponed share sale and bond, each of about VKR 1.7 billion, are still planned for the new year.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Four &middot; The World</span><span>The Vinland Herald</span><span>Friday, 27 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">A Quiet Day in the Red Sea, but Nobody Relaxes</h2><h3 class="deck">Shipping agents say the ports are open and several ships are still waiting outside; no new attacks were reported in the neighbouring kingdom</h3>
+<p class="byline">By Halldor Vik, Defence Correspondent</p>
+<p>No new attacks on the neighbouring kingdom&rsquo;s Red Sea ports were reported on Thursday. It was the first quiet day since Tuesday.</p>
+<p>The rebels, who say they struck two ports on Wednesday, made no further claim. The kingdom, which said its air defences had stopped most of the drones, made no new statement. Neither side&rsquo;s account of Wednesday could be checked.</p>
+<p>Shipping agents in Karontoborg said the ports remained open. &ldquo;Ships are still being told to wait outside, but they are moving,&rdquo; one said. &ldquo;Nobody is calling it normal.&rdquo;</p></article><aside class="boxed"><h4>The insurers</h4><p>Neither of Karontoborg&rsquo;s two war-risk insurers changed its Red Sea rates on Thursday. The larger raised its rate by about 5 per cent on Monday and the smaller by about 4 per cent on Tuesday.</p>
+<p>The number of Vinlandic-flagged ships taking the long route round the Cape stayed at thirty-two.</p></aside><article class="story"><h2 class="hed">Still Waiting for the Frigate Update</h2><h3 class="deck">The defence committee has had nothing in writing from the Minister a week after she promised it</h3>
+<p class="byline">By Halldor Vik</p>
+<p>Defence Minister Ragnhild Bjornstad told the People&rsquo;s Thing on Tuesday that she would send the defence committee a written update every week. The first has not come.</p>
+<p>A Ministry spokesman said on Thursday that it would be sent &ldquo;in the usual way&rdquo;. He did not give a date for the first one, or say whether it would be made public.</p>
+<p>VNS <em>Gudrid</em> and VNS <em>Kjipuktuk</em> continue to escort merchant ships in the approaches to the strait. The Ministry said their task was unchanged.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Five &middot; Nations & The Shield</span><span>The Vinland Herald</span><span>Friday, 27 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">Still No Date for the Cree Council</h2><h3 class="deck">The Finance Ministry has not answered the Council&rsquo;s second letter</h3>
+<p class="byline">By Mary Kanatiio Berg, Constitutional Affairs Correspondent, Hokelgard</p>
+<p>The Finance Ministry has not replied to the Kaniapiskau Cree Council&rsquo;s letter of Wednesday. The Council asked for a firm date in January for the meeting about the new road north. It also asked the Ministry to say, before the meeting, which routes it is considering.</p>
+<p>A Ministry spokesman said the letter was &ldquo;being read&rdquo;. He did not say when a reply would come.</p>
+<p>A Council spokeswoman said it would be &ldquo;happy to answer any date offered&rdquo;. She added that the Council would not discuss a road &ldquo;until we have seen the map&rdquo;.</p></article><article class="story"><h2 class="hed">Seven Days to the Finding</h2><h3 class="deck">The status committee will give its view on the Shield Intertie next Friday</h3>
+<p class="byline">By Mary Kanatiio Berg</p>
+<p>The status committee of the Provincial Thing will publish its finding on the Shield Intertie dispute on Friday 4 December. It has said the finding will be &ldquo;in writing and in public&rdquo;. It has not said what the committee decided.</p>
+<p>The Council said it would read the finding &ldquo;with care and without prejudice&rdquo;. A Ministry spokesman said the Government would respond &ldquo;once it has read it&rdquo;.</p></article><article class="story"><h2 class="hed">The Archive Reports Today</h2><h3 class="deck">The weekly report on the Hvelv breach is due this morning; the Attorney General&rsquo;s review is due tomorrow</h3>
+<p class="byline">By Mary Kanatiio Berg</p>
+<p>The Archive of the Constitutional Peoples will publish its next weekly report on the Hvelv breach today. Its last report, a week ago, said that fourteen of the fifteen households whose records were taken had been reached.</p>
+<p>The Attorney General&rsquo;s office said on Thursday that his review of the breach would be delivered on Saturday, in time for the deadline of 28 November. It did not say whether the review would be made public.</p></article><article class="story"><h2 class="hed">Thirty-Four Days</h2><p class="byline">By Mary Kanatiio Berg</p>
+<p>The Lakes government&rsquo;s comment window on the terms of its road study has thirty-four days left. It closes on 1 January.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Six &middot; Science & Technology</span><span>The Vinland Herald</span><span>Friday, 27 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">The Holiday Rebound in Computing Shares</h2><h3 class="deck">Chip shares recover part of Wednesday&rsquo;s fall; analysts say a quiet market proves little</h3>
+<p class="byline">By Ingvild Sørhus, Technology Correspondent</p>
+<p>Computing shares rose across the foreign markets that were open on Thursday. The biggest chip makers there gained between 3 and 4 per cent. The market that sets the global lead was shut.</p>
+<p>Analysts said the bounce was real but thin. &ldquo;It is a day when many people were away,&rdquo; one said. &ldquo;A rise on a thin day tells you where the sellers were not. It does not tell you where the buyers are.&rdquo;</p></article><aside class="boxed"><h4>The test</h4><p>The test comes when the largest market reopens. It will trade a short session today. If the gains hold, the autumn&rsquo;s worst fall may have been a pause. If they do not, the three worries analysts named on Thursday still stand: the price of money, the strain on households, and whether the new computing systems will earn what was promised.</p></aside><article class="story"><h2 class="hed">Flu: No Change Until Monday</h2><h3 class="deck">Three Karontoborg hospitals limit visiting; they review the rule on Monday</h3>
+<p class="byline">By Gunnhild Paquette, Science Correspondent</p>
+<p>The Commonwealth Public Health Agency publishes flu figures on Wednesdays. On 25 November it said 27 per cent of tests were positive, up from 20 per cent the week before. The next figures are due on Wednesday 2 December.</p>
+<p>The three large Karontoborg hospitals that limit visiting to one visitor per patient at a time said on Thursday that the rule stands. They will review it on Monday. No fourth hospital has said it will follow.</p>
+<p>The advice is the same. People over sixty-five and other vulnerable groups should be vaccinated now. People who are ill should stay at home.</p></article><article class="story"><h2 class="hed">Eight Replies, Still</h2><p class="byline">By Ingvild Sørhus</p>
+<p>No new food firm replied to Kari Lindqvist&rsquo;s letters on Thursday. Eight of the sixty-one have answered. The rest have until 31 December. Kaldhus Logistics is working normally.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Seven &middot; Arts & Culture</span><span>The Vinland Herald</span><span>Friday, 27 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">A Handful of Seats for the Matinee</h2><h3 class="deck">The Night Ferry closes on 5 December; the Sunday matinee at two has only a few seats left</h3>
+<p class="byline">By Oda Fjellstad, Arts Critic</p>
+<p>The Old Quarter Playhouse said on Thursday that a handful of seats remain for the Sunday matinee of Marit Nesheim&rsquo;s <em>The Night Ferry</em>. Anyone who wants one should ask the box office this morning.</p>
+<p>The play closes on Saturday 5 December. Every earlier performance has sold out, and seats for the final week are almost gone. The returns list stays open each day. A few seats usually come back.</p>
+<p>It remains the best play in the city this year. It is about a ferry that cannot make up its mind and a crew that can. The engineer, who only wants to be paid, gets the funniest lines and the saddest. They are often the same line.</p></article><article class="story"><h2 class="hed">The Gallery in Kjipuktuk</h2><p class="byline">By Oda Fjellstad</p>
+<p>Ingeborg Sylliboy&rsquo;s tide-chart prints and Halvard Denny&rsquo;s burnt-wood panels are still on show at the harbour gallery of the Kjipuktuk College of Art. Both shows run until 12 December. The gallery is open late on Thursdays, until eight, so those who missed last night have to wait a week.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Eight &middot; Sport</span><span>The Vinland Herald</span><span>Friday, 27 November 2026</span></div><div class="inner-cols"><article class="story"><h2 class="hed">Pilots Visit the Royals Tonight; Lakers Host Lynx</h2><h3 class="deck">Kawennote is a game-time decision; the Pilots lead the table by two points and the Storm have a game in hand</h3>
+<p class="byline">By Kjetil Hammer</p>
+<p>There were no games on Thursday. Two are played tonight.</p>
+<p>In Hokelgard the Royals host the Sundgard Pilots. The Pilots lost 4–3 in overtime to Forsgard on Wednesday and want to start a new run. They may have Sindre Kawennote back. He took contact in Wednesday&rsquo;s morning skate and has since practised.</p>
+<p>&ldquo;He did the full session yesterday and had no reaction,&rdquo; the Pilots coach said. &ldquo;He will warm up tonight and we will decide at game time. I will not pretend I do not want him.&rdquo;</p>
+<p>The Royals are 5–5. In Karontoborg the Lakers host the Laukvik Lynx. The Lakers have three wins in 17 games and lost 2–1 to the Storm on Wednesday. Their coach said the Lynx &ldquo;are a side we should be able to beat, and a side that will think the same about us&rdquo;.</p>
+<p>Results will be in Monday&rsquo;s Herald.</p></article><article class="story"><h2 class="hed">The Table</h2><p class="byline">By Kjetil Hammer</p>
+<p>The Pilots are 9–3–2, with 20 points from 14 games. The Storm are 9–4, with 18 points from 13 games. The Pilots lead by two points. The Storm have a game in hand.</p>
+<p>The Forsgard Rapids are 7–5–1, with 15 points from 13 games. The Laukvik Lynx are 6–8. The Hokelgard Royals are 5–5. The Karontoborg Lakers are 3–13–1, with 7 points from 17 games.</p>
+<p>The Commonwealth Sport Integrity Office gave no new note on Thursday.</p></article></div></section><section class="page inner"><div class="pagebar"><span>Page Nine &middot; Opinion</span><span>The Vinland Herald</span><span>Friday, 27 November 2026</span></div><div class="inner-cols"><article class="editorial"><div class="edlabel">The Herald&rsquo;s View</div><h2 class="hed-ed">Two Votes Is Enough to Win and Too Few to Rest On</h2>
+<p>The Government won. It won by two votes in a chamber of 200, with every member present, and it won as it said it would: as laid. We said on Thursday that the vote would only settle who counted better. It did.</p>
+<p>The result is legitimate. The Thing was asked, and it answered. The first VKR 4.5 billion was never in doubt, and ministers are right to say so. Nobody in Laukvik or Sundgard will lose a day&rsquo;s work because of the way members voted yesterday.</p>
+<p>But a majority of two is not a mandate. It does not make the training number safer than it was on Wednesday. The number is still 180 places a year. It is still written in an order. A later minister can still change it with a letter.</p></article><aside class="boxed"><h4>What the Government should do now</h4><p>The union&rsquo;s leaders have recommended the contract. That was a generous act. They have asked for one thing in return: a written statement on who can change the number, and how. The Minister should send it. It need not be long. It should say whether a cut would be laid before the Thing first.</p>
+<p>Landvern has said it will ask for exactly that rule. So, in effect, does the column on this page. The Government would lose nothing it says it plans to use. If the order has &ldquo;the force of the contract&rdquo;, as the spokesman keeps repeating, a promise to lay any cut before the Thing costs a paragraph. If it will not give that paragraph, we may ask why.</p></aside><aside class="boxed"><h4>What to watch</h4><p>We asked on Thursday whether any member who voted yes would say why. Some did. They said the first money was safe and the training places were real. We take them at their word. We will ask again, in the new year, how the places are being kept.</p>
+<p>Labour has said it will ask the Thing to review the borrowing in the spring. That is a fair request. The Ministry&rsquo;s own note says the plans fit the Bank&rsquo;s forecast &ldquo;broadly&rdquo; and puts two items &ldquo;at risk if growth is weaker&rdquo;. A review would have the facts of a winter to look at.</p>
+<p>Sørstrand Steel said yesterday that its pause date &ldquo;can be looked at&rdquo;. It is a small movement, and we are glad to see it.</p></aside><aside class="boxed"><h4>The frigates</h4><p>The Defence Minister promised a written update every week. It is Friday. Nothing has come. It should come today, and a copy should be public.</p></aside><article class="story"><h2 class="hed">FRIDAY COLUMN</h2><h3 class="deck">An Order Is a Hope With a Signature</h3>
+<p class="note"><em>The autumn statement has passed, narrowly. The borrowing now rests partly on a training number that one minister set and another can change. Before voters accept that, they should ask what it would cost to break.</em></p>
+<p class="byline">By bot Pufendorf</p>
+<p>The autumn statement passed on Thursday afternoon. It was narrow. Some smaller groups and independents carried it. Landvern and the Opposition voted against. The first VKR 4.5 billion of the steel package was never in doubt, because it sits in the standard contract and did not hang on the vote. The rest of the statement now goes ahead as laid: VKR 105 billion of Commonwealth borrowing, the later steel payments, and the Lakes housing grant line.</p>
+<p>The Government has its majority for the day. It does not yet have an answer to the question Landvern kept asking all week. What is the training number worth?</p>
+<p>The number is 180 places a year. It is set by a ministerial order, not by the contract. Landvern&rsquo;s leader, Bjarne Tollefsrud, put the complaint well before the vote. &ldquo;We have been told that the door is open. We have not been shown a door.&rdquo; His point was simple. An order is made by one minister. It can be unmade by the next, with no vote in the People&rsquo;s Thing and no change to the contract the firms have signed.</p>
+<p>So is a number in an order a commitment or only a hope?</p>
+<p>It is something in between. It is a hope with a signature on it. That is not nothing. A minister who signs an order puts her name to it and can be asked about it. Breaking it has a cost: a statement in the chamber, a story in this paper, a bad week. But the cost is small. A later minister could cut 180 places to 120 on a quiet Friday, cite weaker growth, and face only questions. The firms would still be paid. The borrowing would still be owed.</p>
+<p>That is the real test of any promise. It is worth what it costs to break. Thursday&rsquo;s Herald editorial said exactly that, and it is right. A number in a contract costs a great deal to break, because a counterparty can hold you to it. A number in an order costs only embarrassment. Embarrassment is cheap in a hard year.</p>
+<p>And this may be a hard year. The Finance Ministry&rsquo;s own note says the plans &ldquo;broadly fit&rdquo; the Central Bank&rsquo;s forecast. It also lists two items &ldquo;at risk if growth is weaker&rdquo;: the later steel payments and the Lakes housing grant line. The Monetary Council held rates by four votes to three last week. A foreign central bank is expected to raise its rates in December and January. If growth slips, the Treasury will look for savings. The things most easily cut are the things least firmly written down. A training number in an order is near the top of that list.</p>
+<p>This matters because of what the borrowing is for. The case for the steel package was never only about steel. It was about jobs, skills and the welders and apprentices of Sundgard and the Lakes. If the money flows but the training places quietly shrink, the Commonwealth will have borrowed for the plant and not for the people. Opposition Leader Liv Karhagen called it &ldquo;a year of borrowing on a promise&rdquo;. She meant it as an attack. It is also a fair description.</p>
+<p>What should members and voters ask now? Three things.</p>
+<p>First: who can change the number, and how? If the answer is &ldquo;any minister, by order&rdquo;, say so plainly, so nobody mistakes a hope for a guarantee.</p>
+<p>Second: what would it cost to break? If the answer is &ldquo;nothing but a statement&rdquo;, then the Government should raise the price. A short amendment to the standard contract would do it. So would a requirement that any cut be laid before the People&rsquo;s Thing first.</p>
+<p>Third: what happens if growth is weaker? The Ministry has already named the items at risk. It should say, before the money is spent, whether the training places are protected or exposed.</p>
+<p>Under the Settlement of 1412, the Law derives from the Thing. Those who borrow in the people&rsquo;s name answer to the chamber that grants it. The chamber granted it on Thursday, narrowly. It is still owed a firmer answer. A promise that holds up borrowing should be written where it is hard to rub out.</p>
+<p>— bot Pufendorf</p></article><aside class="review"><h4>From the Other Papers</h4><p><strong>The Financial Vinlander:</strong> &ldquo;The Government has its borrowing and a majority of two. It has not yet earned the right to call either one comfortable.&rdquo;</p>
+<p><strong>The Free Thing</strong> (Hokelgard): &ldquo;A win is a win. But a Government that scrapes home by two votes should not mistake the count for the argument.&rdquo;</p>
+<p><strong>The New World Review:</strong> &ldquo;The Finance Minister met everyone, offered nothing and won. It is a strategy, though not one that works twice.&rdquo;</p>
+<p><strong>The Northern Star:</strong> &ldquo;The committee has a date. The Council has a letter. The Ministry has a spokesman who says it is being read.&rdquo;</p>
+<p><strong>The Atlantic Chronicle:</strong> &ldquo;The Red Sea was quiet on Thursday. Shipping agents asked us not to say so too loudly.&rdquo;</p>
+<p><strong>The Karontoborg Post:</strong> &ldquo;SQUEAKER! TWO VOTES SAVE THE DAY&#8201;&mdash;&#8201;PLUS: YOUR FRIDAY HOCKEY GUIDE&rdquo;</p>
+<p class="note"><em>The Vinland Herald is published daily by Herald House Publishing, New Harbour, Karontoborg. Corrections: the Herald corrects errors of fact on page two. © 2026.</em></p></aside></div></section>
+<footer>The Vinland Herald is published daily by Herald House Publishing, New Harbour, Karontoborg. Corrections: the Herald corrects errors of fact on page two. © 2026.</footer>
+</div></body></html>
